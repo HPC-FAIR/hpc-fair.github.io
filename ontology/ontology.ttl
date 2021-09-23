@@ -1,0 +1,3688 @@
+@prefix : <https://github.com/HPC-FAIR/HPC-Ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/HPC-FAIR/HPC-Ontology> .
+
+<https://github.com/HPC-FAIR/HPC-Ontology> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://github.com/HPC-FAIR/HPC-Ontology/1.0.0> ;
+                                            <http://purl.org/dc/elements/1.1/creator> "The HPC-FAIR research team" ;
+                                            <http://purl.org/dc/elements/1.1/description> """The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ datasets and machine learning models used in HPC software analyses 
+and optimizations. The goal is to make datasets and AI models FAIR.""" ;
+                                            <http://purl.org/dc/elements/1.1/title> "HPC Ontology" ;
+                                            <http://purl.org/dc/terms/created> "2021-09-23T13:30:00-07:00"^^xsd:dateTime ;
+                                            <http://purl.org/dc/terms/license> "the Creative Commons Attribution-ShareAlike License" ;
+                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "hpc" ;
+                                            <http://purl.org/vocab/vann/preferredNamespaceUri> <https://github.com/HPC-FAIR/HPC-Ontology> ;
+                                            rdfs:comment "" ;
+                                            owl:versionIRI "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty ;
+                                       rdfs:comment "Indicates the status of the vocabulary (Recommnedation, Draft, etc.)" .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty ;
+                 rdfs:comment "Adding a link to a previous version helps to see how the vocabulary has changed from one to the other. Thanks to this relationship, tools like WIDOCO may create automated changelog sections in the documentation of an ontology." .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty ;
+                                              rdfs:comment "It is always helpful to add examples on the intended usages of the ontology. Pointers to real examples are also valuable." .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#access
+:access rdf:type owl:ObjectProperty ;
+        owl:inverseOf :accessedBy ;
+        rdfs:comment "function relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#accessedBy
+:accessedBy rdf:type owl:ObjectProperty ;
+            rdfs:comment "variable relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#actedOnBehalfOf
+:actedOnBehalfOf rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Some agent acted on behalf of another agent." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#after
+:after rdf:type owl:ObjectProperty ;
+       owl:inverseOf :before ;
+       rdf:type owl:TransitiveProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#aiModel
+:aiModel rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :data ;
+         rdfs:comment "a project has an ai model" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#allocate
+:allocate rdf:type owl:ObjectProperty ;
+          owl:inverseOf :allocatedBy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy
+:allocatedBy rdf:type owl:ObjectProperty ;
+             rdfs:comment "array relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#associatedSoftware
+:associatedSoftware rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#before
+:before rdf:type owl:ObjectProperty ,
+                 owl:TransitiveProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#benchmark
+:benchmark rdf:type owl:ObjectProperty ;
+           rdfs:comment "Link to the associated benchmark software ID" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#callSite
+:callSite rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :graphLink ;
+          owl:inverseOf :srcFunc ;
+          rdfs:comment """a function has one or more call sites where it calls other functions. 
+This property links a function to its function call sites.""" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#calledBy
+:calledBy rdf:type owl:ObjectProperty ;
+          owl:equivalentProperty :caller ;
+          rdfs:subPropertyOf :graphLink ;
+          owl:inverseOf :calls .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#callee
+:callee rdf:type owl:ObjectProperty ;
+        owl:equivalentProperty :calls ;
+        rdfs:subPropertyOf :graphLink ;
+        owl:inverseOf :caller .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#caller
+:caller rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#calls
+:calls rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :graphLink ;
+       rdfs:comment "a function calls another function" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#conducted
+:conducted rdf:type owl:ObjectProperty ;
+           owl:inverseOf :wasConductedBy ;
+           rdfs:comment "an agent conducted an activity" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#consistsOf
+:consistsOf rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#contributor
+:contributor rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :wasAttributeTo .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#coprocessor
+:coprocessor rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :processor ;
+             rdfs:comment "a computer has a coprocessor" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#correspondsToArtifactTemplate
+:correspondsToArtifactTemplate rdf:type owl:ObjectProperty ;
+                               rdfs:comment "Artifact of an activity corresponds to a artifact template of a plan. Similar to opmv:correspondsToTemplateArtifact." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#correspondsToPlan
+:correspondsToPlan rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Some activity corresponds to (follows) a plan." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#correspondsToStep
+:correspondsToStep rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Some activity corresponds to a step of a plan. Similar to ompw:correspondsToTemplateProcess." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpu
+:cpu rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf :processor ;
+     rdfs:comment "a computer has a cpu object linked" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#creator
+:creator rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :contributor .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#data
+:data rdf:type owl:ObjectProperty ;
+      rdfs:comment "a project has data (dataset, aiModel ,etc). Derived from experiment generating or using the data." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#dataset
+:dataset rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :data ;
+         rdfs:comment "a project has a dataset" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#deallocatedBy
+:deallocatedBy rdf:type owl:ObjectProperty ;
+               rdfs:comment "array relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#decisionFeature
+:decisionFeature rdf:type owl:ObjectProperty ;
+                 rdfs:comment "For a decision tree node, the feature used as the left operand of the decision condition." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel
+:decisionLabel rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :graphLink ;
+               rdfs:comment "The final decision for a leaf node in a decisiontree" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#declaredBy
+:declaredBy rdf:type owl:ObjectProperty ;
+            rdfs:comment "a variable is declared by a statment" ,
+                         "variable relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#definedBy
+:definedBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#destFunc
+:destFunc rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :graphLink ;
+          owl:inverseOf :upstreamCallSite ;
+          rdfs:comment "linke a call site to the function being called." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#falseNode
+:falseNode rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :graphLink ;
+           rdfs:comment "link from a decision tree node to its false child node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#feed
+:feed rdf:type owl:ObjectProperty ;
+      rdfs:comment "link to software which use this data as input: inverse of hpc:input or hpc:use" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#file
+:file rdf:type owl:ObjectProperty ;
+      rdfs:range :File ;
+      rdfs:comment "a data object has an associated file" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#function
+:function rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :graphLink ;
+          rdfs:comment "a call graph (or other program analysis info object) has a function node." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#fundedBy
+:fundedBy rdf:type owl:ObjectProperty ;
+          rdfs:comment "a project is funded by some agencies" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#generated
+:generated rdf:type owl:ObjectProperty ;
+           owl:equivalentProperty :hadOutput ;
+           owl:inverseOf :wasGeneratedBy ;
+           rdfs:comment "Some activie generated some artifact" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#generates
+:generates rdf:type owl:ObjectProperty ;
+           owl:inverseOf :wasGeneratedBy ;
+           rdfs:comment "Some activity/experiment generates some data (workflow, dataset, ai models, etc. )" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#graphLink
+:graphLink rdf:type owl:ObjectProperty ;
+           rdfs:comment "the top level object properties for any links between AST nodes" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hadInput
+:hadInput rdf:type owl:ObjectProperty ;
+          owl:equivalentProperty :used ;
+          owl:inverseOf :wasUsedBy ;
+          rdfs:comment "Link to ids of input datasets used to generate this model (dataset)" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hadOutput
+:hadOutput rdf:type owl:ObjectProperty ;
+           owl:inverseOf :wasGeneratedBy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment
+:hasAlignment rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :graphLink ;
+              rdfs:comment "AST node to alignment node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr
+:hasArgumentExpr rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentList
+:hasArgumentList rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType
+:hasArrayBaseType rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasType ;
+                  rdfs:range :Type .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank
+:hasArrayRank rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:comment "?" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasBaseType
+:hasBaseType rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasBody
+:hasBody rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :graphLink ;
+         rdfs:comment "AST has a body" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasChild
+:hasChild rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :graphLink ;
+          owl:inverseOf :hasParent .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasCompiler
+:hasCompiler rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasCondition
+:hasCondition rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :graphLink ;
+              rdfs:comment "AST node to its condition node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration
+:hasDeclaration rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :graphLink ;
+                rdfs:comment "Domain: definition" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition
+:hasDefinition rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasElseBody
+:hasElseBody rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasExpression
+:hasExpression rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :graphLink ;
+               rdfs:domain :ExpressionStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasFalseBody
+:hasFalseBody rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasFile
+:hasFile rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :graphLink ;
+         rdfs:comment "AST node to its file node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasForIncr
+:hasForIncr rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasForInit
+:hasForInit rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasForTest
+:hasForTest rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasHiddenType
+:hasHiddenType rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasIndexExp
+:hasIndexExp rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasInitStatement
+:hasInitStatement rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue
+:hasInitialValue rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer
+:hasInitializer rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasInput
+:hasInput rdf:type owl:ObjectProperty ;
+          owl:equivalentProperty :uses ;
+          owl:inverseOf :isInputOf ;
+          rdfs:range :ArtifactTemplate ;
+          rdfs:comment "A plan or step has some input artifact template" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasKey
+:hasKey rdf:type owl:ObjectProperty ;
+        rdfs:comment "case key:" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasLabelRef
+:hasLabelRef rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand
+:hasLeftOperand rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasChild ;
+                rdfs:domain :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:domain :Computer ,
+                         :Organization ;
+             rdfs:range :Location .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           owl:equivalentProperty :member ;
+           owl:inverseOf :memberOf .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasNode
+:hasNode rdf:type owl:ObjectProperty ;
+         rdfs:comment "Link a cluster to its login or compute nodes." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasOperand
+:hasOperand rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasChild .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasOperatingSystem
+:hasOperatingSystem rdf:type owl:ObjectProperty ;
+                    owl:equivalentProperty :operatingSystem ;
+                    rdfs:comment "Link from a machine to OS software ID: RHEL version 8, the one runs on the computer" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasOperator
+:hasOperator rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isOutputOf ;
+           rdfs:range :ArtifactTemplate ;
+           rdfs:comment "A plan or step has some artifact template" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasPI
+:hasPI rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList
+:hasParameterDeclList rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :graphLink ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :FunctionType ;
+                      rdfs:comment "function relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasParameterList
+:hasParameterList rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasParent
+:hasParent rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType
+:hasReturnType rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasType ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain :FunctionType ;
+               rdfs:range :Type ;
+               rdfs:comment "function relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand
+:hasRightOperand rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasChild ;
+                 rdfs:domain :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasSelector
+:hasSelector rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasSize
+:hasSize rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasStatement
+:hasStatement rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass
+:hasStorageClass rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :graphLink ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:comment "variable relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasTarget
+:hasTarget rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasTrueBody
+:hasTrueBody rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :graphLink ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:range :Type ;
+         rdfs:comment "variable relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasValue
+:hasValue rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasVendor
+:hasVendor rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isArtifactTemplateOfPlan
+:isArtifactTemplateOfPlan rdf:type owl:ObjectProperty ;
+                          rdfs:comment "some artifact template belongs to a plan as input or output. simiar to opmw:isVariableOfTemplate" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isDecomposedAsPlan
+:isDecomposedAsPlan rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:comment "MultiStep is decomposed to a Plan" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isDerivedFrom
+:isDerivedFrom rdf:type owl:ObjectProperty ;
+               rdfs:comment "some artifact template is derived from another artifact template, after some steps." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isGeneratedBy
+:isGeneratedBy rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty :isOutputOf ;
+               rdfs:domain :ArtifactTemplate ;
+               rdfs:comment "Some artifact template is generated by a plan or step" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isInputOf
+:isInputOf rdf:type owl:ObjectProperty ;
+           rdfs:comment "some artifact template is an input of a plan or step" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isOutputOf
+:isOutputOf rdf:type owl:ObjectProperty ;
+            rdfs:comment "some artifact template is output of a plan or step" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:comment "is a part of bigger organization entities, used to support parent-child organization relation" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isPreceededBy
+:isPreceededBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Step ;
+               rdfs:range :Step ;
+               rdfs:comment "A step is preceeded by another step." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isStepOfPlan
+:isStepOfPlan rdf:type owl:ObjectProperty ;
+              rdfs:domain :Step ;
+              rdfs:range :Plan ;
+              rdfs:comment "a step is a step of a plan. Similar to opmw:isStepOfTemplate" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isSubPlanOfPlan
+:isSubPlanOfPlan rdf:type owl:ObjectProperty ;
+                 rdfs:comment "A plan is a sub plan of another plan.  Linking MultiStep to its parent Plan." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isVariableTemplateOfPlan
+:isVariableTemplateOfPlan rdf:type owl:ObjectProperty ;
+                          rdfs:comment "similar to opmw:isVariableOfPlan.  Links a variable template to its plan" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#member
+:member rdf:type owl:ObjectProperty ;
+        owl:inverseOf :memberOf .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#memberOf
+:memberOf rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#next
+:next rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      owl:inverseOf :prev .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#operatingSystem
+:operatingSystem rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#osFamily
+:osFamily rdf:type owl:ObjectProperty ;
+          rdfs:comment "Linux, MacOS, Windows etc." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#prev
+:prev rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#processor
+:processor rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:comment "a computer node links to its processor node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#programmingLanguage
+:programmingLanguage rdf:type owl:ObjectProperty ;
+                     rdfs:range :ProgrammingLanguage ;
+                     rdfs:comment "software is written in some programming language" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#project
+:project rdf:type owl:ObjectProperty ;
+         rdfs:comment "something has a project associated" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ranOn
+:ranOn rdf:type owl:ObjectProperty ;
+       rdfs:comment "Some software ran on some machine." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#read
+:read rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :access ;
+      owl:inverseOf :readBy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#readBy
+:readBy rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :accessedBy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#referTo
+:referTo rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :graphLink ;
+         owl:inverseOf :referredBy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#referredBy
+:referredBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :graphLink .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#relationOp
+:relationOp rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#runsOn
+:runsOn rdf:type owl:ObjectProperty ;
+        owl:equivalentProperty :supportedMachine ;
+        rdfs:range :Computer ;
+        rdfs:comment "software runs on some machine" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#software
+:software rdf:type owl:ObjectProperty ;
+          rdfs:comment "software used by a hardware devices." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#sourceFile
+:sourceFile rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :file .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#srcFunc
+:srcFunc rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :graphLink ;
+         rdfs:comment "Inverse of Function--> CallSite" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#submitter
+:submitter rdf:type owl:ObjectProperty ;
+           rdfs:comment "A person submits data into our system" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#supportedMachine
+:supportedMachine rdf:type owl:ObjectProperty ;
+                  rdfs:comment "some software package supports some type of machines" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#supportedOperatingSystem
+:supportedOperatingSystem rdf:type owl:ObjectProperty ;
+                          rdfs:comment "a software package supports some OS types" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#targetApplication
+:targetApplication rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:comment "target application an AI model supports" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#targetMachine
+:targetMachine rdf:type owl:ObjectProperty ;
+               rdfs:comment "link to concrete computers an AI model supports to model"^^xsd:anyURI .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#trueNode
+:trueNode rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :graphLink ;
+          rdfs:comment "link from a decision tree node to its true child node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite
+:upstreamCallSite rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :graphLink ;
+                  rdfs:comment "Inverse of a call site --> function being called." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#used
+:used rdf:type owl:ObjectProperty ;
+      owl:inverseOf :wasUsedBy ;
+      rdfs:comment "Activity/Experiment used some artifact as input" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#uses
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:range :ArtifactTemplate ;
+      rdfs:comment "A plan or step uses some artifact template as input" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#usesWorkflow
+:usesWorkflow rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :correspondsToPlan ;
+              rdfs:comment "Some activity/experiment uses a workflow (plan). This is similar to opmw:correspondsToTemplate which link an execution instance to its workflow template (plan)." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#vendor
+:vendor rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasAWH
+:wasAWH rdf:type owl:ObjectProperty ;
+        owl:equivalentProperty :wasAssociatedWithHardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasAWS
+:wasAWS rdf:type owl:ObjectProperty ;
+        owl:equivalentProperty :wasAssociatedWithSoftware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasAssociatedWithHardware
+:wasAssociatedWithHardware rdf:type owl:ObjectProperty ;
+                           rdfs:comment "some activity was associated with some hardware, such as runOn" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasAssociatedWithSoftware
+:wasAssociatedWithSoftware rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasAttributeTo
+:wasAttributeTo rdf:type owl:ObjectProperty ;
+                rdfs:comment "Some artifact was attributed to an agent" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasConductedBy
+:wasConductedBy rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty :wasControlledBy ;
+                rdfs:comment "some activity was conducted by an agent." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasControlledBy
+:wasControlledBy rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasDerivedFrom
+:wasDerivedFrom rdf:type owl:ObjectProperty ;
+                rdfs:comment "Some artifact was derived from another, after some processing. Simiar to prov-o:wasDerivedFrom" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasDerivedFromDataset
+:wasDerivedFromDataset rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :wasDerivedFrom ;
+                       rdfs:comment "Some AI models were derived from datasets in the workflow pipeline" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasDerivedFromSoftware
+:wasDerivedFromSoftware rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :wasDerivedFromDataset ;
+                        rdfs:comment "program analysis information (such as a call graph) was derivd from an input software" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasGeneratedBy
+:wasGeneratedBy rdf:type owl:ObjectProperty ;
+                rdfs:comment "Link from Artifact to the activity/experiments generating the data" ,
+                             "Some artifact was generated by some activity." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasPreceededBy
+:wasPreceededBy rdf:type owl:ObjectProperty ;
+                rdfs:comment "Some activity was preceeded by another activity." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wasUsedBy
+:wasUsedBy rdf:type owl:ObjectProperty ;
+           rdfs:comment "Link from artifact to experiment using it, reverse of hpc:used." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#workflow
+:workflow rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :data ;
+          rdfs:comment "Project has some workflow" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#write
+:write rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :access ;
+       owl:inverseOf :writtenBy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#writtenBy
+:writtenBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :accessedBy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#writtenIn
+:writtenIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :LanguageConstruct ;
+           rdfs:range :ProgrammingModel .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Nth
+:Nth rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#NthArg
+:NthArg rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Nth .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#NthPara
+:NthPara rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :Nth .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#accuracy
+:accuracy rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#achievedActiveWarpsPerSM
+:achievedActiveWarpsPerSM rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#achievedGPUOccupancy
+:achievedGPUOccupancy rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :occupancy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#activeCyclesOfStreamingMultiprocessor
+:activeCyclesOfStreamingMultiprocessor rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf :cycle .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#affiliate
+:affiliate rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#allocatedDataSize
+:allocatedDataSize rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#alternateName
+:alternateName rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :name .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#arrayID
+:arrayID rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :id .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#arrayName
+:arrayName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :name .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#averageExecutionTime
+:averageExecutionTime rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :executionTime .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#awardAmount
+:awardAmount rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#beginMemoryAddress
+:beginMemoryAddress rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :memoryAddress .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#city
+:city rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#coProcessorMemorySize
+:coProcessorMemorySize rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#coProcessorMemorySizePerNode
+:coProcessorMemorySizePerNode rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#coProcessorPeakPerformancePerNode
+:coProcessorPeakPerformancePerNode rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#coProcessorSpeed
+:coProcessorSpeed rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :frequency .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#codeVariant
+:codeVariant rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#columnNumber
+:columnNumber rdf:type owl:DatatypeProperty ;
+              rdfs:comment "Column number within a file" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#commandLineOption
+:commandLineOption rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#computeNodeCount
+:computeNodeCount rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#continent
+:continent rdf:type owl:DatatypeProperty ;
+           rdfs:comment "located continent" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#coprocessorCores
+:coprocessorCores rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#coprocessorCountPerNode
+:coprocessorCountPerNode rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#count
+:count rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#country
+:country rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuArchitecture
+:cpuArchitecture rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuCoreCount
+:cpuCoreCount rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuCorePerNode
+:cpuCorePerNode rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuCorePerSocket
+:cpuCorePerSocket rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuFrequency
+:cpuFrequency rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :frequency .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuMemorySizePerNode
+:cpuMemorySizePerNode rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuPageFault
+:cpuPageFault rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :pageFault .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cpuPeakPerformancePerNode
+:cpuPeakPerformancePerNode rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#cycle
+:cycle rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#dataTransferSize
+:dataTransferSize rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#date
+:date rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#dateCommissioned
+:dateCommissioned rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :date .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#description
+:description rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#deviceToHostTransferSize
+:deviceToHostTransferSize rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :dataTransferSize .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#dramFrequency
+:dramFrequency rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :frequency .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#dramUtilizationRate
+:dramUtilizationRate rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :percentage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :date .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#endMemoryAddress
+:endMemoryAddress rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :memoryAddress .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#executionTime
+:executionTime rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#executionTimePercentage
+:executionTimePercentage rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :percentage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#familyName
+:familyName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :name .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#fileFormat
+:fileFormat rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#fileName
+:fileName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :name ;
+          rdfs:range xsd:string .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#fileSize
+:fileSize rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#firstReleaseDate
+:firstReleaseDate rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :date .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#format
+:format rdf:type owl:DatatypeProperty ;
+        rdfs:comment "An AI models can be saved model, protobuf, onnx, h5, etc. format." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#frequency
+:frequency rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gender
+:gender rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#givenName
+:givenName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :name .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuArchitecture
+:gpuArchitecture rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuDriverSharedMemorySizePerBlock
+:gpuDriverSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuDynamicSharedMemorySizePerBlock
+:gpuDynamicSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuFrequency
+:gpuFrequency rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :coProcessorSpeed .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuInterconnect
+:gpuInterconnect rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "bus types connecting CPU and GPUs: NVILINK or others" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuMemorySizePerNode
+:gpuMemorySizePerNode rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuModel
+:gpuModel rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuNodeCount
+:gpuNodeCount rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuPageFault
+:gpuPageFault rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :pageFault .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuPeakPerformancePerNode
+:gpuPeakPerformancePerNode rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuSharedMemoryConfigurationSize
+:gpuSharedMemoryConfigurationSize rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuStaticSharedMemorySizePerBlock
+:gpuStaticSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadBlockSize
+:gpuThreadBlockSize rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadCount
+:gpuThreadCount rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadGridSize
+:gpuThreadGridSize rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuUnifiedMemoryRemoteMapSize
+:gpuUnifiedMemoryRemoteMapSize rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuWavesPerSM
+:gpuWavesPerSM rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#harddriveSize
+:harddriveSize rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode
+:hasChildNode rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "If a decision tree node has child nodes or not." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasHPCGPerformance
+:hasHPCGPerformance rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasID
+:hasID rdf:type owl:DatatypeProperty ;
+       owl:equivalentProperty :id .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasIDType
+:hasIDType rdf:type owl:DatatypeProperty ;
+           owl:equivalentProperty :idType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasRmax
+:hasRmax rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The maximum achieved performance [TFlop/s]" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasRpeak
+:hasRpeak rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The theoretical peak performance [TFlop/s]" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasValue
+:hasValue rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#homepage
+:homepage rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hostToDeviceTransferSize
+:hostToDeviceTransferSize rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :dataTransferSize .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#id
+:id rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#idType
+:idType rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#inputDataSize
+:inputDataSize rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#interconnect
+:interconnect rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#interconnectFamily
+:interconnectFamily rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isPlanned
+:isPlanned rdf:type owl:DatatypeProperty ;
+           rdfs:comment "false"^^xsd:boolean .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isPubliclyAccessible
+:isPubliclyAccessible rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:boolean ;
+                      rdfs:comment "If Data is public or Private. True means is public." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isTunable
+:isTunable rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:boolean .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#jobTile
+:jobTile rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#kernelName
+:kernelName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :name .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#l1CacheUitlizationRate
+:l1CacheUitlizationRate rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :percentage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#l2CacheUtilizationRate
+:l2CacheUtilizationRate rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :percentage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#labeledCodeVariant
+:labeledCodeVariant rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :codeVariant .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#latestReleaseDate
+:latestReleaseDate rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :date .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#license
+:license rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#lineNumber
+:lineNumber rdf:type owl:DatatypeProperty ;
+            rdfs:comment "line number within a file" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#loginNodeCount
+:loginNodeCount rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#machineLearningFramework
+:machineLearningFramework rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#mangledName
+:mangledName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :name ;
+             rdfs:comment "Mangled name of a named programming language construct" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxExecutionTime
+:maxExecutionTime rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :executionTime .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedByRegister
+:maxGPUThreadBlockSizeLimitedByRegister rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedBySM
+:maxGPUThreadBlockSizeLimitedBySM rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedBySharedMemory
+:maxGPUThreadBlockSizeLimitedBySharedMemory rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedByWarps
+:maxGPUThreadBlockSizeLimitedByWarps rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#md5
+:md5 rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#memoryAddress
+:memoryAddress rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#memoryBandwidth
+:memoryBandwidth rdf:type owl:DatatypeProperty ;
+                 owl:equivalentProperty :singleCPUMemoryBandwidth ;
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#memoryOccupancy
+:memoryOccupancy rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :occupancy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#memorySize
+:memorySize rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#memoryThroughputRate
+:memoryThroughputRate rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :percentage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#minExecutionTime
+:minExecutionTime rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :executionTime .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#name
+:name rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#numberOfCalls
+:numberOfCalls rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#occupancy
+:occupancy rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#overhead
+:overhead rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#pageFault
+:pageFault rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#params
+:params rdf:type owl:DatatypeProperty ;
+        rdfs:comment "configurable parameters for an AI model" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#percentage
+:percentage rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#performance
+:performance rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#platform
+:platform rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#power
+:power rdf:type owl:DatatypeProperty ;
+       rdfs:comment "Power consumption in kW, Watt, GigaWatt etc. qudt:QuantityValue" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#powerEfficiency
+:powerEfficiency rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "Power efficiency e.g. GFlops/Watts" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#processorGeneration
+:processorGeneration rdf:type owl:DatatypeProperty ;
+                     rdfs:comment "Processor generation information (used in Top500)" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#processorPeakPerformance
+:processorPeakPerformance rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :performance ;
+                          rdfs:comment "Processor peak performance per node, co-processs are excluded." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#processorTech
+:processorTech rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Processor codename/model" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#programArea
+:programArea rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#programLanguage
+:programLanguage rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#publication
+:publication rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#qualifiedName
+:qualifiedName rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :name ;
+               rdfs:comment "C++ qualified names for a function, variable, classs, namespace, etc." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#registersPerThread
+:registersPerThread rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#relationValue
+:relationValue rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#segment
+:segment rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The field using HPC system (research, academic, industry, vendor)" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#singleCPUMemoryBandwidth
+:singleCPUMemoryBandwidth rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#site
+:site rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:comment "Facitility/institution name hosting HPC machine" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#size
+:size rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :date .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#state
+:state rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#streamingMultiprocessorFrequency
+:streamingMultiprocessorFrequency rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf :frequency .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#streamingProcessorUtilizationRate
+:streamingProcessorUtilizationRate rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :percentage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#subject
+:subject rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:comment "link to related subjects or topics: performance modeling, image classification, text generation, etc." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#submitDate
+:submitDate rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :date .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#supportsAccelerator
+:supportsAccelerator rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:boolean .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#systemArchitecture
+:systemArchitecture rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "the system architecture (MPP, cluster or others)" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#systemModel
+:systemModel rdf:type owl:DatatypeProperty ;
+             rdfs:comment """high-level description of system model used by Top500
+Supercomputer Fugaku
+IBM Power System AC922
+Sunway MPP
+HPE Cray EX235n
+NVIDIA DGX A100""" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#theoreticalActiveWarpsPerSM
+:theoreticalActiveWarpsPerSM rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#theoreticalGPUOccupancy
+:theoreticalGPUOccupancy rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :occupancy .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#threadCountPerNode
+:threadCountPerNode rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#title
+:title rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#top500FirstAppearance
+:top500FirstAppearance rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#top500Rank
+:top500Rank rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#top500nhalf
+:top500nhalf rdf:type owl:DatatypeProperty ;
+             rdfs:comment "Problem size for achieving half of Rmax" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#top500nmax
+:top500nmax rdf:type owl:DatatypeProperty ;
+            rdfs:comment "Problem size for achieving Rmax" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterCPUCoreCount
+:totalClusterCPUCoreCount rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterCPUPeakPerformance
+:totalClusterCPUPeakPerformance rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterCoProcessorCount
+:totalClusterCoProcessorCount rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterCoProcressorPeakPerformance
+:totalClusterCoProcressorPeakPerformance rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterGPUPeakPerformance
+:totalClusterGPUPeakPerformance rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterMemorySize
+:totalClusterMemorySize rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterPeakPerformance
+:totalClusterPeakPerformance rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalClusterProcessorPeakPerformance
+:totalClusterProcessorPeakPerformance rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#totalPeakPerformancePerNode
+:totalPeakPerformancePerNode rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#treeNodeLevel
+:treeNodeLevel rdf:type owl:DatatypeProperty ;
+               rdfs:comment "The level of a tree, starting from 0 for the root node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#url
+:url rdf:type owl:DatatypeProperty ;
+     owl:equivalentProperty :website ;
+     rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#version
+:version rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#website
+:website rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#zip
+:zip rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AIModel
+:AIModel rdf:type owl:Class ;
+         owl:equivalentClass :MachineLearningModel ;
+         rdfs:subClassOf :Data .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Accelerator
+:Accelerator rdf:type owl:Class ;
+             rdfs:subClassOf :Coprocessor .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Action
+:Action rdf:type owl:Class ;
+        owl:equivalentClass :Activity .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:comment "something that occurs over a period of time an acts upon or with entities. This is used to represent actions already been done, happened already with concrete actors, timing , location..etc. information" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AddAssignOp
+:AddAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AddOp
+:AddOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AdditiveOp
+:AdditiveOp rdf:type owl:Class ;
+            rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AddressOp
+:AddressOp rdf:type owl:Class ;
+           rdfs:subClassOf :UnaryOp ;
+           rdfs:comment "&" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:comment "A person, organizationsoftware, computer, etc.which can conduct some activities" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AndAssignOp
+:AndAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AndOp
+:AndOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ArrayDecl
+:ArrayDecl rdf:type owl:Class ;
+           rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ArraySub
+:ArraySub rdf:type owl:Class ;
+          rdfs:subClassOf :PostfixOp ;
+          rdfs:comment "[]" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ArrayType
+:ArrayType rdf:type owl:Class ;
+           rdfs:subClassOf :DerivedType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ArrowExp
+:ArrowExp rdf:type owl:Class ;
+          rdfs:subClassOf :MemberRef .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Artifact
+:Artifact rdf:type owl:Class ;
+          rdfs:comment "a physical object or its digital representaton in a computer system" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ArtifactTemplate
+:ArtifactTemplate rdf:type owl:Class ;
+                  rdfs:comment "input and output of planned activites. They are different from artifacts in that artifact templates are not yet instantiated, similar to formal arguments of a function." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ArtificialNeuralNetwork
+:ArtificialNeuralNetwork rdf:type owl:Class ;
+                         rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer
+:AssignInitializer rdf:type owl:Class ;
+                   rdfs:subClassOf :Initializer ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasInitialValue ;
+                                     owl:someValuesFrom :Expression
+                                   ] .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AssignOp
+:AssignOp rdf:type owl:Class ;
+          rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AssignStatement
+:AssignStatement rdf:type owl:Class ;
+                 rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp
+:AssignmentOp rdf:type owl:Class ;
+              rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Auto
+:Auto rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:oneOf ( :auto
+                                      )
+                          ] ;
+      rdfs:subClassOf :StorageClass .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BasicBlock
+:BasicBlock rdf:type owl:Class ;
+            rdfs:subClassOf :ScopeStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BasicType
+:BasicType rdf:type owl:Class ;
+           rdfs:subClassOf :Type ;
+           rdfs:comment "Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Benchmark
+:Benchmark rdf:type owl:Class ;
+           rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp
+:BinaryOp rdf:type owl:Class ;
+          rdfs:subClassOf :Expression ;
+          rdfs:comment "overlap" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseANDOp
+:BitwiseANDOp rdf:type owl:Class ;
+              rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseOROp
+:BitwiseOROp rdf:type owl:Class ;
+             rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseShiftOp
+:BitwiseShiftOp rdf:type owl:Class ;
+                rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseXOROp
+:BitwiseXOROp rdf:type owl:Class ;
+              rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Block
+:Block rdf:type owl:Class ;
+       rdfs:subClassOf :Scope .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BoolType
+:BoolType rdf:type owl:Class ;
+          rdfs:subClassOf :BasicType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BreakStatement
+:BreakStatement rdf:type owl:Class ;
+                rdfs:subClassOf :JumpStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#BuildingDataset
+:BuildingDataset rdf:type owl:Class ;
+                 rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#C
+:C rdf:type owl:Class ;
+   rdfs:subClassOf :ProgrammingLanguage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CPU
+:CPU rdf:type owl:Class ;
+     rdfs:subClassOf :Processor .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CSVDataset
+:CSVDataset rdf:type owl:Class ;
+            rdfs:subClassOf :Dataset .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CUDA
+:CUDA rdf:type owl:Class ;
+      rdfs:subClassOf :ProgrammingModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Cache
+:Cache rdf:type owl:Class ;
+       rdfs:subClassOf :Memory .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CallGraph
+:CallGraph rdf:type owl:Class ;
+           rdfs:subClassOf :Dataset .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CallSite
+:CallSite rdf:type owl:Class ;
+          owl:equivalentClass :FunctionCall ;
+          rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CaseOptionStatement
+:CaseOptionStatement rdf:type owl:Class ;
+                     rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CastOp
+:CastOp rdf:type owl:Class ;
+        rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CharConst
+:CharConst rdf:type owl:Class ;
+           rdfs:subClassOf :Constant .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CharType
+:CharType rdf:type owl:Class ;
+          rdfs:subClassOf :BasicType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Cilk
+:Cilk rdf:type owl:Class ;
+      rdfs:subClassOf :ProgrammingModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration
+:ClassDeclaration rdf:type owl:Class ;
+                  rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Cluster
+:Cluster rdf:type owl:Class ;
+         rdfs:subClassOf :Computer .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Clustering
+:Clustering rdf:type owl:Class ;
+            rdfs:subClassOf :UnsupervisedLearning .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CoPrincipalInvestigator
+:CoPrincipalInvestigator rdf:type owl:Class ;
+                         rdfs:subClassOf :PrincipalInvestigator .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CoProcessor
+:CoProcessor rdf:type owl:Class ;
+             owl:equivalentClass :Coprocessor ;
+             rdfs:subClassOf :Processor .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CommaOp
+:CommaOp rdf:type owl:Class ;
+         rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf :Organization .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Compiler
+:Compiler rdf:type owl:Class ;
+          rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Compiling
+:Compiling rdf:type owl:Class ;
+           rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ComplexType
+:ComplexType rdf:type owl:Class ;
+             rdfs:subClassOf :BasicType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement
+:CompoundStatement rdf:type owl:Class ;
+                   rdfs:subClassOf :Statement ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :consistsOf ;
+                                     owl:someValuesFrom :Statement
+                                   ] ;
+                   rdfs:comment "The body of a function definition is a compound statement." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Computer
+:Computer rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ,
+                          :Agent ,
+                          :Hardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ConditionalOp
+:ConditionalOp rdf:type owl:Class ;
+               rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Const
+:Const rdf:type owl:Class ;
+       rdfs:subClassOf :TypeQualifier .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Constant
+:Constant rdf:type owl:Class ;
+          rdfs:subClassOf :PrimaryExpr .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ContinueStatement
+:ContinueStatement rdf:type owl:Class ;
+                   rdfs:subClassOf :JumpStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ConvolutionalNeuralNetwork
+:ConvolutionalNeuralNetwork rdf:type owl:Class ;
+                            rdfs:subClassOf :FeedforwardNeuralNetwork .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Coprocessor
+:Coprocessor rdf:type owl:Class ;
+             rdfs:subClassOf :Processor .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#CorrectnessTool
+:CorrectnessTool rdf:type owl:Class ;
+                 rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Data
+:Data rdf:type owl:Class ;
+      rdfs:subClassOf :Artifact .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataClearning
+:DataClearning rdf:type owl:Class ;
+               rdfs:subClassOf :DataProcessing .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataFiltering
+:DataFiltering rdf:type owl:Class ;
+               rdfs:subClassOf :DataProcessing .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataFormatting
+:DataFormatting rdf:type owl:Class ;
+                rdfs:subClassOf :DataProcessing .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataGathering
+:DataGathering rdf:type owl:Class ;
+               rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataMerging
+:DataMerging rdf:type owl:Class ;
+             rdfs:subClassOf :DataProcessing .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataProcessing
+:DataProcessing rdf:type owl:Class ;
+                rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataTemplate
+:DataTemplate rdf:type owl:Class ;
+              rdfs:subClassOf :ArtifactTemplate ;
+              rdfs:comment "more complex artifact templates used as input and output of a plan" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DataVerifying
+:DataVerifying rdf:type owl:Class ;
+               rdfs:subClassOf :DataProcessing .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DatabaseManagementSystem
+:DatabaseManagementSystem rdf:type owl:Class ;
+                          rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf :Data .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Debugger
+:Debugger rdf:type owl:Class ;
+          owl:equivalentClass :DebuggingTool ;
+          rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Debugging
+:Debugging rdf:type owl:Class ;
+           rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DebuggingTool
+:DebuggingTool rdf:type owl:Class ;
+               rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DecisionTree
+:DecisionTree rdf:type owl:Class ;
+              rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DecisionTreeNode
+:DecisionTreeNode rdf:type owl:Class ;
+                  rdfs:subClassOf :Artifact .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Declaration
+:Declaration rdf:type owl:Class ;
+             rdfs:subClassOf :Statement ;
+             rdfs:comment "Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DeepNeuralNetwork
+:DeepNeuralNetwork rdf:type owl:Class ;
+                   rdfs:subClassOf :ArtificialNeuralNetwork .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DefaultOptionStatement
+:DefaultOptionStatement rdf:type owl:Class ;
+                        rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DerivedType
+:DerivedType rdf:type owl:Class ;
+             rdfs:subClassOf :Type .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DimensionReduction
+:DimensionReduction rdf:type owl:Class ;
+                    rdfs:subClassOf :UnsupervisedLearning .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Directive
+:Directive rdf:type owl:Class ;
+           rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DivAssignOp
+:DivAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DivOp
+:DivOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DoWhileStatement
+:DoWhileStatement rdf:type owl:Class ;
+                  rdfs:subClassOf :IterationStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DotExp
+:DotExp rdf:type owl:Class ;
+        rdfs:subClassOf :MemberRef .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DoubleType
+:DoubleType rdf:type owl:Class ;
+            rdfs:subClassOf :FloatType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#EnumDecl
+:EnumDecl rdf:type owl:Class ;
+          rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#EnumType
+:EnumType rdf:type owl:Class ;
+          rdfs:subClassOf :BasicType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#EnumerationConst
+:EnumerationConst rdf:type owl:Class ;
+                  rdfs:subClassOf :Constant .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#EqualOp
+:EqualOp rdf:type owl:Class ;
+         rdfs:subClassOf :BinaryOp ,
+                         :EqualityOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp
+:EqualityOp rdf:type owl:Class ;
+            rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Executing
+:Executing rdf:type owl:Class ;
+           rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Experiment
+:Experiment rdf:type owl:Class ;
+            rdfs:subClassOf :Activity ;
+            rdfs:comment "A kind of scientifc activity or process. It is an action or series of actions performed on or caused by artifacts, and resulting in new artifacts." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Expression
+:Expression rdf:type owl:Class ;
+            rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ExpressionList
+:ExpressionList rdf:type owl:Class ;
+                rdfs:subClassOf :Unsorted .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement
+:ExpressionStatement rdf:type owl:Class ;
+                     rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Extern
+:Extern rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:oneOf ( :extern
+                                        )
+                            ] ;
+        rdfs:subClassOf :StorageClass .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ExternalDataDefinition
+:ExternalDataDefinition rdf:type owl:Class ;
+                        rdfs:subClassOf :ExternalDefinition .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition
+:ExternalDefinition rdf:type owl:Class ;
+                    rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition
+:ExternalFunctionDefinition rdf:type owl:Class ;
+                            rdfs:subClassOf :ExternalDefinition ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasReturnType ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass :Type
+                                            ] .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FeedforwardNeuralNetwork
+:FeedforwardNeuralNetwork rdf:type owl:Class ;
+                          rdfs:subClassOf :ArtificialNeuralNetwork .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#File
+:File rdf:type owl:Class ;
+      rdfs:subClassOf :Artifact .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FloatType
+:FloatType rdf:type owl:Class ;
+           rdfs:subClassOf :BasicType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FloatingConst
+:FloatingConst rdf:type owl:Class ;
+               rdfs:subClassOf :Constant .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ForInitStatement
+:ForInitStatement rdf:type owl:Class ;
+                  rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ForStatement
+:ForStatement rdf:type owl:Class ;
+              rdfs:subClassOf :IterationStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Fortran
+:Fortran rdf:type owl:Class ;
+         rdfs:subClassOf :ProgrammingLanguage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Function
+:Function rdf:type owl:Class ;
+          owl:equivalentClass :Kernel ;
+          rdfs:subClassOf :Statement ;
+          rdfs:comment "A function of any kinds, including defining function declarations, non-defining function declarations, etc." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall
+:FunctionCall rdf:type owl:Class ;
+              rdfs:subClassOf :PostfixOp ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :calls ;
+                                owl:someValuesFrom :Expression
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasArgumentExpr ;
+                                owl:someValuesFrom :Expression
+                              ] .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration
+:FunctionDeclaration rdf:type owl:Class ;
+                     rdfs:subClassOf :Declaration ,
+                                     :Function ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasDefinition ;
+                                       owl:someValuesFrom :FunctionDefinitionBody
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasParameter ;
+                                       owl:someValuesFrom :Variable
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasScope ;
+                                       owl:someValuesFrom :Scope
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasType ;
+                                       owl:someValuesFrom :Type
+                                     ] ;
+                     rdfs:comment "A function declaration can be either a forward declaration or a defining declaration. If it is a defining declaration then it contains a pointer to the function definition." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody
+:FunctionDefinitionBody rdf:type owl:Class ;
+                        rdfs:subClassOf :CompoundStatement ,
+                                        :Scope .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionParameterList
+:FunctionParameterList rdf:type owl:Class ;
+                       rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef
+:FunctionRef rdf:type owl:Class ;
+             rdfs:subClassOf :PrimaryExpr ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :referTo ;
+                               owl:someValuesFrom :FunctionDeclaration
+                             ] .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionType
+:FunctionType rdf:type owl:Class ;
+              rdfs:subClassOf :DerivedType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#GPU
+:GPU rdf:type owl:Class ;
+     rdfs:subClassOf :Accelerator .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#GPUSharedMemory
+:GPUSharedMemory rdf:type owl:Class ;
+                 rdfs:subClassOf :Hardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#GeneralLinearModel
+:GeneralLinearModel rdf:type owl:Class ;
+                    rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#GeneralizedLinearModel
+:GeneralizedLinearModel rdf:type owl:Class ;
+                        rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Global
+:Global rdf:type owl:Class ;
+        rdfs:subClassOf :ScopeStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#GotoStatement
+:GotoStatement rdf:type owl:Class ;
+               rdfs:subClassOf :JumpStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp
+:GreaterOp rdf:type owl:Class ;
+           rdfs:subClassOf :BinaryOp ,
+                           :RelationalOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp
+:GreaterOrEqualOp rdf:type owl:Class ;
+                  rdfs:subClassOf :BinaryOp ,
+                                  :RelationalOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Hardware
+:Hardware rdf:type owl:Class .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#HiddenMarkovModel
+:HiddenMarkovModel rdf:type owl:Class ;
+                   rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#HierarchicalClustering
+:HierarchicalClustering rdf:type owl:Class ;
+                        rdfs:subClassOf :Clustering .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IOStatement
+:IOStatement rdf:type owl:Class ;
+             rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IfElseStatement
+:IfElseStatement rdf:type owl:Class ;
+                 rdfs:subClassOf :SelectionStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IfStatement
+:IfStatement rdf:type owl:Class ;
+             rdfs:subClassOf :SelectionStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp
+:IndirectionOp rdf:type owl:Class ;
+               rdfs:subClassOf :UnaryOp ;
+               rdfs:comment "*" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Initializer
+:Initializer rdf:type owl:Class ;
+             rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IntConst
+:IntConst rdf:type owl:Class ;
+          rdfs:subClassOf :Constant .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IntType
+:IntType rdf:type owl:Class ;
+         rdfs:subClassOf :BasicType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Iterating
+:Iterating rdf:type owl:Class ;
+           rdfs:subClassOf :Executing .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement
+:IterationStatement rdf:type owl:Class ;
+                    owl:equivalentClass :Loop ;
+                    rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Java
+:Java rdf:type owl:Class ;
+      rdfs:subClassOf :ProgrammingLanguage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement
+:JumpStatement rdf:type owl:Class ;
+               rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#K-meansClustering
+:K-meansClustering rdf:type owl:Class ;
+                   rdfs:subClassOf :Clustering .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Kernel
+:Kernel rdf:type owl:Class ;
+        rdfs:subClassOf :Statement ;
+        rdfs:comment "A kernel is a function or subroutine of a program written in any programming languages. A kernel has a defined function body and can be executed on a computer. This is a generic concept used for performance analysis."@en .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#L1Cache
+:L1Cache rdf:type owl:Class ;
+         rdfs:subClassOf :Cache .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#L2Cache
+:L2Cache rdf:type owl:Class ;
+         rdfs:subClassOf :Cache .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#L3Cache
+:L3Cache rdf:type owl:Class ;
+         rdfs:subClassOf :Cache .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LabeledStatement
+:LabeledStatement rdf:type owl:Class ;
+                  rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct
+:LanguageConstruct rdf:type owl:Class .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LawrenceLivermoreNationalLaboratory
+:LawrenceLivermoreNationalLaboratory rdf:type owl:Class ;
+                                     rdfs:subClassOf :National_Laboratory .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LessOp
+:LessOp rdf:type owl:Class ;
+        rdfs:subClassOf :BinaryOp ,
+                        :RelationalOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp
+:LessOrEqualOp rdf:type owl:Class ;
+               rdfs:subClassOf :BinaryOp ,
+                               :RelationalOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Library
+:Library rdf:type owl:Class ;
+         rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LinearDiscriminantAnalysis
+:LinearDiscriminantAnalysis rdf:type owl:Class ;
+                            rdfs:subClassOf :DimensionReduction .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LinearRegression
+:LinearRegression rdf:type owl:Class ;
+                  rdfs:subClassOf :MachineLearning .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LinearRegressionModel
+:LinearRegressionModel rdf:type owl:Class ;
+                       rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Linking
+:Linking rdf:type owl:Class ;
+         rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Linux
+:Linux rdf:type owl:Class ;
+       rdfs:subClassOf :Unix .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ListExp
+:ListExp rdf:type owl:Class ;
+         rdfs:subClassOf :Unsorted ;
+         rdfs:comment "?" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Literal
+:Literal rdf:type owl:Class ;
+         rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Location
+:Location rdf:type owl:Class .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalANDOp
+:LogicalANDOp rdf:type owl:Class ;
+              rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalAndOp
+:LogicalAndOp rdf:type owl:Class ;
+              rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp
+:LogicalNegOp rdf:type owl:Class ;
+              rdfs:subClassOf :UnaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalOROp
+:LogicalOROp rdf:type owl:Class ;
+             rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalOrOp
+:LogicalOrOp rdf:type owl:Class ;
+             rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LogisticRegressionModel
+:LogisticRegressionModel rdf:type owl:Class ;
+                         rdfs:subClassOf :GeneralizedLinearModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LongShortTermMemory
+:LongShortTermMemory rdf:type owl:Class ;
+                     rdfs:subClassOf :RecurrentNeuralNetwork .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#LongType
+:LongType rdf:type owl:Class ;
+          rdfs:subClassOf :IntType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Loop
+:Loop rdf:type owl:Class ;
+      rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Lvalue
+:Lvalue rdf:type owl:Class ;
+        rdfs:subClassOf :Expression ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :referTo ;
+                          owl:someValuesFrom :Variable
+                        ] ;
+        rdfs:comment "An Object is a named region of storage; an lvalue is an expression referring to an object." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MPI
+:MPI rdf:type owl:Class ;
+     rdfs:subClassOf :ProgrammingModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MachineLearning
+:MachineLearning rdf:type owl:Class ;
+                 rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningModel
+:MachineLearningModel rdf:type owl:Class ;
+                      rdfs:subClassOf :Data .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningSoftware
+:MachineLearningSoftware rdf:type owl:Class ;
+                         rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MainFunction
+:MainFunction rdf:type owl:Class ;
+              rdfs:subClassOf :Function ;
+              rdfs:comment "The main function in C/C++. Or similar entry function in other programming languages." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MarkovProcess
+:MarkovProcess rdf:type owl:Class ;
+               rdfs:subClassOf :SupervisedLearning .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MemberRef
+:MemberRef rdf:type owl:Class ;
+           rdfs:subClassOf :PostfixOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Memory
+:Memory rdf:type owl:Class ;
+        rdfs:subClassOf :Hardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MicrosoftWindows
+:MicrosoftWindows rdf:type owl:Class ;
+                  rdfs:subClassOf :OperatingSystem .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ModAssignOp
+:ModAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ModOp
+:ModOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ModelEvaluation
+:ModelEvaluation rdf:type owl:Class ;
+                 rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ModelTraining
+:ModelTraining rdf:type owl:Class ;
+               rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MulAssignOp
+:MulAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MulOp
+:MulOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MultiStep
+:MultiStep rdf:type owl:Class ;
+           rdfs:subClassOf :Plan ,
+                           :Step ;
+           rdfs:comment "A collection of multiple steps. This can be viewed as both a step and a plan" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MultipleLinearRegressionModel
+:MultipleLinearRegressionModel rdf:type owl:Class ;
+                               rdfs:subClassOf :LinearRegressionModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#MultiplicativeOp
+:MultiplicativeOp rdf:type owl:Class ;
+                  rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#National_Laboratory
+:National_Laboratory rdf:type owl:Class ;
+                     rdfs:subClassOf :Organization .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#NeqOp
+:NeqOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp ,
+                       :EqualityOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#NullExpr
+:NullExpr rdf:type owl:Class ;
+          rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType
+:NullPointerType rdf:type owl:Class ;
+                 rdfs:subClassOf :PointerType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#NullStatement
+:NullStatement rdf:type owl:Class ;
+               rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#NumerialAnalysis
+:NumerialAnalysis rdf:type owl:Class .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp
+:OnesComplementOp rdf:type owl:Class ;
+                  rdfs:subClassOf :UnaryOp ;
+                  rdfs:comment "?" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#OpenACC
+:OpenACC rdf:type owl:Class ;
+         rdfs:subClassOf :ProgrammingModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#OpenMP
+:OpenMP rdf:type owl:Class ;
+        rdfs:subClassOf :ProgrammingModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#OperatingSystem
+:OperatingSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#OrAssignOp
+:OrAssignOp rdf:type owl:Class ;
+            rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#OrOp
+:OrOp rdf:type owl:Class ;
+      rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ,
+                              :Agent .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#POSIXThreads
+:POSIXThreads rdf:type owl:Class ;
+              rdfs:subClassOf :ProgrammingModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion
+:ParallelRegion rdf:type owl:Class ;
+                rdfs:subClassOf :Directive ,
+                                :OpenMP .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Parameter
+:Parameter rdf:type owl:Class ;
+           rdfs:subClassOf :Variable .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ParameterTemplate
+:ParameterTemplate rdf:type owl:Class ;
+                   rdfs:subClassOf :ArtifactTemplate ;
+                   rdfs:comment "single parameter template" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PerformanceAnalysisTool
+:PerformanceAnalysisTool rdf:type owl:Class ;
+                         rdfs:subClassOf :Software .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Perl
+:Perl rdf:type owl:Class ;
+      rdfs:subClassOf :ProgrammingLanguage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ,
+                        :Agent .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Plan
+:Plan rdf:type owl:Class ;
+      rdfs:comment "A Plan of series actions to be done. A plan takes in conceptual artifacts( called artifact templates) and generate artifact templates.  A plan can be used by multiple activites which consume and generate concrete artifacts." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PointerDecl
+:PointerDecl rdf:type owl:Class ;
+             rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PointerType
+:PointerType rdf:type owl:Class ;
+             rdfs:subClassOf :DerivedType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp
+:PostfixDecrementOp rdf:type owl:Class ;
+                    rdfs:subClassOf :PostfixOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp
+:PostfixIncrementOp rdf:type owl:Class ;
+                    rdfs:subClassOf :PostfixOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp
+:PostfixOp rdf:type owl:Class ;
+           rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp
+:PrefixDecrementOp rdf:type owl:Class ;
+                   rdfs:subClassOf :UnaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp
+:PrefixIncrementOp rdf:type owl:Class ;
+                   rdfs:subClassOf :UnaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp
+:PrefixMinusOp rdf:type owl:Class ;
+               rdfs:subClassOf :UnaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp
+:PrefixPlusOp rdf:type owl:Class ;
+              rdfs:subClassOf :UnaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr
+:PrimaryExpr rdf:type owl:Class ;
+             rdfs:subClassOf :Expression ;
+             rdfs:comment """Primary expressions are identifiers, constants, strings, or expressions in parentheses.
+primary-expression 
+identifier 
+constant
+string 
+(expression)""" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PrincipalComponentAnalysis
+:PrincipalComponentAnalysis rdf:type owl:Class ;
+                            rdfs:subClassOf :DimensionReduction .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#PrincipalInvestigator
+:PrincipalInvestigator rdf:type owl:Class ;
+                       rdfs:subClassOf :Person .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Processor
+:Processor rdf:type owl:Class ;
+           rdfs:subClassOf :Hardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Profiling
+:Profiling rdf:type owl:Class ;
+           rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Programmer
+:Programmer rdf:type owl:Class ;
+            rdfs:subClassOf :Person .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingLanguage
+:ProgrammingLanguage rdf:type owl:Class .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel
+:ProgrammingModel rdf:type owl:Class ;
+                  rdfs:subClassOf :ProgrammingLanguage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Project
+:Project rdf:type owl:Class .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Python
+:Python rdf:type owl:Class ;
+        rdfs:subClassOf :ProgrammingLanguage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#RandomForest
+:RandomForest rdf:type owl:Class ;
+              rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#RecurrentNeuralNetwork
+:RecurrentNeuralNetwork rdf:type owl:Class ;
+                        rdfs:subClassOf :ArtificialNeuralNetwork .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType
+:ReferenceType rdf:type owl:Class ;
+               rdfs:subClassOf :DerivedType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Register
+:Register rdf:type owl:Class ;
+          rdfs:subClassOf :Hardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#RegisterStorage
+:RegisterStorage rdf:type owl:Class ;
+                 rdfs:subClassOf :StorageClass .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Reinforcementlearning
+:Reinforcementlearning rdf:type owl:Class ;
+                       rdfs:subClassOf :MachineLearning .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp
+:RelationalOp rdf:type owl:Class ;
+              rdfs:subClassOf :Expression ;
+              rdfs:comment "? model as individual or subclass" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ReturnStatement
+:ReturnStatement rdf:type owl:Class ;
+                 rdfs:subClassOf :JumpStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Scope
+:Scope rdf:type owl:Class ;
+       owl:equivalentClass :ScopeStatement ;
+       rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement
+:ScopeStatement rdf:type owl:Class ;
+                rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement
+:SelectionStatement rdf:type owl:Class ;
+                    rdfs:subClassOf :Statement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Server
+:Server rdf:type owl:Class ;
+        rdfs:subClassOf :Computer .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ShellScript
+:ShellScript rdf:type owl:Class ;
+             rdfs:subClassOf :ProgrammingLanguage .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ShlAssignOp
+:ShlAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ShlOp
+:ShlOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ShortType
+:ShortType rdf:type owl:Class ;
+           rdfs:subClassOf :IntType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ShrAssignOp
+:ShrAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ShrOp
+:ShrOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Signed
+:Signed rdf:type owl:Class ;
+        rdfs:subClassOf :Type .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SimpleLinearRegressionModel
+:SimpleLinearRegressionModel rdf:type owl:Class ;
+                             rdfs:subClassOf :LinearRegressionModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SizeofOp
+:SizeofOp rdf:type owl:Class ;
+          rdfs:subClassOf :UnaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Software
+:Software rdf:type owl:Class ;
+          rdfs:subClassOf :Agent ,
+                          :Data .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SpectralClustering
+:SpectralClustering rdf:type owl:Class ;
+                    rdfs:subClassOf :Clustering .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Statement
+:Statement rdf:type owl:Class ;
+           rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Static
+:Static rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:oneOf ( :static
+                                        )
+                            ] ;
+        rdfs:subClassOf :StorageClass .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Step
+:Step rdf:type owl:Class ;
+      rdfs:comment "A step within a Plan" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#StorageClass
+:StorageClass rdf:type owl:Class ;
+              rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#StreamingMultiprocessor
+:StreamingMultiprocessor rdf:type owl:Class ;
+                         rdfs:subClassOf :Hardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#String
+:String rdf:type owl:Class ;
+        rdfs:subClassOf :Type .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#StringLiteral
+:StringLiteral rdf:type owl:Class ;
+               rdfs:subClassOf :PrimaryExpr .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#StructureType
+:StructureType rdf:type owl:Class ;
+               rdfs:subClassOf :DerivedType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#StructureUnionDecl
+:StructureUnionDecl rdf:type owl:Class ;
+                    rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SubAssignOp
+:SubAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SubOp
+:SubOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SuperComputer
+:SuperComputer rdf:type owl:Class ;
+               rdfs:subClassOf :Cluster .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SupervisedLearning
+:SupervisedLearning rdf:type owl:Class ;
+                    rdfs:subClassOf :MachineLearning .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SupportVectorMachine
+:SupportVectorMachine rdf:type owl:Class ;
+                      rdfs:subClassOf :MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#SwitchStatement
+:SwitchStatement rdf:type owl:Class ;
+                 rdfs:subClassOf :SelectionStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TableRow
+:TableRow rdf:type owl:Class ;
+          rdfs:subClassOf :CSVDataset .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration
+:TemplateClassDeclaration rdf:type owl:Class ;
+                          rdfs:subClassOf :ClassDeclaration ,
+                                          :TemplateDeclaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration
+:TemplateClassInstantiationDeclaration rdf:type owl:Class ;
+                                       rdfs:subClassOf :ClassDeclaration ,
+                                                       :TemplateInstantiation .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration
+:TemplateDeclaration rdf:type owl:Class ;
+                     rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration
+:TemplateFunctionDeclaration rdf:type owl:Class ;
+                             rdfs:subClassOf :FunctionDeclaration ,
+                                             :TemplateDeclaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration
+:TemplateFunctionInstantiationDeclaration rdf:type owl:Class ;
+                                          rdfs:subClassOf :FunctionDeclaration ,
+                                                          :TemplateInstantiation .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation
+:TemplateInstantiation rdf:type owl:Class ;
+                       rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Trainning
+:Trainning rdf:type owl:Class ;
+           rdfs:subClassOf :Action .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Type
+:Type rdf:type owl:Class ;
+      rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier
+:TypeQualifier rdf:type owl:Class ;
+               rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#TypedefDecl
+:TypedefDecl rdf:type owl:Class ;
+             rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#UPC
+:UPC rdf:type owl:Class ;
+     rdfs:subClassOf :ProgrammingModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp
+:UnaryOp rdf:type owl:Class ;
+         rdfs:subClassOf :Expression .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#UnionType
+:UnionType rdf:type owl:Class ;
+           rdfs:subClassOf :DerivedType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#University
+:University rdf:type owl:Class ;
+            rdfs:subClassOf :Organization .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Unix
+:Unix rdf:type owl:Class ;
+      rdfs:subClassOf :OperatingSystem .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#UnknownClass
+:UnknownClass rdf:type owl:Class ;
+              rdfs:subClassOf :Unsorted .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#UnknownType
+:UnknownType rdf:type owl:Class ;
+             rdfs:subClassOf :Type .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Unsigned
+:Unsigned rdf:type owl:Class ;
+          rdfs:subClassOf :Type .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Unsorted
+:Unsorted rdf:type owl:Class ;
+          rdfs:subClassOf :LanguageConstruct .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning
+:UnsupervisedLearning rdf:type owl:Class ;
+                      rdfs:subClassOf :MachineLearning .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Value
+:Value rdf:type owl:Class ;
+       rdfs:subClassOf :Unsorted ;
+       rdfs:comment "SgXXXVal = constant?" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Variable
+:Variable rdf:type owl:Class ;
+          rdfs:subClassOf :Expression ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :declaredBy ;
+                            owl:someValuesFrom :Declaration
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :definedBy ;
+                            owl:someValuesFrom :Declaration
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasInitializer ;
+                            owl:someValuesFrom :Initializer
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasScope ;
+                            owl:someValuesFrom :Scope
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasSize ;
+                            owl:someValuesFrom :Literal
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasStorageClass ;
+                            owl:someValuesFrom :StorageClass
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasType ;
+                            owl:someValuesFrom :Type
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :name ;
+                            owl:someValuesFrom :Literal
+                          ] ;
+          rdfs:comment """synonyms: object
+named location of storage""" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#VariableDecl
+:VariableDecl rdf:type owl:Class ;
+              rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#VariableDefinition
+:VariableDefinition rdf:type owl:Class ;
+                    rdfs:subClassOf :Declaration .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#VariableRef
+:VariableRef rdf:type owl:Class ;
+             rdfs:subClassOf :PrimaryExpr ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :referTo ;
+                               owl:someValuesFrom :Variable
+                             ] .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Vendor
+:Vendor rdf:type owl:Class ;
+        rdfs:subClassOf :Organization .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#VoidType
+:VoidType rdf:type owl:Class ;
+          rdfs:subClassOf :BasicType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Volatile
+:Volatile rdf:type owl:Class ;
+          rdfs:subClassOf :TypeQualifier .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#WCharType
+:WCharType rdf:type owl:Class ;
+           rdfs:subClassOf :CharType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Warp
+:Warp rdf:type owl:Class ;
+      rdfs:subClassOf :Hardware .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#WhileStatement
+:WhileStatement rdf:type owl:Class ;
+                rdfs:subClassOf :IterationStatement .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Workflow
+:Workflow rdf:type owl:Class ;
+          rdfs:subClassOf :Data ,
+                          :Plan ;
+          rdfs:comment "similar to opmw:WorkflowTemplate. A subclass of Plan" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Workstation
+:Workstation rdf:type owl:Class ;
+             rdfs:subClassOf :Computer .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#XorAssignOp
+:XorAssignOp rdf:type owl:Class ;
+             rdfs:subClassOf :AssignmentOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#XorOp
+:XorOp rdf:type owl:Class ;
+       rdfs:subClassOf :BinaryOp .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo
+:isAssignedTo rdf:type owl:Class ;
+              rdfs:subClassOf :Expression ,
+                              :Unsorted .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#macOS
+:macOS rdf:type owl:Class ;
+       rdfs:subClassOf :Unix .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#C++
+<https://github.com/HPC-FAIR/HPC-Ontology#C++> rdf:type owl:Class ;
+                                               rdfs:subClassOf :ProgrammingLanguage .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#IBM
+:IBM rdf:type owl:NamedIndividual ,
+              :Company .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Intel
+:Intel rdf:type owl:NamedIndividual ,
+                :Company .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#Nvidia
+:Nvidia rdf:type owl:NamedIndividual ,
+                 :Company .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#array_type
+:array_type rdf:type owl:NamedIndividual ,
+                     :ArrayType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#auto
+:auto rdf:type owl:NamedIndividual ,
+               :Auto .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#bool
+:bool rdf:type owl:NamedIndividual ,
+               :BoolType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#char
+:char rdf:type owl:NamedIndividual ,
+               :CharType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#complex
+:complex rdf:type owl:NamedIndividual ,
+                  :ComplexType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#double
+:double rdf:type owl:NamedIndividual ,
+                 :DoubleType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#enum_type
+:enum_type rdf:type owl:NamedIndividual ,
+                    :EnumType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#extern
+:extern rdf:type owl:NamedIndividual ,
+                 :Extern .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#float
+:float rdf:type owl:NamedIndividual ,
+                :FloatType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#function_type
+:function_type rdf:type owl:NamedIndividual ,
+                        :FunctionType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#int
+:int rdf:type owl:NamedIndividual ,
+              :IntType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#lassen
+:lassen rdf:type owl:NamedIndividual ,
+                 :SuperComputer .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#long
+:long rdf:type owl:NamedIndividual ,
+               :LongType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#long_double
+:long_double rdf:type owl:NamedIndividual ,
+                      :DoubleType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#long_long
+:long_long rdf:type owl:NamedIndividual ,
+                    :LongType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#null_pointer
+:null_pointer rdf:type owl:NamedIndividual ,
+                       :NullPointerType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#pointer_type
+:pointer_type rdf:type owl:NamedIndividual ,
+                       :PointerType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#ref_type
+:ref_type rdf:type owl:NamedIndividual ,
+                   :ReferenceType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#short
+:short rdf:type owl:NamedIndividual ,
+                :ShortType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#signed_char
+:signed_char rdf:type owl:NamedIndividual ,
+                      :CharType ,
+                      :Signed .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#signed_int
+:signed_int rdf:type owl:NamedIndividual ,
+                     :Signed .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#signed_long
+:signed_long rdf:type owl:NamedIndividual ,
+                      :Signed .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#signed_long_long
+:signed_long_long rdf:type owl:NamedIndividual ,
+                           :Signed .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#signed_short
+:signed_short rdf:type owl:NamedIndividual ,
+                       :Signed .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#static
+:static rdf:type owl:NamedIndividual ,
+                 :Static .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#string
+:string rdf:type owl:NamedIndividual ,
+                 :String .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unknown_modifier
+:unknown_modifier rdf:type owl:NamedIndividual ,
+                           :Unsorted .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unknown_type
+:unknown_type rdf:type owl:NamedIndividual ,
+                       :UnknownType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_char
+:unsigned_char rdf:type owl:NamedIndividual ,
+                        :Unsigned .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_int
+:unsigned_int rdf:type owl:NamedIndividual ,
+                       :Unsigned .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long
+:unsigned_long rdf:type owl:NamedIndividual ,
+                        :Unsigned .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long_long
+:unsigned_long_long rdf:type owl:NamedIndividual ,
+                             :Unsigned .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_short
+:unsigned_short rdf:type owl:NamedIndividual ,
+                         :Unsigned .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#unspecified
+:unspecified rdf:type owl:NamedIndividual ,
+                      :StorageClass .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#void_type
+:void_type rdf:type owl:NamedIndividual ,
+                    :VoidType .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#wchar
+:wchar rdf:type owl:NamedIndividual ,
+                :WCharType .
+
+
+[ rdfs:comment "function relation"
+] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/terms/created> rdfs:comment "Date when the vocabulary was created. There are different ways in which the date may be represented, but typically is with an xsd:dateTime literal. Note that some vocabularies, like schema.org, define their own object as range for the date property. We advise to look at the respective vocabulary specifications for more information." .
+
+
+rdfs:comment rdfs:comment "Definition of the term. We recommend it to be as precise as possible, in order to avoid possible misunderstandings when reusing the ontology." .
+
+
+rdfs:isDefinedBy rdfs:comment "Source used to define the ontology term. This property is also used for crawlers, in order to refer to the ontology document in case they stumble upon a term." .
+
+
+rdfs:label rdfs:comment "A human readable label of the term." .
+
+
+owl:versionIRI rdfs:comment "The IRI that identifies this version of your vocabulary." .
+
+
+owl:versionInfo rdfs:comment "Details about the version being handled. We recommend to include, for example, the version number of the ontology (e.g., 1.0.1)." .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AddressOp
+                :IndirectionOp
+                :LogicalNegOp
+                :OnesComplementOp
+                :PostfixDecrementOp
+                :PostfixIncrementOp
+                :PrefixDecrementOp
+                :PrefixIncrementOp
+                :PrefixMinusOp
+                :PrefixPlusOp
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
