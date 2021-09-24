@@ -4,7 +4,7 @@
 <https://github.com/HPC-FAIR/HPC-Ontology> <http://purl.org/dc/elements/1.1/description> "The HPC Ontology describes software, hardware, and artifacts in the domain\nof High-Performance Computing. It can be used to annotate training\n datasets and machine learning models used in HPC software analyses \nand optimizations. The goal is to make datasets and AI models FAIR." .
 <https://github.com/HPC-FAIR/HPC-Ontology> <http://purl.org/dc/elements/1.1/title> "HPC Ontology" .
 <https://github.com/HPC-FAIR/HPC-Ontology> <http://purl.org/dc/terms/created> "2021-09-23T13:30:00-07:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://github.com/HPC-FAIR/HPC-Ontology> <http://purl.org/dc/terms/license> "the Creative Commons Attribution-ShareAlike License" .
+<https://github.com/HPC-FAIR/HPC-Ontology> <http://purl.org/dc/terms/license> "the Creative Commons Attribution 4.0" .
 <https://github.com/HPC-FAIR/HPC-Ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "hpc" .
 <https://github.com/HPC-FAIR/HPC-Ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://github.com/HPC-FAIR/HPC-Ontology> .
 <https://github.com/HPC-FAIR/HPC-Ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
@@ -61,6 +61,13 @@
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://schema.org/domainIncludes> <http://www.w3.org/2000/01/rdf-schema#comment> "one or more domains a property is associated with. Union semantics is used for multiple domains, instead of intersection semantics of rdfs:range" .
+# 
+# http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2002/07/owl#priorVersion
 <http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Adding a link to a previous version helps to see how the vocabulary has changed from one to the other. Thanks to this relationship, tools like WIDOCO may create automated changelog sections in the documentation of an ontology." .
@@ -81,15 +88,6 @@
 # #################################################################
 # 
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#access
-<https://github.com/HPC-FAIR/HPC-Ontology#access> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#access> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#accessedBy> .
-<https://github.com/HPC-FAIR/HPC-Ontology#access> <http://www.w3.org/2000/01/rdf-schema#comment> "function relation" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#accessedBy
-<https://github.com/HPC-FAIR/HPC-Ontology#accessedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#accessedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "variable relation" .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#actedOnBehalfOf
 <https://github.com/HPC-FAIR/HPC-Ontology#actedOnBehalfOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Some agent acted on behalf of another agent." .
@@ -104,14 +102,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#aiModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#data> .
 <https://github.com/HPC-FAIR/HPC-Ontology#aiModel> <http://www.w3.org/2000/01/rdf-schema#comment> "a project has an ai model" .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#allocate
-<https://github.com/HPC-FAIR/HPC-Ontology#allocate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#allocate> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy
-<https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "array relation" .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#associatedSoftware
 <https://github.com/HPC-FAIR/HPC-Ontology#associatedSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
@@ -122,33 +112,6 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#benchmark
 <https://github.com/HPC-FAIR/HPC-Ontology#benchmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#benchmark> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the associated benchmark software ID" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#callSite
-<https://github.com/HPC-FAIR/HPC-Ontology#callSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#callSite> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#callSite> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#srcFunc> .
-<https://github.com/HPC-FAIR/HPC-Ontology#callSite> <http://www.w3.org/2000/01/rdf-schema#comment> "a function has one or more call sites where it calls other functions. \nThis property links a function to its function call sites." .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#calledBy
-<https://github.com/HPC-FAIR/HPC-Ontology#calledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#calledBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://github.com/HPC-FAIR/HPC-Ontology#caller> .
-<https://github.com/HPC-FAIR/HPC-Ontology#calledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#calledBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#calls> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#callee
-<https://github.com/HPC-FAIR/HPC-Ontology#callee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#callee> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://github.com/HPC-FAIR/HPC-Ontology#calls> .
-<https://github.com/HPC-FAIR/HPC-Ontology#callee> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#callee> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#caller> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#caller
-<https://github.com/HPC-FAIR/HPC-Ontology#caller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#caller> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#calls
-<https://github.com/HPC-FAIR/HPC-Ontology#calls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#calls> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#calls> <http://www.w3.org/2000/01/rdf-schema#comment> "a function calls another function" .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#conducted
 <https://github.com/HPC-FAIR/HPC-Ontology#conducted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -198,39 +161,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#dataset> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#data> .
 <https://github.com/HPC-FAIR/HPC-Ontology#dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "a project has a dataset" .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#deallocatedBy
-<https://github.com/HPC-FAIR/HPC-Ontology#deallocatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#deallocatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "array relation" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#decisionFeature
-<https://github.com/HPC-FAIR/HPC-Ontology#decisionFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#decisionFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "For a decision tree node, the feature used as the left operand of the decision condition." .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel
-<https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "The final decision for a leaf node in a decisiontree" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#declaredBy
-<https://github.com/HPC-FAIR/HPC-Ontology#declaredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#declaredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "a variable is declared by a statment" .
-<https://github.com/HPC-FAIR/HPC-Ontology#declaredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "variable relation" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#definedBy
-<https://github.com/HPC-FAIR/HPC-Ontology#definedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#definedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#destFunc
-<https://github.com/HPC-FAIR/HPC-Ontology#destFunc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#destFunc> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#destFunc> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite> .
-<https://github.com/HPC-FAIR/HPC-Ontology#destFunc> <http://www.w3.org/2000/01/rdf-schema#comment> "linke a call site to the function being called." .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#falseNode
-<https://github.com/HPC-FAIR/HPC-Ontology#falseNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#falseNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#falseNode> <http://www.w3.org/2000/01/rdf-schema#comment> "link from a decision tree node to its false child node" .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#feed
 <https://github.com/HPC-FAIR/HPC-Ontology#feed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#feed> <http://www.w3.org/2000/01/rdf-schema#comment> "link to software which use this data as input: inverse of hpc:input or hpc:use" .
@@ -239,11 +169,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#file> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#file> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/HPC-FAIR/HPC-Ontology#File> .
 <https://github.com/HPC-FAIR/HPC-Ontology#file> <http://www.w3.org/2000/01/rdf-schema#comment> "a data object has an associated file" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#function
-<https://github.com/HPC-FAIR/HPC-Ontology#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#function> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#function> <http://www.w3.org/2000/01/rdf-schema#comment> "a call graph (or other program analysis info object) has a function node." .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#fundedBy
 <https://github.com/HPC-FAIR/HPC-Ontology#fundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -274,109 +199,8 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#hadOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hadOutput> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#wasGeneratedBy> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment
-<https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment> <http://www.w3.org/2000/01/rdf-schema#comment> "AST node to alignment node" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentList
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentList> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasType> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank> <http://www.w3.org/2000/01/rdf-schema#comment> "?" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasBaseType
-<https://github.com/HPC-FAIR/HPC-Ontology#hasBaseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasBaseType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasBody
-<https://github.com/HPC-FAIR/HPC-Ontology#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasBody> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasBody> <http://www.w3.org/2000/01/rdf-schema#comment> "AST has a body" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasChild
-<https://github.com/HPC-FAIR/HPC-Ontology#hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasChild> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasChild> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasParent> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasCompiler
 <https://github.com/HPC-FAIR/HPC-Ontology#hasCompiler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasCondition
-<https://github.com/HPC-FAIR/HPC-Ontology#hasCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasCondition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "AST node to its condition node" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain: definition" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition
-<https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasElseBody
-<https://github.com/HPC-FAIR/HPC-Ontology#hasElseBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasElseBody> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasExpression
-<https://github.com/HPC-FAIR/HPC-Ontology#hasExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasExpression> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasFalseBody
-<https://github.com/HPC-FAIR/HPC-Ontology#hasFalseBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasFalseBody> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasFile
-<https://github.com/HPC-FAIR/HPC-Ontology#hasFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasFile> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasFile> <http://www.w3.org/2000/01/rdf-schema#comment> "AST node to its file node" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasForIncr
-<https://github.com/HPC-FAIR/HPC-Ontology#hasForIncr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasForIncr> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasForInit
-<https://github.com/HPC-FAIR/HPC-Ontology#hasForInit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasForInit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasForTest
-<https://github.com/HPC-FAIR/HPC-Ontology#hasForTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasForTest> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasHiddenType
-<https://github.com/HPC-FAIR/HPC-Ontology#hasHiddenType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasHiddenType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasIndexExp
-<https://github.com/HPC-FAIR/HPC-Ontology#hasIndexExp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasIndexExp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasInitStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#hasInitStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasInitStatement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue
-<https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer
-<https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasInput
 <https://github.com/HPC-FAIR/HPC-Ontology#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -385,24 +209,10 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/HPC-FAIR/HPC-Ontology#ArtifactTemplate> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hasInput> <http://www.w3.org/2000/01/rdf-schema#comment> "A plan or step has some input artifact template" .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasKey
-<https://github.com/HPC-FAIR/HPC-Ontology#hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasKey> <http://www.w3.org/2000/01/rdf-schema#comment> "case key:" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasLabelRef
-<https://github.com/HPC-FAIR/HPC-Ontology#hasLabelRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasLabelRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand
-<https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasChild> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasLocation
 <https://github.com/HPC-FAIR/HPC-Ontology#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#Computer> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#Organization> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/HPC-FAIR/HPC-Ontology#Location> .
+<https://github.com/HPC-FAIR/HPC-Ontology#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The location information of a computer or an organization" .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasMember
 <https://github.com/HPC-FAIR/HPC-Ontology#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -413,18 +223,10 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#hasNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hasNode> <http://www.w3.org/2000/01/rdf-schema#comment> "Link a cluster to its login or compute nodes." .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasOperand
-<https://github.com/HPC-FAIR/HPC-Ontology#hasOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasOperand> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasChild> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasOperatingSystem
 <https://github.com/HPC-FAIR/HPC-Ontology#hasOperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hasOperatingSystem> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://github.com/HPC-FAIR/HPC-Ontology#operatingSystem> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Link from a machine to OS software ID: RHEL version 8, the one runs on the computer" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasOperator
-<https://github.com/HPC-FAIR/HPC-Ontology#hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasOperator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasOutput
 <https://github.com/HPC-FAIR/HPC-Ontology#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -435,76 +237,8 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#hasPI
 <https://github.com/HPC-FAIR/HPC-Ontology#hasPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasParameter
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionType> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList> <http://www.w3.org/2000/01/rdf-schema#comment> "function relation" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasParameterList
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameterList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParameterList> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasParent
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasParent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType
-<https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasType> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionType> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType> <http://www.w3.org/2000/01/rdf-schema#comment> "function relation" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand
-<https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#hasChild> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasScope
-<https://github.com/HPC-FAIR/HPC-Ontology#hasScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasScope> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasSelector
-<https://github.com/HPC-FAIR/HPC-Ontology#hasSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasSelector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasSize
 <https://github.com/HPC-FAIR/HPC-Ontology#hasSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#hasStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasStatement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass
-<https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass> <http://www.w3.org/2000/01/rdf-schema#comment> "variable relation" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasTarget
-<https://github.com/HPC-FAIR/HPC-Ontology#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasTrueBody
-<https://github.com/HPC-FAIR/HPC-Ontology#hasTrueBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasTrueBody> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasType
-<https://github.com/HPC-FAIR/HPC-Ontology#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "variable relation" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasValue
-<https://github.com/HPC-FAIR/HPC-Ontology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasVendor
 <https://github.com/HPC-FAIR/HPC-Ontology#hasVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -601,27 +335,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#ranOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#ranOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Some software ran on some machine." .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#read
-<https://github.com/HPC-FAIR/HPC-Ontology#read> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#read> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#access> .
-<https://github.com/HPC-FAIR/HPC-Ontology#read> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#readBy> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#readBy
-<https://github.com/HPC-FAIR/HPC-Ontology#readBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#readBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#accessedBy> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#referTo
-<https://github.com/HPC-FAIR/HPC-Ontology#referTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#referTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#referTo> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#referredBy> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#referredBy
-<https://github.com/HPC-FAIR/HPC-Ontology#referredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#referredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#relationOp
-<https://github.com/HPC-FAIR/HPC-Ontology#relationOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#runsOn
 <https://github.com/HPC-FAIR/HPC-Ontology#runsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#runsOn> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://github.com/HPC-FAIR/HPC-Ontology#supportedMachine> .
@@ -631,15 +344,6 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#software
 <https://github.com/HPC-FAIR/HPC-Ontology#software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#software> <http://www.w3.org/2000/01/rdf-schema#comment> "software used by a hardware devices." .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#sourceFile
-<https://github.com/HPC-FAIR/HPC-Ontology#sourceFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#sourceFile> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#file> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#srcFunc
-<https://github.com/HPC-FAIR/HPC-Ontology#srcFunc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#srcFunc> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#srcFunc> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of Function--> CallSite" .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#submitter
 <https://github.com/HPC-FAIR/HPC-Ontology#submitter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -661,16 +365,6 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#targetMachine
 <https://github.com/HPC-FAIR/HPC-Ontology#targetMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#targetMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "link to concrete computers an AI model supports to model"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#trueNode
-<https://github.com/HPC-FAIR/HPC-Ontology#trueNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#trueNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#trueNode> <http://www.w3.org/2000/01/rdf-schema#comment> "link from a decision tree node to its true child node" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite
-<https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#graphLink> .
-<https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of a call site --> function being called." .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#used
 <https://github.com/HPC-FAIR/HPC-Ontology#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -749,20 +443,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#workflow> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#data> .
 <https://github.com/HPC-FAIR/HPC-Ontology#workflow> <http://www.w3.org/2000/01/rdf-schema#comment> "Project has some workflow" .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#write
-<https://github.com/HPC-FAIR/HPC-Ontology#write> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#write> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#access> .
-<https://github.com/HPC-FAIR/HPC-Ontology#write> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/HPC-FAIR/HPC-Ontology#writtenBy> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#writtenBy
-<https://github.com/HPC-FAIR/HPC-Ontology#writtenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#writtenBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#accessedBy> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#writtenIn
-<https://github.com/HPC-FAIR/HPC-Ontology#writtenIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#writtenIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-<https://github.com/HPC-FAIR/HPC-Ontology#writtenIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel> .
-# 
 # 
 # 
 # #################################################################
@@ -771,17 +451,6 @@
 # #
 # #################################################################
 # 
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Nth
-<https://github.com/HPC-FAIR/HPC-Ontology#Nth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#NthArg
-<https://github.com/HPC-FAIR/HPC-Ontology#NthArg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#NthArg> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#Nth> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#NthPara
-<https://github.com/HPC-FAIR/HPC-Ontology#NthPara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#NthPara> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#Nth> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#accuracy
 <https://github.com/HPC-FAIR/HPC-Ontology#accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -800,21 +469,9 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#affiliate
 <https://github.com/HPC-FAIR/HPC-Ontology#affiliate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#allocatedDataSize
-<https://github.com/HPC-FAIR/HPC-Ontology#allocatedDataSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#allocatedDataSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#size> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#alternateName
 <https://github.com/HPC-FAIR/HPC-Ontology#alternateName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#alternateName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#name> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#arrayID
-<https://github.com/HPC-FAIR/HPC-Ontology#arrayID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#arrayID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#id> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#arrayName
-<https://github.com/HPC-FAIR/HPC-Ontology#arrayName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#arrayName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#name> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#averageExecutionTime
 <https://github.com/HPC-FAIR/HPC-Ontology#averageExecutionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -822,10 +479,6 @@
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#awardAmount
 <https://github.com/HPC-FAIR/HPC-Ontology#awardAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#beginMemoryAddress
-<https://github.com/HPC-FAIR/HPC-Ontology#beginMemoryAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#beginMemoryAddress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#memoryAddress> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#city
 <https://github.com/HPC-FAIR/HPC-Ontology#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -848,13 +501,6 @@
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#codeVariant
 <https://github.com/HPC-FAIR/HPC-Ontology#codeVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#columnNumber
-<https://github.com/HPC-FAIR/HPC-Ontology#columnNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#columnNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Column number within a file" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#commandLineOption
-<https://github.com/HPC-FAIR/HPC-Ontology#commandLineOption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#computeNodeCount
 <https://github.com/HPC-FAIR/HPC-Ontology#computeNodeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -941,10 +587,6 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#endDate
 <https://github.com/HPC-FAIR/HPC-Ontology#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#endDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#date> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#endMemoryAddress
-<https://github.com/HPC-FAIR/HPC-Ontology#endMemoryAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#endMemoryAddress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#memoryAddress> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#executionTime
 <https://github.com/HPC-FAIR/HPC-Ontology#executionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1058,11 +700,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#harddriveSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#harddriveSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#size> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode
-<https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode> <http://www.w3.org/2000/01/rdf-schema#comment> "If a decision tree node has child nodes or not." .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#hasHPCGPerformance
 <https://github.com/HPC-FAIR/HPC-Ontology#hasHPCGPerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hasHPCGPerformance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#performance> .
@@ -1082,9 +719,6 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#hasRpeak
 <https://github.com/HPC-FAIR/HPC-Ontology#hasRpeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#hasRpeak> <http://www.w3.org/2000/01/rdf-schema#comment> "The theoretical peak performance [TFlop/s]" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#hasValue
-<https://github.com/HPC-FAIR/HPC-Ontology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#homepage
 <https://github.com/HPC-FAIR/HPC-Ontology#homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1125,10 +759,6 @@
 # https://github.com/HPC-FAIR/HPC-Ontology#jobTile
 <https://github.com/HPC-FAIR/HPC-Ontology#jobTile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#kernelName
-<https://github.com/HPC-FAIR/HPC-Ontology#kernelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#kernelName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#name> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#l1CacheUitlizationRate
 <https://github.com/HPC-FAIR/HPC-Ontology#l1CacheUitlizationRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#l1CacheUitlizationRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#percentage> .
@@ -1147,10 +777,6 @@
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#license
 <https://github.com/HPC-FAIR/HPC-Ontology#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#lineNumber
-<https://github.com/HPC-FAIR/HPC-Ontology#lineNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#lineNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "line number within a file" .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#loginNodeCount
 <https://github.com/HPC-FAIR/HPC-Ontology#loginNodeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1279,9 +905,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#registersPerThread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#registersPerThread> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#count> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#relationValue
-<https://github.com/HPC-FAIR/HPC-Ontology#relationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#segment
 <https://github.com/HPC-FAIR/HPC-Ontology#segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#segment> <http://www.w3.org/2000/01/rdf-schema#comment> "The field using HPC system (research, academic, industry, vendor)" .
@@ -1397,10 +1020,6 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#totalPeakPerformancePerNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#totalPeakPerformancePerNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/HPC-FAIR/HPC-Ontology#performance> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#treeNodeLevel
-<https://github.com/HPC-FAIR/HPC-Ontology#treeNodeLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/HPC-FAIR/HPC-Ontology#treeNodeLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The level of a tree, starting from 0 for the root node" .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#url
 <https://github.com/HPC-FAIR/HPC-Ontology#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://github.com/HPC-FAIR/HPC-Ontology#url> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://github.com/HPC-FAIR/HPC-Ontology#website> .
@@ -1441,51 +1060,9 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "something that occurs over a period of time an acts upon or with entities. This is used to represent actions already been done, happened already with concrete actors, timing , location..etc. information" .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#AddAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AddAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AddAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AddOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AddOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AddOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AdditiveOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AdditiveOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AdditiveOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AddressOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AddressOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AddressOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AddressOp> <http://www.w3.org/2000/01/rdf-schema#comment> "&" .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Agent
 <https://github.com/HPC-FAIR/HPC-Ontology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "A person, organizationsoftware, computer, etc.which can conduct some activities" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AndAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AndAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AndAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AndOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AndOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AndOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ArrayDecl
-<https://github.com/HPC-FAIR/HPC-Ontology#ArrayDecl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ArrayDecl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ArraySub
-<https://github.com/HPC-FAIR/HPC-Ontology#ArraySub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ArraySub> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ArraySub> <http://www.w3.org/2000/01/rdf-schema#comment> "[]" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ArrayType
-<https://github.com/HPC-FAIR/HPC-Ontology#ArrayType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ArrayType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ArrowExp
-<https://github.com/HPC-FAIR/HPC-Ontology#ArrowExp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ArrowExp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MemberRef> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Artifact
 <https://github.com/HPC-FAIR/HPC-Ontology#Artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1499,81 +1076,9 @@
 <https://github.com/HPC-FAIR/HPC-Ontology#ArtificialNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#ArtificialNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningModel> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Initializer> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue> .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AssignStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Auto
-<https://github.com/HPC-FAIR/HPC-Ontology#Auto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Auto> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid2 <http://www.w3.org/2002/07/owl#oneOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#auto> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Auto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BasicBlock
-<https://github.com/HPC-FAIR/HPC-Ontology#BasicBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BasicBlock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BasicType
-<https://github.com/HPC-FAIR/HPC-Ontology#BasicType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BasicType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BasicType> <http://www.w3.org/2000/01/rdf-schema#comment> "Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types." .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Benchmark
 <https://github.com/HPC-FAIR/HPC-Ontology#Benchmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Benchmark> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Software> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp
-<https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> <http://www.w3.org/2000/01/rdf-schema#comment> "overlap" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BitwiseANDOp
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseANDOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseANDOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BitwiseOROp
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseOROp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseOROp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BitwiseShiftOp
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseShiftOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseShiftOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BitwiseXOROp
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseXOROp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BitwiseXOROp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Block
-<https://github.com/HPC-FAIR/HPC-Ontology#Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Block> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Scope> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BoolType
-<https://github.com/HPC-FAIR/HPC-Ontology#BoolType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BoolType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BasicType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#BreakStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#BreakStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#BreakStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#BuildingDataset
 <https://github.com/HPC-FAIR/HPC-Ontology#BuildingDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1599,38 +1104,9 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://github.com/HPC-FAIR/HPC-Ontology#Cache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Memory> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#CallGraph
-<https://github.com/HPC-FAIR/HPC-Ontology#CallGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CallGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Dataset> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#CallSite
-<https://github.com/HPC-FAIR/HPC-Ontology#CallSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CallSite> <http://www.w3.org/2002/07/owl#equivalentClass> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CallSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#CaseOptionStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#CaseOptionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CaseOptionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#CastOp
-<https://github.com/HPC-FAIR/HPC-Ontology#CastOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CastOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#CharConst
-<https://github.com/HPC-FAIR/HPC-Ontology#CharConst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CharConst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Constant> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#CharType
-<https://github.com/HPC-FAIR/HPC-Ontology#CharType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CharType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BasicType> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Cilk
 <https://github.com/HPC-FAIR/HPC-Ontology#Cilk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Cilk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Cluster
 <https://github.com/HPC-FAIR/HPC-Ontology#Cluster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1639,6 +1115,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://github.com/HPC-FAIR/HPC-Ontology#Clustering
 <https://github.com/HPC-FAIR/HPC-Ontology#Clustering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Clustering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning> .
+<https://github.com/HPC-FAIR/HPC-Ontology#Clustering> <http://www.w3.org/2000/01/rdf-schema#comment> "The action of clustering elements into different categories" .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#CoPrincipalInvestigator
 <https://github.com/HPC-FAIR/HPC-Ontology#CoPrincipalInvestigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1648,10 +1125,6 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://github.com/HPC-FAIR/HPC-Ontology#CoProcessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#CoProcessor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://github.com/HPC-FAIR/HPC-Ontology#Coprocessor> .
 <https://github.com/HPC-FAIR/HPC-Ontology#CoProcessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Processor> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#CommaOp
-<https://github.com/HPC-FAIR/HPC-Ontology#CommaOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CommaOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Company
 <https://github.com/HPC-FAIR/HPC-Ontology#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1665,40 +1138,11 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://github.com/HPC-FAIR/HPC-Ontology#Compiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Compiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Action> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#ComplexType
-<https://github.com/HPC-FAIR/HPC-Ontology#ComplexType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ComplexType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BasicType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#consistsOf> .
-_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-<https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "The body of a function definition is a compound statement." .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Computer
 <https://github.com/HPC-FAIR/HPC-Ontology#Computer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Computer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Computer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Agent> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Computer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Hardware> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ConditionalOp
-<https://github.com/HPC-FAIR/HPC-Ontology#ConditionalOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ConditionalOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Const
-<https://github.com/HPC-FAIR/HPC-Ontology#Const> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Const> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Constant
-<https://github.com/HPC-FAIR/HPC-Ontology#Constant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Constant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ContinueStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#ContinueStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ContinueStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#ConvolutionalNeuralNetwork
 <https://github.com/HPC-FAIR/HPC-Ontology#ConvolutionalNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1770,79 +1214,13 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-
 <https://github.com/HPC-FAIR/HPC-Ontology#DebuggingTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#DebuggingTool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Software> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#DecisionTree
-<https://github.com/HPC-FAIR/HPC-Ontology#DecisionTree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DecisionTree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningModel> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#DecisionTreeNode
-<https://github.com/HPC-FAIR/HPC-Ontology#DecisionTreeNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DecisionTreeNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Artifact> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Declaration
-<https://github.com/HPC-FAIR/HPC-Ontology#Declaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Declaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Declaration> <http://www.w3.org/2000/01/rdf-schema#comment> "Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions." .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#DeepNeuralNetwork
 <https://github.com/HPC-FAIR/HPC-Ontology#DeepNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#DeepNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ArtificialNeuralNetwork> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#DefaultOptionStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#DefaultOptionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DefaultOptionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#DerivedType
-<https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#DimensionReduction
 <https://github.com/HPC-FAIR/HPC-Ontology#DimensionReduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#DimensionReduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Directive
-<https://github.com/HPC-FAIR/HPC-Ontology#Directive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Directive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#DivAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#DivAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DivAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#DivOp
-<https://github.com/HPC-FAIR/HPC-Ontology#DivOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DivOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#DoWhileStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#DoWhileStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DoWhileStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#DotExp
-<https://github.com/HPC-FAIR/HPC-Ontology#DotExp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DotExp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MemberRef> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#DoubleType
-<https://github.com/HPC-FAIR/HPC-Ontology#DoubleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#DoubleType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#FloatType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#EnumDecl
-<https://github.com/HPC-FAIR/HPC-Ontology#EnumDecl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#EnumDecl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#EnumType
-<https://github.com/HPC-FAIR/HPC-Ontology#EnumType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#EnumType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BasicType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#EnumerationConst
-<https://github.com/HPC-FAIR/HPC-Ontology#EnumerationConst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#EnumerationConst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Constant> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#EqualOp
-<https://github.com/HPC-FAIR/HPC-Ontology#EqualOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#EqualOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#EqualOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp
-<https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Executing
 <https://github.com/HPC-FAIR/HPC-Ontology#Executing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1853,45 +1231,6 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-
 <https://github.com/HPC-FAIR/HPC-Ontology#Experiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Activity> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Experiment> <http://www.w3.org/2000/01/rdf-schema#comment> "A kind of scientifc activity or process. It is an action or series of actions performed on or caused by artifacts, and resulting in new artifacts." .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#Expression
-<https://github.com/HPC-FAIR/HPC-Ontology#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ExpressionList
-<https://github.com/HPC-FAIR/HPC-Ontology#ExpressionList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ExpressionList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Extern
-<https://github.com/HPC-FAIR/HPC-Ontology#Extern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Extern> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid5 <http://www.w3.org/2002/07/owl#oneOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#extern> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Extern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ExternalDataDefinition
-<https://github.com/HPC-FAIR/HPC-Ontology#ExternalDataDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ExternalDataDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition
-<https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition
-<https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType> .
-_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#FeedforwardNeuralNetwork
 <https://github.com/HPC-FAIR/HPC-Ontology#FeedforwardNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#FeedforwardNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ArtificialNeuralNetwork> .
@@ -1900,86 +1239,9 @@ _:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/HPC-FAIR/HP
 <https://github.com/HPC-FAIR/HPC-Ontology#File> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#File> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Artifact> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#FloatType
-<https://github.com/HPC-FAIR/HPC-Ontology#FloatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FloatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BasicType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#FloatingConst
-<https://github.com/HPC-FAIR/HPC-Ontology#FloatingConst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FloatingConst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Constant> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ForInitStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#ForInitStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ForInitStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ForStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#ForStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ForStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Fortran
 <https://github.com/HPC-FAIR/HPC-Ontology#Fortran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Fortran> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingLanguage> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Function
-<https://github.com/HPC-FAIR/HPC-Ontology#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Function> <http://www.w3.org/2002/07/owl#equivalentClass> <https://github.com/HPC-FAIR/HPC-Ontology#Kernel> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "A function of any kinds, including defining function declarations, non-defining function declarations, etc." .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#calls> .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr> .
-_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Function> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition> .
-_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasParameter> .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Variable> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasScope> .
-_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Scope> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasType> .
-_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#comment> "A function declaration can be either a forward declaration or a defining declaration. If it is a defining declaration then it contains a pointer to the function definition." .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Scope> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#FunctionParameterList
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionParameterList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionParameterList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#referTo> .
-_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#FunctionType
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#FunctionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#GPU
 <https://github.com/HPC-FAIR/HPC-Ontology#GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1997,24 +1259,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#GeneralizedLinearModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#GeneralizedLinearModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningModel> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#Global
-<https://github.com/HPC-FAIR/HPC-Ontology#Global> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Global> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#GotoStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#GotoStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#GotoStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp
-<https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp
-<https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Hardware
 <https://github.com/HPC-FAIR/HPC-Ontology#Hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -2026,60 +1270,17 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#HierarchicalClustering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#HierarchicalClustering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Clustering> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#IOStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#IOStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IOStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#IfElseStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#IfElseStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IfElseStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#IfStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#IfStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IfStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp
-<https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp> <http://www.w3.org/2000/01/rdf-schema#comment> "*" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Initializer
-<https://github.com/HPC-FAIR/HPC-Ontology#Initializer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Initializer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#IntConst
-<https://github.com/HPC-FAIR/HPC-Ontology#IntConst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IntConst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Constant> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#IntType
-<https://github.com/HPC-FAIR/HPC-Ontology#IntType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IntType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BasicType> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Iterating
 <https://github.com/HPC-FAIR/HPC-Ontology#Iterating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Iterating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Executing> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://github.com/HPC-FAIR/HPC-Ontology#Loop> .
-<https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Java
 <https://github.com/HPC-FAIR/HPC-Ontology#Java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Java> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingLanguage> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#K-meansClustering
 <https://github.com/HPC-FAIR/HPC-Ontology#K-meansClustering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#K-meansClustering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Clustering> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Kernel
-<https://github.com/HPC-FAIR/HPC-Ontology#Kernel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Kernel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Kernel> <http://www.w3.org/2000/01/rdf-schema#comment> "A kernel is a function or subroutine of a program written in any programming languages. A kernel has a defined function body and can be executed on a computer. This is a generic concept used for performance analysis."@en .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#L1Cache
 <https://github.com/HPC-FAIR/HPC-Ontology#L1Cache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2093,26 +1294,9 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#L3Cache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#L3Cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Cache> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#LabeledStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#LabeledStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LabeledStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct
-<https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#LawrenceLivermoreNationalLaboratory
 <https://github.com/HPC-FAIR/HPC-Ontology#LawrenceLivermoreNationalLaboratory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#LawrenceLivermoreNationalLaboratory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#National_Laboratory> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LessOp
-<https://github.com/HPC-FAIR/HPC-Ontology#LessOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LessOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LessOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp
-<https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Library
 <https://github.com/HPC-FAIR/HPC-Ontology#Library> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2138,37 +1322,8 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#Linux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Linux> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Unix> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#ListExp
-<https://github.com/HPC-FAIR/HPC-Ontology#ListExp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ListExp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ListExp> <http://www.w3.org/2000/01/rdf-schema#comment> "?" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Literal
-<https://github.com/HPC-FAIR/HPC-Ontology#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Literal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Location
 <https://github.com/HPC-FAIR/HPC-Ontology#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LogicalANDOp
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalANDOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalANDOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LogicalAndOp
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalAndOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalAndOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LogicalOROp
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalOROp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalOROp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LogicalOrOp
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalOrOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LogicalOrOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#LogisticRegressionModel
 <https://github.com/HPC-FAIR/HPC-Ontology#LogisticRegressionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2177,23 +1332,6 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 # https://github.com/HPC-FAIR/HPC-Ontology#LongShortTermMemory
 <https://github.com/HPC-FAIR/HPC-Ontology#LongShortTermMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#LongShortTermMemory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#RecurrentNeuralNetwork> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#LongType
-<https://github.com/HPC-FAIR/HPC-Ontology#LongType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#LongType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#IntType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Loop
-<https://github.com/HPC-FAIR/HPC-Ontology#Loop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Loop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Lvalue
-<https://github.com/HPC-FAIR/HPC-Ontology#Lvalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Lvalue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Lvalue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#referTo> .
-_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Variable> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Lvalue> <http://www.w3.org/2000/01/rdf-schema#comment> "An Object is a named region of storage; an lvalue is an expression referring to an object." .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#MPI
 <https://github.com/HPC-FAIR/HPC-Ontology#MPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2211,18 +1349,9 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningSoftware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Software> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#MainFunction
-<https://github.com/HPC-FAIR/HPC-Ontology#MainFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#MainFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Function> .
-<https://github.com/HPC-FAIR/HPC-Ontology#MainFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "The main function in C/C++. Or similar entry function in other programming languages." .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#MarkovProcess
 <https://github.com/HPC-FAIR/HPC-Ontology#MarkovProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#MarkovProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#SupervisedLearning> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#MemberRef
-<https://github.com/HPC-FAIR/HPC-Ontology#MemberRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#MemberRef> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Memory
 <https://github.com/HPC-FAIR/HPC-Ontology#Memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2232,14 +1361,6 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#MicrosoftWindows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#MicrosoftWindows> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#OperatingSystem> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#ModAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#ModAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ModAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ModOp
-<https://github.com/HPC-FAIR/HPC-Ontology#ModOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ModOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#ModelEvaluation
 <https://github.com/HPC-FAIR/HPC-Ontology#ModelEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#ModelEvaluation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Action> .
@@ -2247,14 +1368,6 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 # https://github.com/HPC-FAIR/HPC-Ontology#ModelTraining
 <https://github.com/HPC-FAIR/HPC-Ontology#ModelTraining> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#ModelTraining> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Action> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#MulAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#MulAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#MulAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#MulOp
-<https://github.com/HPC-FAIR/HPC-Ontology#MulOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#MulOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#MultiStep
 <https://github.com/HPC-FAIR/HPC-Ontology#MultiStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2266,38 +1379,12 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#MultipleLinearRegressionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#MultipleLinearRegressionModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LinearRegressionModel> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#MultiplicativeOp
-<https://github.com/HPC-FAIR/HPC-Ontology#MultiplicativeOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#MultiplicativeOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#National_Laboratory
 <https://github.com/HPC-FAIR/HPC-Ontology#National_Laboratory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#National_Laboratory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Organization> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#NeqOp
-<https://github.com/HPC-FAIR/HPC-Ontology#NeqOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#NeqOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#NeqOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#NullExpr
-<https://github.com/HPC-FAIR/HPC-Ontology#NullExpr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#NullExpr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType
-<https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PointerType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#NullStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#NullStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#NullStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#NumerialAnalysis
 <https://github.com/HPC-FAIR/HPC-Ontology#NumerialAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp
-<https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-<https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp> <http://www.w3.org/2000/01/rdf-schema#comment> "?" .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#OpenACC
 <https://github.com/HPC-FAIR/HPC-Ontology#OpenACC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2311,14 +1398,6 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#OperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Software> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#OrAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#OrAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#OrAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#OrOp
-<https://github.com/HPC-FAIR/HPC-Ontology#OrOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#OrOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Organization
 <https://github.com/HPC-FAIR/HPC-Ontology#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
@@ -2327,15 +1406,6 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 # https://github.com/HPC-FAIR/HPC-Ontology#POSIXThreads
 <https://github.com/HPC-FAIR/HPC-Ontology#POSIXThreads> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#POSIXThreads> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion
-<https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Directive> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#OpenMP> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Parameter
-<https://github.com/HPC-FAIR/HPC-Ontology#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Variable> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#ParameterTemplate
 <https://github.com/HPC-FAIR/HPC-Ontology#ParameterTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2358,47 +1428,6 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 # https://github.com/HPC-FAIR/HPC-Ontology#Plan
 <https://github.com/HPC-FAIR/HPC-Ontology#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Plan> <http://www.w3.org/2000/01/rdf-schema#comment> "A Plan of series actions to be done. A plan takes in conceptual artifacts( called artifact templates) and generate artifact templates.  A plan can be used by multiple activites which consume and generate concrete artifacts." .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PointerDecl
-<https://github.com/HPC-FAIR/HPC-Ontology#PointerDecl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PointerDecl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PointerType
-<https://github.com/HPC-FAIR/HPC-Ontology#PointerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PointerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp
-<https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp
-<https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp
-<https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr
-<https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-<https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr> <http://www.w3.org/2000/01/rdf-schema#comment> "Primary expressions are identifiers, constants, strings, or expressions in parentheses.\nprimary-expression \nidentifier \nconstant\nstring \n(expression)" .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#PrincipalComponentAnalysis
 <https://github.com/HPC-FAIR/HPC-Ontology#PrincipalComponentAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2442,43 +1471,13 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#RecurrentNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#RecurrentNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ArtificialNeuralNetwork> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType
-<https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Register
 <https://github.com/HPC-FAIR/HPC-Ontology#Register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Register> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Hardware> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#RegisterStorage
-<https://github.com/HPC-FAIR/HPC-Ontology#RegisterStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#RegisterStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Reinforcementlearning
 <https://github.com/HPC-FAIR/HPC-Ontology#Reinforcementlearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Reinforcementlearning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearning> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp
-<https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-<https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp> <http://www.w3.org/2000/01/rdf-schema#comment> "? model as individual or subclass" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ReturnStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#ReturnStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ReturnStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Scope
-<https://github.com/HPC-FAIR/HPC-Ontology#Scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Scope> <http://www.w3.org/2002/07/owl#equivalentClass> <https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Scope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Statement> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Server
 <https://github.com/HPC-FAIR/HPC-Ontology#Server> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2488,37 +1487,9 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#ShellScript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#ShellScript> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingLanguage> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#ShlAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#ShlAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ShlAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ShlOp
-<https://github.com/HPC-FAIR/HPC-Ontology#ShlOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ShlOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ShortType
-<https://github.com/HPC-FAIR/HPC-Ontology#ShortType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ShortType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#IntType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ShrAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#ShrAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ShrAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ShrOp
-<https://github.com/HPC-FAIR/HPC-Ontology#ShrOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ShrOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Signed
-<https://github.com/HPC-FAIR/HPC-Ontology#Signed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Signed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#SimpleLinearRegressionModel
 <https://github.com/HPC-FAIR/HPC-Ontology#SimpleLinearRegressionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#SimpleLinearRegressionModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LinearRegressionModel> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#SizeofOp
-<https://github.com/HPC-FAIR/HPC-Ontology#SizeofOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#SizeofOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Software
 <https://github.com/HPC-FAIR/HPC-Ontology#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2529,55 +1500,13 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#SpectralClustering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#SpectralClustering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Clustering> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#Statement
-<https://github.com/HPC-FAIR/HPC-Ontology#Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Static
-<https://github.com/HPC-FAIR/HPC-Ontology#Static> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Static> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid16 <http://www.w3.org/2002/07/owl#oneOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#static> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Static> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Step
 <https://github.com/HPC-FAIR/HPC-Ontology#Step> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Step> <http://www.w3.org/2000/01/rdf-schema#comment> "A step within a Plan" .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#StorageClass
-<https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#StreamingMultiprocessor
 <https://github.com/HPC-FAIR/HPC-Ontology#StreamingMultiprocessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#StreamingMultiprocessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Hardware> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#String
-<https://github.com/HPC-FAIR/HPC-Ontology#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#String> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#StringLiteral
-<https://github.com/HPC-FAIR/HPC-Ontology#StringLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#StringLiteral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#StructureType
-<https://github.com/HPC-FAIR/HPC-Ontology#StructureType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#StructureType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#StructureUnionDecl
-<https://github.com/HPC-FAIR/HPC-Ontology#StructureUnionDecl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#StructureUnionDecl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#SubAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#SubAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#SubAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#SubOp
-<https://github.com/HPC-FAIR/HPC-Ontology#SubOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#SubOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#SuperComputer
 <https://github.com/HPC-FAIR/HPC-Ontology#SuperComputer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2591,69 +1520,17 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://github.com/HPC-FAIR/HPC-Ontology#SupportVectorMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#SupportVectorMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningModel> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#SwitchStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#SwitchStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#SwitchStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#TableRow
 <https://github.com/HPC-FAIR/HPC-Ontology#TableRow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#TableRow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#CSVDataset> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Trainning
 <https://github.com/HPC-FAIR/HPC-Ontology#Trainning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Trainning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Action> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#Type
-<https://github.com/HPC-FAIR/HPC-Ontology#Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier
-<https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#TypedefDecl
-<https://github.com/HPC-FAIR/HPC-Ontology#TypedefDecl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#TypedefDecl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#UPC
 <https://github.com/HPC-FAIR/HPC-Ontology#UPC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#UPC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp
-<https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#UnionType
-<https://github.com/HPC-FAIR/HPC-Ontology#UnionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#UnionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#DerivedType> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#University
 <https://github.com/HPC-FAIR/HPC-Ontology#University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2663,108 +1540,17 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://github.com/HPC-FAIR/HPC-Ontology#Unix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Unix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#OperatingSystem> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#UnknownClass
-<https://github.com/HPC-FAIR/HPC-Ontology#UnknownClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#UnknownClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#UnknownType
-<https://github.com/HPC-FAIR/HPC-Ontology#UnknownType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#UnknownType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Unsigned
-<https://github.com/HPC-FAIR/HPC-Ontology#Unsigned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Unsigned> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Unsorted
-<https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning
 <https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#MachineLearning> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Value
-<https://github.com/HPC-FAIR/HPC-Ontology#Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Value> <http://www.w3.org/2000/01/rdf-schema#comment> "SgXXXVal = constant?" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Variable
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#declaredBy> .
-_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#definedBy> .
-_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer> .
-_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Initializer> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasScope> .
-_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Scope> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasSize> .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Literal> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass> .
-_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#hasType> .
-_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Type> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#name> .
-<https://github.com/HPC-FAIR/HPC-Ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Literal> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "synonyms: object\nnamed location of storage" .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#VariableDecl
-<https://github.com/HPC-FAIR/HPC-Ontology#VariableDecl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#VariableDecl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#VariableDefinition
-<https://github.com/HPC-FAIR/HPC-Ontology#VariableDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#VariableDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Declaration> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#VariableRef
-<https://github.com/HPC-FAIR/HPC-Ontology#VariableRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#VariableRef> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr> .
-<https://github.com/HPC-FAIR/HPC-Ontology#VariableRef> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/HPC-FAIR/HPC-Ontology#referTo> .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC-FAIR/HPC-Ontology#Variable> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Vendor
 <https://github.com/HPC-FAIR/HPC-Ontology#Vendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Vendor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Organization> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#VoidType
-<https://github.com/HPC-FAIR/HPC-Ontology#VoidType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#VoidType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BasicType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#Volatile
-<https://github.com/HPC-FAIR/HPC-Ontology#Volatile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#Volatile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#WCharType
-<https://github.com/HPC-FAIR/HPC-Ontology#WCharType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#WCharType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#CharType> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#Warp
 <https://github.com/HPC-FAIR/HPC-Ontology#Warp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Warp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Hardware> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#WhileStatement
-<https://github.com/HPC-FAIR/HPC-Ontology#WhileStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#WhileStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#Workflow
 <https://github.com/HPC-FAIR/HPC-Ontology#Workflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2775,19 +1561,6 @@ _:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 # https://github.com/HPC-FAIR/HPC-Ontology#Workstation
 <https://github.com/HPC-FAIR/HPC-Ontology#Workstation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Workstation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Computer> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#XorAssignOp
-<https://github.com/HPC-FAIR/HPC-Ontology#XorAssignOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#XorAssignOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#XorOp
-<https://github.com/HPC-FAIR/HPC-Ontology#XorOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#XorOp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo
-<https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Expression> .
-<https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> .
 # 
 # https://github.com/HPC-FAIR/HPC-Ontology#macOS
 <https://github.com/HPC-FAIR/HPC-Ontology#macOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2818,152 +1591,10 @@ _:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/HPC
 <https://github.com/HPC-FAIR/HPC-Ontology#Nvidia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://github.com/HPC-FAIR/HPC-Ontology#Nvidia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Company> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#array_type
-<https://github.com/HPC-FAIR/HPC-Ontology#array_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#array_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#ArrayType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#auto
-<https://github.com/HPC-FAIR/HPC-Ontology#auto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#auto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Auto> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#bool
-<https://github.com/HPC-FAIR/HPC-Ontology#bool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#bool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#BoolType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#char
-<https://github.com/HPC-FAIR/HPC-Ontology#char> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#char> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#CharType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#complex
-<https://github.com/HPC-FAIR/HPC-Ontology#complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#ComplexType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#double
-<https://github.com/HPC-FAIR/HPC-Ontology#double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#DoubleType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#enum_type
-<https://github.com/HPC-FAIR/HPC-Ontology#enum_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#enum_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#EnumType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#extern
-<https://github.com/HPC-FAIR/HPC-Ontology#extern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#extern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Extern> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#float
-<https://github.com/HPC-FAIR/HPC-Ontology#float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#FloatType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#function_type
-<https://github.com/HPC-FAIR/HPC-Ontology#function_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#function_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#FunctionType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#int
-<https://github.com/HPC-FAIR/HPC-Ontology#int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#IntType> .
-# 
 # https://github.com/HPC-FAIR/HPC-Ontology#lassen
 <https://github.com/HPC-FAIR/HPC-Ontology#lassen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://github.com/HPC-FAIR/HPC-Ontology#lassen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#SuperComputer> .
 # 
-# https://github.com/HPC-FAIR/HPC-Ontology#long
-<https://github.com/HPC-FAIR/HPC-Ontology#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#LongType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#long_double
-<https://github.com/HPC-FAIR/HPC-Ontology#long_double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#long_double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#DoubleType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#long_long
-<https://github.com/HPC-FAIR/HPC-Ontology#long_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#long_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#LongType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#null_pointer
-<https://github.com/HPC-FAIR/HPC-Ontology#null_pointer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#null_pointer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#pointer_type
-<https://github.com/HPC-FAIR/HPC-Ontology#pointer_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#pointer_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#PointerType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#ref_type
-<https://github.com/HPC-FAIR/HPC-Ontology#ref_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#ref_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#short
-<https://github.com/HPC-FAIR/HPC-Ontology#short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#ShortType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#signed_char
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_char> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_char> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#CharType> .
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_char> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Signed> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#signed_int
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Signed> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#signed_long
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Signed> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#signed_long_long
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_long_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_long_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Signed> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#signed_short
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#signed_short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Signed> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#static
-<https://github.com/HPC-FAIR/HPC-Ontology#static> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#static> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Static> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#string
-<https://github.com/HPC-FAIR/HPC-Ontology#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#String> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unknown_modifier
-<https://github.com/HPC-FAIR/HPC-Ontology#unknown_modifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unknown_modifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Unsorted> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unknown_type
-<https://github.com/HPC-FAIR/HPC-Ontology#unknown_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unknown_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#UnknownType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unsigned_char
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_char> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_char> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Unsigned> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unsigned_int
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Unsigned> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Unsigned> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long_long
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Unsigned> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unsigned_short
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unsigned_short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#Unsigned> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#unspecified
-<https://github.com/HPC-FAIR/HPC-Ontology#unspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#unspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#StorageClass> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#void_type
-<https://github.com/HPC-FAIR/HPC-Ontology#void_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#void_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#VoidType> .
-# 
-# https://github.com/HPC-FAIR/HPC-Ontology#wchar
-<https://github.com/HPC-FAIR/HPC-Ontology#wchar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://github.com/HPC-FAIR/HPC-Ontology#wchar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/HPC-FAIR/HPC-Ontology#WCharType> .
-# 
-_:genid27 <http://www.w3.org/2000/01/rdf-schema#comment> "function relation" .
 # 
 # 
 # #################################################################
@@ -2984,47 +1615,5 @@ _:genid27 <http://www.w3.org/2000/01/rdf-schema#comment> "function relation" .
 <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/2000/01/rdf-schema#comment> "The IRI that identifies this version of your vocabulary." .
 # 
 <http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Details about the version being handled. We recommend to include, for example, the version number of the ontology (e.g., 1.0.1)." .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    General axioms
-# #
-# #################################################################
-# 
-# 
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid28 <http://www.w3.org/2002/07/owl#members> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#AddressOp> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

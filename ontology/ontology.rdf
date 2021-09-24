@@ -10,7 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://github.com/HPC-FAIR/HPC-Ontology">
         <owl:versionIRI rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology/1.0.0"/>
         <dc:creator>The HPC-FAIR research team</dc:creator>
@@ -20,7 +21,7 @@ of High-Performance Computing. It can be used to annotate training
 and optimizations. The goal is to make datasets and AI models FAIR.</dc:description>
         <dc:title>HPC Ontology</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T13:30:00-07:00</terms:created>
-        <terms:license>the Creative Commons Attribution-ShareAlike License</terms:license>
+        <terms:license>the Creative Commons Attribution 4.0</terms:license>
         <vann:preferredNamespacePrefix>hpc</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology"/>
         <rdfs:comment></rdfs:comment>
@@ -141,6 +142,22 @@ and optimizations. The goal is to make datasets and AI models FAIR.</dc:descript
     
 
 
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes">
+        <rdfs:comment>one or more domains a property is associated with. Union semantics is used for multiple domains, instead of intersection semantics of rdfs:range</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#priorVersion -->
 
 
@@ -178,25 +195,6 @@ and optimizations. The goal is to make datasets and AI models FAIR.</dc:descript
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#access -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#access">
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#accessedBy"/>
-        <rdfs:comment>function relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#accessedBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#accessedBy">
-        <rdfs:comment>variable relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#actedOnBehalfOf -->
 
 
@@ -226,24 +224,6 @@ and optimizations. The goal is to make datasets and AI models FAIR.</dc:descript
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#allocate -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#allocate">
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy">
-        <rdfs:comment>array relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#associatedSoftware -->
 
 
@@ -265,59 +245,6 @@ and optimizations. The goal is to make datasets and AI models FAIR.</dc:descript
 
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#benchmark">
         <rdfs:comment>Link to the associated benchmark software ID</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#callSite -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#callSite">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#srcFunc"/>
-        <rdfs:comment>a function has one or more call sites where it calls other functions. 
-This property links a function to its function call sites.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#calledBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#calledBy">
-        <owl:equivalentProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#caller"/>
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#calls"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#callee -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#callee">
-        <owl:equivalentProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#calls"/>
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#caller"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#caller -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#caller">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#calls -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#calls">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>a function calls another function</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -424,74 +351,6 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#deallocatedBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#deallocatedBy">
-        <rdfs:comment>array relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#decisionFeature -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#decisionFeature">
-        <rdfs:comment>For a decision tree node, the feature used as the left operand of the decision condition.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>The final decision for a leaf node in a decisiontree</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#declaredBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#declaredBy">
-        <rdfs:comment>a variable is declared by a statment</rdfs:comment>
-        <rdfs:comment>variable relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#definedBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#definedBy">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#destFunc -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#destFunc">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite"/>
-        <rdfs:comment>linke a call site to the function being called.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#falseNode -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#falseNode">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>link from a decision tree node to its false child node</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#feed -->
 
 
@@ -507,16 +366,6 @@ This property links a function to its function call sites.</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#file">
         <rdfs:range rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#File"/>
         <rdfs:comment>a data object has an associated file</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#function -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#function">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>a call graph (or other program analysis info object) has a function node.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -580,226 +429,10 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>AST node to alignment node</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentList -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentList">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasType"/>
-        <rdfs:range rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:comment>?</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasBaseType -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasBaseType">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasType"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasBody -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasBody">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>AST has a body</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasChild -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasChild">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasParent"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasCompiler -->
 
 
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasCompiler"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasCondition -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasCondition">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>AST node to its condition node</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>Domain: definition</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasElseBody -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasElseBody">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasExpression -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasExpression">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasFalseBody -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasFalseBody">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasFile -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasFile">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>AST node to its file node</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasForIncr -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasForIncr">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasForInit -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasForInit">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasForTest -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasForTest">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasHiddenType -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasHiddenType">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasType"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasIndexExp -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasIndexExp">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasInitStatement -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasInitStatement">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
     
 
 
@@ -815,41 +448,12 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasKey -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasKey">
-        <rdfs:comment>case key:</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasLabelRef -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasLabelRef">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasChild"/>
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasLocation -->
 
 
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasLocation">
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Computer"/>
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Organization"/>
         <rdfs:range rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Location"/>
+        <rdfs:comment>The location information of a computer or an organization</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -873,30 +477,12 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasOperand -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasOperand">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasChild"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasOperatingSystem -->
 
 
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasOperatingSystem">
         <owl:equivalentProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#operatingSystem"/>
         <rdfs:comment>Link from a machine to OS software ID: RHEL version 8, the one runs on the computer</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasOperator -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasOperator">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
     </owl:ObjectProperty>
     
 
@@ -919,147 +505,10 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasParameter -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasParameter">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionType"/>
-        <rdfs:comment>function relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasParameterList -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasParameterList">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasParent -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasParent">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasType"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionType"/>
-        <rdfs:range rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-        <rdfs:comment>function relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasChild"/>
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasScope -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasScope">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasSelector -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasSelector">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasSize -->
 
 
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasSize"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasStatement -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasStatement">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:comment>variable relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasTarget -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasTarget"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasTrueBody -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasTrueBody">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasType -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasType">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-        <rdfs:comment>variable relation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasValue -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasValue">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
     
 
 
@@ -1265,51 +714,6 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#read -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#read">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#access"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#readBy"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#readBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#readBy">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#accessedBy"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#referTo -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#referTo">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#referredBy"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#referredBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#referredBy">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#relationOp -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#relationOp"/>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#runsOn -->
 
 
@@ -1326,25 +730,6 @@ This property links a function to its function call sites.</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#software">
         <rdfs:comment>software used by a hardware devices.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#sourceFile -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#sourceFile">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#file"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#srcFunc -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#srcFunc">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>Inverse of Function--&gt; CallSite</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -1391,26 +776,6 @@ This property links a function to its function call sites.</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#targetMachine">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">link to concrete computers an AI model supports to model</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#trueNode -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#trueNode">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>link from a decision tree node to its true child node</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#graphLink"/>
-        <rdfs:comment>Inverse of a call site --&gt; function being called.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -1579,35 +944,6 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#write -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#write">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#access"/>
-        <owl:inverseOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#writtenBy"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#writtenBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#writtenBy">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#accessedBy"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#writtenIn -->
-
-
-    <owl:ObjectProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#writtenIn">
-        <rdfs:domain rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-        <rdfs:range rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1617,31 +953,6 @@ This property links a function to its function call sites.</rdfs:comment>
      -->
 
 
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Nth -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Nth"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#NthArg -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#NthArg">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Nth"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#NthPara -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#NthPara">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Nth"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -1684,37 +995,10 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#allocatedDataSize -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#allocatedDataSize">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#size"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#alternateName -->
 
 
     <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#alternateName">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#name"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#arrayID -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#arrayID">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#id"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#arrayName -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#arrayName">
         <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#name"/>
     </owl:DatatypeProperty>
     
@@ -1733,15 +1017,6 @@ This property links a function to its function call sites.</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#awardAmount"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#beginMemoryAddress -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#beginMemoryAddress">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#memoryAddress"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -1792,22 +1067,6 @@ This property links a function to its function call sites.</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#codeVariant"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#columnNumber -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#columnNumber">
-        <rdfs:comment>Column number within a file</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#commandLineOption -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#commandLineOption"/>
     
 
 
@@ -2002,15 +1261,6 @@ This property links a function to its function call sites.</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#endDate">
         <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#date"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#endMemoryAddress -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#endMemoryAddress">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#memoryAddress"/>
     </owl:DatatypeProperty>
     
 
@@ -2267,16 +1517,6 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment>If a decision tree node has child nodes or not.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasHPCGPerformance -->
 
 
@@ -2319,13 +1559,6 @@ This property links a function to its function call sites.</rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasRpeak">
         <rdfs:comment>The theoretical peak performance [TFlop/s]</rdfs:comment>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#hasValue -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#hasValue"/>
     
 
 
@@ -2417,15 +1650,6 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#kernelName -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#kernelName">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#name"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#l1CacheUitlizationRate -->
 
 
@@ -2466,15 +1690,6 @@ This property links a function to its function call sites.</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#license"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#lineNumber -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#lineNumber">
-        <rdfs:comment>line number within a file</rdfs:comment>
-    </owl:DatatypeProperty>
     
 
 
@@ -2762,13 +1977,6 @@ This property links a function to its function call sites.</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#relationValue -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#relationValue"/>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#segment -->
 
 
@@ -3032,15 +2240,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#treeNodeLevel -->
-
-
-    <owl:DatatypeProperty rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#treeNodeLevel">
-        <rdfs:comment>The level of a tree, starting from 0 for the root node</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#url -->
 
 
@@ -3121,103 +2320,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AddAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AddAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AddOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AddOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AdditiveOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AdditiveOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AddressOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AddressOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-        <rdfs:comment>&amp;</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Agent -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Agent">
         <rdfs:comment>A person, organizationsoftware, computer, etc.which can conduct some activities</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AndAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AndAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AndOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AndOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ArrayDecl -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ArrayDecl">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ArraySub -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ArraySub">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp"/>
-        <rdfs:comment>[]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ArrayType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ArrayType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DerivedType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ArrowExp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ArrowExp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#MemberRef"/>
     </owl:Class>
     
 
@@ -3249,161 +2356,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Initializer"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AssignStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AssignStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Auto -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Auto">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#auto"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#StorageClass"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BasicBlock -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BasicBlock">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BasicType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BasicType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-        <rdfs:comment>Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Benchmark -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Benchmark">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Software"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-        <rdfs:comment>overlap</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BitwiseANDOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BitwiseANDOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BitwiseOROp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BitwiseOROp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BitwiseShiftOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BitwiseShiftOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BitwiseXOROp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BitwiseXOROp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Block -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Block">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Scope"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BoolType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BoolType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BasicType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#BreakStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#BreakStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement"/>
     </owl:Class>
     
 
@@ -3462,75 +2419,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CallGraph -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CallGraph">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Dataset"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CallSite -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CallSite">
-        <owl:equivalentClass rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CaseOptionStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CaseOptionStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CastOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CastOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CharConst -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CharConst">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Constant"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CharType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CharType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BasicType"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Cilk -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Cilk">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
     </owl:Class>
     
 
@@ -3549,6 +2442,7 @@ NVIDIA DGX A100</rdfs:comment>
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Clustering">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning"/>
+        <rdfs:comment>The action of clustering elements into different categories</rdfs:comment>
     </owl:Class>
     
 
@@ -3568,15 +2462,6 @@ NVIDIA DGX A100</rdfs:comment>
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CoProcessor">
         <owl:equivalentClass rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Coprocessor"/>
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Processor"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CommaOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CommaOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
     </owl:Class>
     
 
@@ -3608,31 +2493,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ComplexType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ComplexType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BasicType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#consistsOf"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>The body of a function definition is a compound statement.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Computer -->
 
 
@@ -3640,42 +2500,6 @@ NVIDIA DGX A100</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Agent"/>
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Hardware"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ConditionalOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ConditionalOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Const -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Const">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Constant -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Constant">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ContinueStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ContinueStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement"/>
     </owl:Class>
     
 
@@ -3835,34 +2659,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DecisionTree -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DecisionTree">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#MachineLearningModel"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DecisionTreeNode -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DecisionTreeNode">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Artifact"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Declaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Declaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-        <rdfs:comment>Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#DeepNeuralNetwork -->
 
 
@@ -3872,129 +2668,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DefaultOptionStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DefaultOptionStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DerivedType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DerivedType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#DimensionReduction -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DimensionReduction">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Directive -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Directive">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DivAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DivAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DivOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DivOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DoWhileStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DoWhileStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DotExp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DotExp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#MemberRef"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#DoubleType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#DoubleType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FloatType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#EnumDecl -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#EnumDecl">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#EnumType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#EnumType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BasicType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#EnumerationConst -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#EnumerationConst">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Constant"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#EqualOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#EqualOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
     </owl:Class>
     
 
@@ -4018,83 +2696,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Expression -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Expression">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ExpressionList -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ExpressionList">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsorted"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Extern -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Extern">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#extern"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#StorageClass"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ExternalDataDefinition -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ExternalDataDefinition">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#FeedforwardNeuralNetwork -->
 
 
@@ -4113,157 +2714,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FloatType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FloatType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BasicType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FloatingConst -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FloatingConst">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Constant"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ForInitStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ForInitStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ForStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ForStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Fortran -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Fortran">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingLanguage"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Function -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Function">
-        <owl:equivalentClass rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Kernel"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-        <rdfs:comment>A function of any kinds, including defining function declarations, non-defining function declarations, etc.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#calls"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Function"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasParameter"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Variable"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasScope"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Scope"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasType"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A function declaration can be either a forward declaration or a defining declaration. If it is a defining declaration then it contains a pointer to the function definition.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Scope"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FunctionParameterList -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FunctionParameterList">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#referTo"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#FunctionType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#FunctionType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DerivedType"/>
     </owl:Class>
     
 
@@ -4304,44 +2759,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Global -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Global">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#GotoStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#GotoStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Hardware -->
 
 
@@ -4367,85 +2784,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#IOStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IOStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#IfElseStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IfElseStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#IfStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IfStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-        <rdfs:comment>*</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Initializer -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Initializer">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#IntConst -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IntConst">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Constant"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#IntType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IntType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BasicType"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Iterating -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Iterating">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Executing"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement">
-        <owl:equivalentClass rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Loop"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
     </owl:Class>
     
 
@@ -4459,30 +2802,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#K-meansClustering -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#K-meansClustering">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Clustering"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Kernel -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Kernel">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-        <rdfs:comment xml:lang="en">A kernel is a function or subroutine of a program written in any programming languages. A kernel has a defined function body and can be executed on a computer. This is a generic concept used for performance analysis.</rdfs:comment>
     </owl:Class>
     
 
@@ -4514,47 +2838,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LabeledStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LabeledStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#LawrenceLivermoreNationalLaboratory -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LawrenceLivermoreNationalLaboratory">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#National_Laboratory"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LessOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LessOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp"/>
     </owl:Class>
     
 
@@ -4613,74 +2901,10 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ListExp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ListExp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsorted"/>
-        <rdfs:comment>?</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Literal -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Literal">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Location -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Location"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LogicalANDOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LogicalANDOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LogicalAndOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LogicalAndOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LogicalOROp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LogicalOROp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LogicalOrOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LogicalOrOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
     
 
 
@@ -4698,40 +2922,6 @@ NVIDIA DGX A100</rdfs:comment>
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LongShortTermMemory">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#RecurrentNeuralNetwork"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#LongType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LongType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#IntType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Loop -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Loop">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Lvalue -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Lvalue">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#referTo"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Variable"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>An Object is a named region of storage; an lvalue is an expression referring to an object.</rdfs:comment>
     </owl:Class>
     
 
@@ -4772,30 +2962,11 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#MainFunction -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#MainFunction">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Function"/>
-        <rdfs:comment>The main function in C/C++. Or similar entry function in other programming languages.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#MarkovProcess -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#MarkovProcess">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#SupervisedLearning"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#MemberRef -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#MemberRef">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp"/>
     </owl:Class>
     
 
@@ -4818,24 +2989,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ModAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ModAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ModOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ModOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#ModelEvaluation -->
 
 
@@ -4850,24 +3003,6 @@ NVIDIA DGX A100</rdfs:comment>
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ModelTraining">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Action"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#MulAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#MulAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#MulOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#MulOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
     </owl:Class>
     
 
@@ -4892,15 +3027,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#MultiplicativeOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#MultiplicativeOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#National_Laboratory -->
 
 
@@ -4910,57 +3036,10 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#NeqOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#NeqOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#NullExpr -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#NullExpr">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PointerType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#NullStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#NullStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#NumerialAnalysis -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#NumerialAnalysis"/>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-        <rdfs:comment>?</rdfs:comment>
-    </owl:Class>
     
 
 
@@ -4991,24 +3070,6 @@ NVIDIA DGX A100</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#OrAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#OrAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#OrOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#OrOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Organization -->
 
 
@@ -5024,25 +3085,6 @@ NVIDIA DGX A100</rdfs:comment>
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#POSIXThreads">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Directive"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#OpenMP"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Parameter -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Parameter">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Variable"/>
     </owl:Class>
     
 
@@ -5090,102 +3132,6 @@ NVIDIA DGX A100</rdfs:comment>
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Plan">
         <rdfs:comment>A Plan of series actions to be done. A plan takes in conceptual artifacts( called artifact templates) and generate artifact templates.  A plan can be used by multiple activites which consume and generate concrete artifacts.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PointerDecl -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PointerDecl">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PointerType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PointerType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DerivedType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-        <rdfs:comment>Primary expressions are identifiers, constants, strings, or expressions in parentheses.
-primary-expression 
-identifier 
-constant
-string 
-(expression)</rdfs:comment>
     </owl:Class>
     
 
@@ -5285,15 +3231,6 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DerivedType"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Register -->
 
 
@@ -5303,67 +3240,11 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#RegisterStorage -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#RegisterStorage">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#StorageClass"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Reinforcementlearning -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Reinforcementlearning">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#MachineLearning"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-        <rdfs:comment>? model as individual or subclass</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ReturnStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ReturnStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Scope -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Scope">
-        <owl:equivalentClass rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Statement"/>
     </owl:Class>
     
 
@@ -5386,74 +3267,11 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ShlAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ShlAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ShlOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ShlOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ShortType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ShortType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#IntType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ShrAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ShrAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ShrOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ShrOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Signed -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Signed">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#SimpleLinearRegressionModel -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#SimpleLinearRegressionModel">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LinearRegressionModel"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#SizeofOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#SizeofOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp"/>
     </owl:Class>
     
 
@@ -5477,31 +3295,6 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Statement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Statement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Static -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Static">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#static"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#StorageClass"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Step -->
 
 
@@ -5511,74 +3304,11 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#StorageClass -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#StorageClass">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#StreamingMultiprocessor -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#StreamingMultiprocessor">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Hardware"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#String -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#String">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#StringLiteral -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#StringLiteral">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#StructureType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#StructureType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DerivedType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#StructureUnionDecl -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#StructureUnionDecl">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#SubAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#SubAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#SubOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#SubOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
     </owl:Class>
     
 
@@ -5610,78 +3340,11 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#SwitchStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#SwitchStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#TableRow -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TableRow">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#CSVDataset"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
     </owl:Class>
     
 
@@ -5695,56 +3358,11 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Type -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Type">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#TypedefDecl -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#TypedefDecl">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#UPC -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#UPC">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ProgrammingModel"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#UnionType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#UnionType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DerivedType"/>
     </owl:Class>
     
 
@@ -5767,149 +3385,11 @@ string
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#UnknownClass -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#UnknownClass">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsorted"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#UnknownType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#UnknownType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Unsigned -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Unsigned">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Unsorted -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Unsorted">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#UnsupervisedLearning">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#MachineLearning"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Value -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Value">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsorted"/>
-        <rdfs:comment>SgXXXVal = constant?</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Variable -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Variable">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#declaredBy"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#definedBy"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Initializer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasScope"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Scope"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasSize"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#StorageClass"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#hasType"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Type"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#name"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>synonyms: object
-named location of storage</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#VariableDecl -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#VariableDecl">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#VariableDefinition -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#VariableDefinition">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Declaration"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#VariableRef -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#VariableRef">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#referTo"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Variable"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -5923,47 +3403,11 @@ named location of storage</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#VoidType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#VoidType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BasicType"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#Volatile -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Volatile">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#WCharType -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#WCharType">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#CharType"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#Warp -->
 
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Warp">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Hardware"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#WhileStatement -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#WhileStatement">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement"/>
     </owl:Class>
     
 
@@ -5984,34 +3428,6 @@ named location of storage</rdfs:comment>
 
     <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#Workstation">
         <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Computer"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#XorAssignOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#XorAssignOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#XorOp -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#XorOp">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo -->
-
-
-    <owl:Class rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo">
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Expression"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsorted"/>
     </owl:Class>
     
 
@@ -6073,331 +3489,12 @@ named location of storage</rdfs:comment>
     
 
 
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#array_type -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#array_type">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ArrayType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#auto -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#auto">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Auto"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#bool -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#bool">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#BoolType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#char -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#char">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#CharType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#complex -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#complex">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ComplexType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#double -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#double">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DoubleType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#enum_type -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#enum_type">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#EnumType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#extern -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#extern">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Extern"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#float -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#float">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FloatType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#function_type -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#function_type">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#FunctionType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#int -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#int">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#IntType"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://github.com/HPC-FAIR/HPC-Ontology#lassen -->
 
 
     <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#lassen">
         <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#SuperComputer"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#long -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#long">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LongType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#long_double -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#long_double">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#DoubleType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#long_long -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#long_long">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#LongType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#null_pointer -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#null_pointer">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#pointer_type -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#pointer_type">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#PointerType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#ref_type -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#ref_type">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#short -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#short">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#ShortType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#signed_char -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#signed_char">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#CharType"/>
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Signed"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#signed_int -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#signed_int">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Signed"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#signed_long -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#signed_long">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Signed"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#signed_long_long -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#signed_long_long">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Signed"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#signed_short -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#signed_short">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Signed"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#static -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#static">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Static"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#string -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#string">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#String"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unknown_modifier -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unknown_modifier">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsorted"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unknown_type -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unknown_type">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#UnknownType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unsigned_char -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unsigned_char">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsigned"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unsigned_int -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unsigned_int">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsigned"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsigned"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long_long -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long_long">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsigned"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unsigned_short -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unsigned_short">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#Unsigned"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#unspecified -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#unspecified">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#StorageClass"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#void_type -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#void_type">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#VoidType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/HPC-FAIR/HPC-Ontology#wchar -->
-
-
-    <owl:NamedIndividual rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#wchar">
-        <rdf:type rdf:resource="https://github.com/HPC-FAIR/HPC-Ontology#WCharType"/>
-    </owl:NamedIndividual>
-    <rdf:Description>
-        <rdfs:comment>function relation</rdfs:comment>
-    </rdf:Description>
     
 
 
@@ -6427,33 +3524,6 @@ named location of storage</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
         <rdfs:comment>Details about the version being handled. We recommend to include, for example, the version number of the ontology (e.g., 1.0.1).</rdfs:comment>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#AddressOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp"/>
-            <rdf:Description rdf:about="https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
