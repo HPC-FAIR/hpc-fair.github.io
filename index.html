@@ -37,6 +37,9 @@
     <li class="nav-item" id="hpcfair_menu_publication">
       <a class="nav-link" href="/publication.html">Publication</a>
     </li>
+    <li class="nav-item" id="hpcfair_menu_ontology">
+      <a class="nav-link" href="/ontology">Ontology</a>
+    </li>
     <li class="nav-item" id="hpcfair_menu_team">
       <a class="nav-link" href="/team.html">Team</a>
     </li>
@@ -64,11 +67,6 @@
           <p>
 Supercomputers increasingly rely on hierarchical and heterogeneous node architectures for improved performance and efficiency.  Artificial intelligence (AI) and machine learning (ML) techniques have been widely studied to address various challenges of productively and efficiently running scientific applications on supercomputers. These approaches are limited, however, because it is extremely difficult to generate, access, and maintain high-quality training data needed to drive ML-based research. To this end, we provide a generic High Performance Computing data management framework to make both training data and AI models of scientific applications findable, accessible, interoperable, and reusable.
           </p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="/ontology" role="button">Discover our HPC Ontology</a>
-            <a class="btn btn-lg btn-primary" href="/explore" role="button">Explore Public HPC Data</a>
-            <a class="btn btn-lg btn-primary" href="#" role="button">Request Access to Contribute Data</a>
-          </p>
         </div>
       </div>
     </div>
@@ -87,9 +85,6 @@ We provide a GraphQL interface for the high-level data using a common software s
 We use BlazeGraph to store the all data, submitted high-level metadata and processed data file (such as CSV).
 These data can be queried using SparQL.
       </p>
-      <p>
-        <a class="btn btn-secondary" href="/explore" role="button">Find HPC data</a>
-      </p>
     </div>
     <div class="col-md-4" style="margin: auto;">
       <img class="featurette-image img-fluid mx-auto" src="/assets/img/Search.png" alt="Generic placeholder image">
@@ -107,9 +102,6 @@ Accessible HPC Data
       <p class="lead">
 RestAPI, GraphQL, SparQL, ...
       </p>
-      <p>
-        <a class="btn btn-secondary" href="/apidoc" role="button">API Documentation</a>
-      </p>
     </div>
   </div>
 
@@ -122,9 +114,6 @@ Interoperable HPC Data
 We designed a two-levels ontology.
 The high-level ontology permits analyst to model the HPC environment (projects, hardware, software, ...).
 The low-level ontology is used to model measurement performed on HPC software and hardware.
-      </p>
-      <p>
-        <a class="btn btn-secondary" href="/ontology" role="button">Discover our HPC Ontology</a>
       </p>
     </div>
     <div class="col-md-4" style="margin: auto;">
@@ -143,26 +132,6 @@ Reusable HPC Data
       <p class="lead">
 Our high-level ontology permit contributors to describe their HPC experiments, data processing steps, AI model training, and much more.
       </p>
-      <p>
-        <a class="btn btn-secondary" href="/ontology" role="button">Discover our HPC Ontology</a>
-      </p>
-    </div>
-  </div>
-
-  <div class="row featurette" style="margin-top:2%; background-color: dodgerblue; color: cornsilk; border-radius:30px; ">
-    <div class="col-md-7" style="margin:auto; ">
-      <h2 class="featurette-heading">
-Project, Team, and Support
-      </h2>
-      <p class="lead">
-TODO
-      </p>
-      <p>
-        <a class="btn btn-secondary" href="/ontology" role="button">Discover our HPC Ontology</a>
-      </p>
-    </div>
-    <div class="col-md-4">
-      <img class="featurette-image img-fluid mx-auto" src="/assets/img/team.png" alt="Generic placeholder image">
     </div>
   </div>
 
@@ -178,48 +147,43 @@ TODO
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-12">
             <p>
                 HPC FAIR is a collaboration between
                    <a href="https://www.llnl.gov">Lawrence Livermore National Laboratory</a>,
                    <a href="https://www.anl.gov">Argonne National Laboratory</a>, and
-                   <a href="https://www.ncsu.edu">North Carolina State University</a>
+                   <a href="https://www.ncsu.edu">North Carolina State University</a> (<a href="https://pamspublic.science.energy.gov/">DE-</a>).
             </p>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-4">
-                  <figure class="fourth">
-                  <img src="/assets/img/llnlLogo.jpg" style="width: 140px">  
-                  </figure>
-                </div>
-                <div class="col-sm-4">    
-                  <figure class="fourth">     
-                  <img src="/assets/img/anlLogo.jpeg" style="width: 140px">
-                  </figure>
-                </div>
-                <div class="col-sm-4">
-                  <figure class="fourth">
-                  <img src="/assets/img/ncstate.jpg" style="width: 140px">
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-6">
             <p>
-                This research is supported by
-                   <a href="https://pamspublic.science.energy.gov/">DE-</a>,
-                   <a href="https://pamspublic.science.energy.gov/">DE-</a>, and
-                   <a href="https://pamspublic.science.energy.gov/">DE-</a>
-                from the 
+                This research is supported by grants from the 
                    <a href="https://www.energy.gov/science/ascr/advanced-scientific-computing-research">Office of Advanced Scientific Computing Research</a>
                 within
                    <a href="https://www.energy.gov/">U.S. Department of Energy</a> <a href="https://science.osti.gov/">Office of Science</a>.
             </p>
-            <figure class="fourth">
-              <img src="/assets/img/DOE_OS.png" style="width: 420px">
-            </figure>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-3">
+                  <figure class="fourth">
+                  <img src="/assets/img/llnlLogo.jpg" style="width: 140px">  
+                  </figure>
+                </div>
+                <div class="col-sm-3">    
+                  <figure class="fourth">     
+                  <img src="/assets/img/anlLogo.jpeg" style="width: 140px">
+                  </figure>
+                </div>
+                <div class="col-sm-3">
+                  <figure class="fourth">
+                  <img src="/assets/img/ncstate.jpg" style="width: 140px">
+                  </figure>
+                </div>
+                <div class="col-sm-3">
+                  <figure class="fourth">
+                    <img src="/assets/img/DOE_OS.png" style="width: 420px">
+                  </figure>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
