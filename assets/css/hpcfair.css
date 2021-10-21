@@ -1,0 +1,279 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%-60px;
+  padding-top: 60px;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+main {
+  flex: 1 1 auto;
+  min-height: 100%-60px;
+}
+
+/* ================================================= */
+/* Page layout */
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+/* ================================================= */
+/* Tree view */
+#osa_treeview_tree {
+    position:relative;
+    overflow-x:auto;
+}
+
+/* Remove default bullets */
+ul, .tree-view {
+    list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+.tree-view {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer; 
+    user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+    content: "\25B6";
+    font-family:FontAwesome;
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+    transform: rotate(90deg); 
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+}
+
+/* ================================================= */
+/* CSS for more complex table views view */
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+} 
+
+td.details-control {
+    background: url(/assets/img/plus-expand.png) no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url(/assets/img/plus-close.png) no-repeat center center;
+}
+
+/* ================================================= */
+/* CSS for Explorer TODO move to its own file       */
+
+.osa-explorer-tab .col {
+  border: 1px solid #c9c9c9;
+}
+.osa-explorer-tab {
+  padding: 20px;
+}
+
+.osa-explorer-tab .col:not(:last-child) {
+  border-right-width: 0;
+}
+
+.osa-explorer-tab .row:not(:last-child) .col {
+  border-bottom-width: 0;
+}
+
+/* ================================================= */
+/* CSS for Dashboard TODO move to its own file       */
+
+#osa_dashboard {
+  padding: 20px;
+}
+
+#osa_dashboard .col {
+  border: 1px solid #c9c9c9;
+}
+
+#osa_dashboard .col:not(:last-child) {
+  border-right-width: 0;
+}
+
+#osa_dashboard .row:not(:last-child) .col {
+  border-bottom-width: 0;
+}
+
+/* ====================== */
+/* CSS for loading screen */
+
+#osa_loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* =================== */
+/* CSS for Login Modal */
+
+.modal-login {
+	color: #636363;
+	width: 350px;
+}
+.modal-login .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-login .modal-header {
+	border-bottom: none;
+	position: relative;
+	justify-content: center;
+}
+.modal-login h4 {
+	text-align: center;
+	font-size: 26px;
+}
+.modal-login  .form-group {
+	position: relative;
+}
+.modal-login i {
+	position: absolute;
+	left: 13px;
+	top: 11px;
+	font-size: 18px;
+}
+.modal-login .form-control {
+	padding-left: 40px;
+}
+.modal-login .form-control:focus {
+	border-color: #00ce81;
+}
+.modal-login .form-control, .modal-login .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+}
+.modal-login .hint-text {
+	text-align: center;
+	padding-top: 10px;
+}
+.modal-login .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+.modal-login .btn, .modal-login .btn:active {	
+	border: none;
+	background: #00ce81 !important;
+	line-height: normal;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+	background: #00bf78 !important;
+}
+.modal-login .modal-footer {
+	background: #ecf0f1;
+	border-color: #dee4e7;
+	text-align: center;
+	margin: 0 -20px -20px;
+	border-radius: 5px;
+	font-size: 13px;
+	justify-content: center;
+}
+.modal-login .modal-footer a {
+	color: #999;
+}
+
+/* ================================================= */
+/* SCRATCH */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+#hpcfair_ontology_schema_svg {
+  height: 800px;
+  width: 1200px;
+  border-style: solid;
+}
+
+
+

@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;       /* body takes whole viewport's height */
+}
+
+main {
+    flex: 1;                 /* this will make the container take the free space */
+}
+
+main div {
+    position:absolute;
+    top:40%;
+    left:35%;
+}
+
+main h1 {
+    font-size:35px;
+}
+
+main p {
+    font-size:25px;
+}
