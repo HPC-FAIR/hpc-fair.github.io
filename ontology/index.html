@@ -2,10 +2,16 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>HPC Ontology</title>
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />
+ <link rel="stylesheet" href="resources/rec.css" media="screen" />
+ <link rel="stylesheet" href="resources/extra.css" media="screen" />
+ <link rel="stylesheet" href="resources/owl.css" media="screen" />
 
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/bootstrap-toggle.min.css" rel="stylesheet" />
 
-<!-- SCHEMA.ORG METADATA -->
+ <title>HPC Ontology</title>
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://hpc-fair.github.io/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://hpc-fair.github.io/ontology#","name":"HPC Ontology", "headline":"The HPC Ontology describes software, hardware, and artifacts in the domainof High-Performance Computing. It can be used to annotate training datasets and machine learning models used in HPC software analyses and optimizations. The goal is to make datasets and AI models FAIR.", "datePublished":"2021-09-23T13:30:00-07:00", "author":[{"@type":"Person","name":"The HPC-FAIR research team"}]}</script>
 
 <script src="resources/jquery.js"></script> 
@@ -50,7 +56,29 @@ $(function(){
    </script> 
   </head> 
 
-<body>
+<body class="d-flex flex-column">
+    <header>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="/">HPC FAIR</a>
+  <ul class="navbar-nav">
+    <li class="nav-item" id="hpcfair_menu_about">
+      <a class="nav-link" href="/about.html">About</a>
+    </li>
+    <li class="nav-item" id="hpcfair_menu_publications">
+      <a class="nav-link" href="/publications.html">Publications</a>
+    </li>
+    <li class="nav-item" id="hpcfair_menu_ontology">
+      <a class="nav-link" href="/ontology">Ontology</a>
+    </li>
+    <li class="nav-item" id="hpcfair_menu_team">
+      <a class="nav-link" href="/team.html">Team</a>
+    </li>
+  </ul>
+</nav>
+    </header>
+    
+    <main class="container-fluid">
+
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
@@ -8759,7 +8787,7 @@ NVIDIA DGX A100</span>
   <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <ul>
- <li> Chunhua Liao, Pei-Hung Lin, Gaurav Verma, Tristan Vanderbruggen, Murali Emani, Zifan Nan, Xipeng Shen, HPC Ontology: Towards a Unified Ontology for Managing Training Datasets and AI Models for High-Performance Computing, 2021 IEEE/ACM Workshop on Machine Learning in High Performance Computing Environments (MLHPC) (LLNL-CONF-826494) <a href="https://github.com/HPC-FAIR/hpc-fair.github.io/blob/master/docs/HPC_Ontology_MLHPC-2021.pdf">pdf</a> </li>
+ <li> Chunhua Liao, Pei-Hung Lin, Gaurav Verma, Tristan Vanderbruggen, Murali Emani, Zifan Nan, Xipeng Shen, HPC Ontology: Towards a Unified Ontology for Managing Training Datasets and AI Models for High-Performance Computing, 2021 IEEE/ACM Workshop on Machine Learning in High Performance Computing Environments (MLHPC) (LLNL-CONF-826494) <a href="/assets/pdf/HPC_Ontology_MLHPC-2021.pdf">pdf</a> </li>
 
 </ul>
 </div>
@@ -8773,5 +8801,63 @@ NVIDIA DGX A100</span>
 
 
 </div>
+
+    </main>
+
+<hr />
+
+    <footer class="container">
+      <!-- <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020 Lawrence Livermore National Laboratory &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <p>
+                HPC FAIR is a collaboration between
+                   <a href="https://www.llnl.gov">Lawrence Livermore National Laboratory</a>,
+                   <a href="https://www.anl.gov">Argonne National Laboratory</a>, and
+                   <a href="https://www.ncsu.edu">North Carolina State University</a> (<a href="https://pamspublic.science.energy.gov/">DE-</a>).
+            </p>
+            <p>
+                This research is supported by grants from the 
+                   <a href="https://www.energy.gov/science/ascr/advanced-scientific-computing-research">Office of Advanced Scientific Computing Research</a>
+                within
+                   <a href="https://www.energy.gov/">U.S. Department of Energy</a> <a href="https://science.osti.gov/">Office of Science</a>.
+            </p>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-3">
+                  <figure class="fourth">
+                  <img src="/assets/img/llnlLogo.jpg" style="width: 180px">  
+                  </figure>
+                </div>
+                <div class="col-sm-3">    
+                  <figure class="fourth">     
+                  <img src="/assets/img/anlLogo.jpeg" style="width: 180px">
+                  </figure>
+                </div>
+                <div class="col-sm-3">
+                  <figure class="fourth">
+                  <img src="/assets/img/ncstate.jpg" style="width: 180px">
+                  </figure>
+                </div>
+                <div class="col-sm-3">
+                  <figure class="fourth">
+                    <img src="/assets/img/DOE_OS.png" style="width: 180px">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+             <p>This website was approved for release by Lawrence Livermore National Laboratory: LLNL-WEB-828465</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
