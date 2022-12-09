@@ -1,0 +1,126 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://hpc-fair.github.io/ontology#coprocessorSpeed
+<https://hpc-fair.github.io/ontology#coprocessorSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#count
+<https://hpc-fair.github.io/ontology#count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#frequency
+<https://hpc-fair.github.io/ontology#frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#gpuArchitecture
+<https://hpc-fair.github.io/ontology#gpuArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#gpuDriverSharedMemorySizePerBlock
+<https://hpc-fair.github.io/ontology#gpuDriverSharedMemorySizePerBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuDriverSharedMemorySizePerBlock> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+<https://hpc-fair.github.io/ontology#size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#gpuDynamicSharedMemorySizePerBlock
+<https://hpc-fair.github.io/ontology#gpuDynamicSharedMemorySizePerBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuDynamicSharedMemorySizePerBlock> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#gpuFrequency
+<https://hpc-fair.github.io/ontology#gpuFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuFrequency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#coprocessorSpeed> .
+# 
+# https://hpc-fair.github.io/ontology#gpuInterconnect
+<https://hpc-fair.github.io/ontology#gpuInterconnect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuInterconnect> <http://www.w3.org/2000/01/rdf-schema#comment> "bus types connecting CPU and GPUs: NVILINK or others" .
+# 
+# https://hpc-fair.github.io/ontology#gpuMemorySizePerNode
+<https://hpc-fair.github.io/ontology#gpuMemorySizePerNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuMemorySizePerNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#gpuModel
+<https://hpc-fair.github.io/ontology#gpuModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# https://hpc-fair.github.io/ontology#gpuNodeCount
+<https://hpc-fair.github.io/ontology#gpuNodeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuNodeCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#count> .
+# 
+# https://hpc-fair.github.io/ontology#gpuPeakPerformancePerNode
+<https://hpc-fair.github.io/ontology#gpuPeakPerformancePerNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuPeakPerformancePerNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#performance> .
+<https://hpc-fair.github.io/ontology#performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#gpuSharedMemoryConfigurationSize
+<https://hpc-fair.github.io/ontology#gpuSharedMemoryConfigurationSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuSharedMemoryConfigurationSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#gpuStaticSharedMemorySizePerBlock
+<https://hpc-fair.github.io/ontology#gpuStaticSharedMemorySizePerBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuStaticSharedMemorySizePerBlock> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#gpuThreadBlockSize
+<https://hpc-fair.github.io/ontology#gpuThreadBlockSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuThreadBlockSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#gpuThreadCount
+<https://hpc-fair.github.io/ontology#gpuThreadCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuThreadCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#count> .
+# 
+# https://hpc-fair.github.io/ontology#gpuThreadGridSize
+<https://hpc-fair.github.io/ontology#gpuThreadGridSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuThreadGridSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#gpuUnifiedMemoryRemoteMapSize
+<https://hpc-fair.github.io/ontology#gpuUnifiedMemoryRemoteMapSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuUnifiedMemoryRemoteMapSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#gpuWavesPerSM
+<https://hpc-fair.github.io/ontology#gpuWavesPerSM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuWavesPerSM> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#pageFault> .
+<https://hpc-fair.github.io/ontology#pageFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByRegister
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByRegister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByRegister> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySM
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySM> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySharedMemory
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySharedMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySharedMemory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByWarps
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByWarps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByWarps> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+# 
+# https://hpc-fair.github.io/ontology#occupancy
+<https://hpc-fair.github.io/ontology#occupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#pageFault
+# 
+# https://hpc-fair.github.io/ontology#performance
+# 
+# https://hpc-fair.github.io/ontology#registersPerThread
+<https://hpc-fair.github.io/ontology#registersPerThread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#registersPerThread> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#count> .
+# 
+# https://hpc-fair.github.io/ontology#size
+# 
+# https://hpc-fair.github.io/ontology#streamingMultiprocessorFrequency
+<https://hpc-fair.github.io/ontology#streamingMultiprocessorFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#streamingMultiprocessorFrequency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#frequency> .
+# 
+# https://hpc-fair.github.io/ontology#theoreticalActiveWarpsPerSM
+<https://hpc-fair.github.io/ontology#theoreticalActiveWarpsPerSM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#theoreticalGPUOccupancy
+<https://hpc-fair.github.io/ontology#theoreticalGPUOccupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#theoreticalGPUOccupancy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#occupancy> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

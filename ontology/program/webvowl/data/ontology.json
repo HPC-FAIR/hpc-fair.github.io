@@ -1,0 +1,6710 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://hpc-fair.github.io/ontology", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "202",
+    "type" : "owl:Class"
+  }, {
+    "id" : "206",
+    "type" : "owl:Class"
+  }, {
+    "id" : "156",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "owl:Class"
+  }, {
+    "id" : "239",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "260",
+    "type" : "owl:Class"
+  }, {
+    "id" : "300",
+    "type" : "owl:Class"
+  }, {
+    "id" : "282",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "289",
+    "type" : "owl:Class"
+  }, {
+    "id" : "301",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "328",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "237",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "346",
+    "type" : "owl:Class"
+  }, {
+    "id" : "210",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "356",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "owl:Class"
+  }, {
+    "id" : "244",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "254",
+    "type" : "owl:Class"
+  }, {
+    "id" : "378",
+    "type" : "owl:Class"
+  }, {
+    "id" : "296",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "242",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "386",
+    "type" : "owl:Class"
+  }, {
+    "id" : "221",
+    "type" : "owl:Class"
+  }, {
+    "id" : "277",
+    "type" : "owl:Class"
+  }, {
+    "id" : "400",
+    "type" : "owl:Class"
+  }, {
+    "id" : "401",
+    "type" : "owl:Class"
+  }, {
+    "id" : "270",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "344",
+    "type" : "owl:Class"
+  }, {
+    "id" : "379",
+    "type" : "owl:Class"
+  }, {
+    "id" : "187",
+    "type" : "owl:Class"
+  }, {
+    "id" : "416",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "288",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "361",
+    "type" : "owl:Class"
+  }, {
+    "id" : "286",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "263",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "431",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "430",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "418",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "442",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "443",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "119",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "445",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "114",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "200",
+    "type" : "owl:Class"
+  }, {
+    "id" : "446",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "447",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "207",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "448",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "449",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "333",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "253",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "229",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "454",
+    "type" : "owl:Class"
+  }, {
+    "id" : "456",
+    "type" : "owl:Class"
+  }, {
+    "id" : "279",
+    "type" : "owl:Class"
+  }, {
+    "id" : "370",
+    "type" : "owl:Class"
+  }, {
+    "id" : "310",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "402",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "291",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "owl:Class"
+  }, {
+    "id" : "214",
+    "type" : "owl:Class"
+  }, {
+    "id" : "463",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "350",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "303",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "464",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "465",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "472",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "473",
+    "type" : "owl:Class"
+  }, {
+    "id" : "387",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "322",
+    "type" : "owl:Class"
+  }, {
+    "id" : "248",
+    "type" : "owl:Class"
+  }, {
+    "id" : "470",
+    "type" : "owl:Class"
+  }, {
+    "id" : "466",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "413",
+    "type" : "owl:Class"
+  }, {
+    "id" : "420",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "246",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "477",
+    "type" : "owl:Class"
+  }, {
+    "id" : "307",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "403",
+    "type" : "owl:Class"
+  }, {
+    "id" : "351",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "481",
+    "type" : "owl:Class"
+  }, {
+    "id" : "272",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "319",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "298",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "440",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "250",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "owl:Class"
+  }, {
+    "id" : "467",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "412",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "327",
+    "type" : "owl:Class"
+  }, {
+    "id" : "223",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "471",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "293",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "255",
+    "type" : "owl:Class"
+  }, {
+    "id" : "281",
+    "type" : "owl:Class"
+  }, {
+    "id" : "256",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "318",
+    "type" : "owl:Class"
+  }, {
+    "id" : "353",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "358",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "414",
+    "type" : "owl:Class"
+  }, {
+    "id" : "266",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "231",
+    "type" : "owl:Class"
+  }, {
+    "id" : "341",
+    "type" : "owl:Class"
+  }, {
+    "id" : "438",
+    "type" : "owl:Class"
+  }, {
+    "id" : "261",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "212",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "274",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://hpc-fair.github.io/ontology#ReturnStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReturnStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BitwiseShiftOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BitwiseShiftOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "76", "77", "78" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "75"
+  }, {
+    "instances" : 0,
+    "union" : [ "82", "83", "84" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "81"
+  }, {
+    "instances" : 0,
+    "union" : [ "88", "89" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "87"
+  }, {
+    "instances" : 0,
+    "union" : [ "93", "94", "95" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "92"
+  }, {
+    "instances" : 0,
+    "union" : [ "99", "100", "101" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ForStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "110",
+    "superClasses" : [ "111" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PostfixOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PostfixOp"
+    },
+    "subClasses" : [ "105", "109", "61", "65", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#IntConst",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntConst"
+    },
+    "attributes" : [ "external" ],
+    "id" : "116",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#EnumDecl",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnumDecl"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#StructureType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StructureType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FunctionCall",
+    "equivalent" : [ "41" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionCall"
+    },
+    "comment" : {
+      "undefined" : "A function call site, the same as the function call expression in AST"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AddressOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddressOp"
+    },
+    "comment" : {
+      "undefined" : "&"
+    },
+    "attributes" : [ "external" ],
+    "id" : "150",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#VariableRef",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VariableRef"
+    },
+    "attributes" : [ "external" ],
+    "id" : "152",
+    "superClasses" : [ "153" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#RelationalOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RelationalOp"
+    },
+    "subClasses" : [ "11", "16", "20", "24" ],
+    "comment" : {
+      "undefined" : "? model as individual or subclass"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ExternalDefinition",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExternalDefinition"
+    },
+    "subClasses" : [ "28", "33" ],
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CallSite",
+    "equivalent" : [ "1" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CallSite"
+    },
+    "subClasses" : [ "40" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "41",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#WhileStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhileStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "157",
+    "superClasses" : [ "111" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TemplateInstantiation",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemplateInstantiation"
+    },
+    "subClasses" : [ "182", "183" ],
+    "attributes" : [ "external" ],
+    "id" : "107",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DoubleType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DoubleType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#double",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "double"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#long_double",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "long_double"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "202",
+    "superClasses" : [ "203" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Block",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Block"
+    },
+    "attributes" : [ "external" ],
+    "id" : "206",
+    "superClasses" : [ "207" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LanguageConstruct",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LanguageConstruct"
+    },
+    "subClasses" : [ "208", "120", "192", "36", "209", "57", "29", "210" ],
+    "attributes" : [ "external" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ConditionalOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConditionalOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "235",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Auto",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Auto"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#auto",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "auto"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "239",
+    "superClasses" : [ "208" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PrefixDecrementOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrefixDecrementOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "251",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Constant",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Constant"
+    },
+    "subClasses" : [ "254", "255", "116", "256" ],
+    "attributes" : [ "external" ],
+    "id" : "117",
+    "superClasses" : [ "153" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#WCharType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WCharType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#wchar",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "wchar"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "260",
+    "superClasses" : [ "261" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#NullStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NullStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "300",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Function",
+    "equivalent" : [ "298" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Function"
+    },
+    "subClasses" : [ "281", "26" ],
+    "comment" : {
+      "undefined" : "A function of any kinds, including defining function declarations, non-defining function declarations, etc."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "282",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Variable",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable"
+    },
+    "subClasses" : [ "288" ],
+    "comment" : {
+      "undefined" : "synonyms: object\nnamed location of storage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "289",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Value",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Value"
+    },
+    "comment" : {
+      "undefined" : "SgXXXVal = constant?"
+    },
+    "attributes" : [ "external" ],
+    "id" : "301",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PointerType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointerType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#pointer_type",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "pointer_type"
+      }
+    } ],
+    "subClasses" : [ "293" ],
+    "attributes" : [ "external" ],
+    "id" : "159",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Unsigned",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unsigned"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#unsigned_long",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unsigned_long"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#unsigned_int",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unsigned_int"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#unsigned_char",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unsigned_char"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#unsigned_long_long",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unsigned_long_long"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#unsigned_short",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unsigned_short"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "328",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#IterationStatement",
+    "equivalent" : [ "286" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IterationStatement"
+    },
+    "subClasses" : [ "296", "110", "157" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "111",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#GotoStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GotoStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "237",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MulAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MulAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ReferenceType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReferenceType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#ref_type",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "ref_type"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "130",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ProgrammingModel",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProgrammingModel"
+    },
+    "attributes" : [ "external" ],
+    "id" : "346"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Directive",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Directive"
+    },
+    "subClasses" : [ "200" ],
+    "attributes" : [ "external" ],
+    "id" : "210",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MemberRef",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MemberRef"
+    },
+    "subClasses" : [ "270", "274" ],
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#JumpStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JumpStatement"
+    },
+    "subClasses" : [ "277", "237", "43", "244" ],
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FunctionParameterList",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionParameterList"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#NullExpr",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NullExpr"
+    },
+    "attributes" : [ "external" ],
+    "id" : "356",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#SelectionStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelectionStatement"
+    },
+    "subClasses" : [ "248", "253", "214" ],
+    "attributes" : [ "external" ],
+    "id" : "215",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BreakStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BreakStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "244",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ClassDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassDeclaration"
+    },
+    "subClasses" : [ "183", "221" ],
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#EnumerationConst",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnumerationConst"
+    },
+    "attributes" : [ "external" ],
+    "id" : "254",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ComplexType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComplexType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#complex",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "complex"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "378",
+    "superClasses" : [ "379" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DoWhileStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DoWhileStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "296",
+    "superClasses" : [ "111" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ScopeStatement",
+    "equivalent" : [ "207" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScopeStatement"
+    },
+    "subClasses" : [ "225", "229" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "226",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TemplateDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemplateDeclaration"
+    },
+    "subClasses" : [ "221", "187" ],
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Static",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Static"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#static",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "static"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "242",
+    "superClasses" : [ "208" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TypeQualifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeQualifier"
+    },
+    "subClasses" : [ "191", "196" ],
+    "attributes" : [ "external" ],
+    "id" : "192",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#OpenMP",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpenMP"
+    },
+    "subClasses" : [ "200" ],
+    "attributes" : [ "external" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Initializer",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Initializer"
+    },
+    "subClasses" : [ "387" ],
+    "attributes" : [ "external" ],
+    "id" : "386",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TemplateClassDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemplateClassDeclaration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "221",
+    "superClasses" : [ "59", "31" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ContinueStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContinueStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "277",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Literal",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "400",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#IntType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#int",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "int"
+      }
+    } ],
+    "subClasses" : [ "402", "403" ],
+    "attributes" : [ "external" ],
+    "id" : "401",
+    "superClasses" : [ "379" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DotExp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DotExp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "270",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ShlAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShlAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ListExp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListExp"
+    },
+    "comment" : {
+      "undefined" : "?"
+    },
+    "attributes" : [ "external" ],
+    "id" : "344",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BasicType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BasicType"
+    },
+    "subClasses" : [ "401", "378", "412", "413", "414", "261", "203" ],
+    "comment" : {
+      "undefined" : "Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types."
+    },
+    "attributes" : [ "external" ],
+    "id" : "379",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TemplateFunctionDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemplateFunctionDeclaration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "187",
+    "superClasses" : [ "59", "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "416",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Parameter",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "288",
+    "superClasses" : [ "289" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LogicalNegOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogicalNegOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "361",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Loop",
+    "equivalent" : [ "111" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Loop"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "286",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CompoundStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CompoundStatement"
+    },
+    "subClasses" : [ "420" ],
+    "comment" : {
+      "undefined" : "The body of a function definition is a compound statement."
+    },
+    "attributes" : [ "external" ],
+    "id" : "263",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DivAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DivAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "126",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ShrAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShrAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Signed",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Signed"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#signed_long",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "signed_long"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#signed_short",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "signed_short"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#signed_long_long",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "signed_long_long"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#signed_int",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "signed_int"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#signed_char",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "signed_char"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "431",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CommaOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommaOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "171",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "185",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "430",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "418",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "442",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#XorAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "XorAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "123",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "443",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "119",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#StructureUnionDecl",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StructureUnionDecl"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Const",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Const"
+    },
+    "attributes" : [ "external" ],
+    "id" : "191",
+    "superClasses" : [ "192" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "445",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "114",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ParallelRegion",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParallelRegion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "200",
+    "superClasses" : [ "201", "210" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "446",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "447",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "348",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Scope",
+    "equivalent" : [ "226" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scope"
+    },
+    "subClasses" : [ "420", "206" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "207",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "448",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "449",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ExpressionStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "333",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#VariableDefinition",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VariableDefinition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#IfElseStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IfElseStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "253",
+    "superClasses" : [ "215" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Global",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Global"
+    },
+    "attributes" : [ "external" ],
+    "id" : "229",
+    "superClasses" : [ "226" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BitwiseANDOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BitwiseANDOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "175",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#OrOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "454",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#StringLiteral",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StringLiteral"
+    },
+    "attributes" : [ "external" ],
+    "id" : "456",
+    "superClasses" : [ "153" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Extern",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Extern"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#extern",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "extern"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "279",
+    "superClasses" : [ "208" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#IndirectionOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndirectionOp"
+    },
+    "comment" : {
+      "undefined" : "*"
+    },
+    "attributes" : [ "external" ],
+    "id" : "370",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LabeledStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LabeledStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "310",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#isAssignedTo",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "isAssignedTo"
+    },
+    "attributes" : [ "external" ],
+    "id" : "165",
+    "superClasses" : [ "36", "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ShortType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShortType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#short",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "short"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "402",
+    "superClasses" : [ "401" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ModAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "147",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DefaultOptionStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DefaultOptionStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "291",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BasicBlock",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BasicBlock"
+    },
+    "attributes" : [ "external" ],
+    "id" : "225",
+    "superClasses" : [ "226" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#IfStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IfStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "214",
+    "superClasses" : [ "215" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "463",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#OnesComplementOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnesComplementOp"
+    },
+    "comment" : {
+      "undefined" : "?"
+    },
+    "attributes" : [ "external" ],
+    "id" : "350",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LogicalOROp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogicalOROp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "173",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "303",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "464",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LogicalANDOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogicalANDOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "465",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PrimaryExpr",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrimaryExpr"
+    },
+    "subClasses" : [ "152", "456", "117", "440" ],
+    "comment" : {
+      "undefined" : "Primary expressions are identifiers, constants, strings, or expressions in parentheses.\nprimary-expression\nidentifier\nconstant\nstring\n(expression)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "153",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Type",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type"
+    },
+    "subClasses" : [ "466", "431", "467", "328", "128", "379" ],
+    "attributes" : [ "external" ],
+    "id" : "120",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PointerDecl",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointerDecl"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#GreaterOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GreaterOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "163", "12" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Expression",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "subClasses" : [ "470", "465", "153", "438", "151", "12", "289", "386", "356", "56", "41", "235", "400", "319", "71", "471", "472", "2", "163", "165", "167", "169", "171", "173", "175" ],
+    "attributes" : [ "external" ],
+    "id" : "57",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DerivedType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DerivedType"
+    },
+    "subClasses" : [ "127", "179", "159", "130", "113", "133" ],
+    "attributes" : [ "external" ],
+    "id" : "128",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AdditiveOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdditiveOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "472",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ExternalDataDefinition",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExternalDataDefinition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LogicalAndOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogicalAndOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "473",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AssignInitializer",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssignInitializer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "387",
+    "superClasses" : [ "386" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Dataset",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "135" ],
+    "attributes" : [ "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#EqualOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EqualOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "322",
+    "superClasses" : [ "163", "319" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#SwitchStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SwitchStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "248",
+    "superClasses" : [ "215" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BitwiseOROp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BitwiseOROp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "470",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#UnknownType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnknownType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#unknown_type",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unknown_type"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "466",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ArrayType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArrayType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#array_type",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "array_type"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "179",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#EnumType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnumType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#enum_type",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "enum_type"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "413",
+    "superClasses" : [ "379" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FunctionDefinitionBody",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionDefinitionBody"
+    },
+    "attributes" : [ "external" ],
+    "id" : "420",
+    "superClasses" : [ "207", "263" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ShrOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShrOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "189",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LessOrEqualOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LessOrEqualOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "163", "12" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#GreaterOrEqualOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GreaterOrEqualOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "163", "12" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PostfixIncrementOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PostfixIncrementOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Library",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Library"
+    },
+    "subClasses" : [ "138" ],
+    "attributes" : [ "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AssignmentOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssignmentOp"
+    },
+    "subClasses" : [ "141", "145", "147", "149", "123", "126", "70", "74", "80", "86", "91" ],
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#RegisterStorage",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegisterStorage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "246",
+    "superClasses" : [ "208" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MultiplicativeOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiplicativeOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "167",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#SizeofOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SizeofOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "477",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AssignStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssignStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "307",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Declaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Declaration"
+    },
+    "subClasses" : [ "97", "103", "107", "59", "63", "67", "4", "14", "18", "22", "26", "31" ],
+    "comment" : {
+      "undefined" : "Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LongType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LongType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#long_long",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "long_long"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#long",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "long"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "403",
+    "superClasses" : [ "401" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PrefixPlusOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrefixPlusOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "351",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AndAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AndAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LogicalOrOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogicalOrOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "481",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#IOStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IOStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "272",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Unsorted",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unsorted"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#unknown_modifier",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unknown_modifier"
+      }
+    } ],
+    "subClasses" : [ "35", "165", "301", "341", "344" ],
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#EqualityOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EqualityOp"
+    },
+    "subClasses" : [ "318", "322" ],
+    "attributes" : [ "external" ],
+    "id" : "319",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AddOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "194",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DivOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DivOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "198",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AddAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "149",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Kernel",
+    "equivalent" : [ "282" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Kernel"
+    },
+    "comment" : {
+      "en" : "A kernel is a function or subroutine of a program written in any programming languages. A kernel has a defined function body and can be executed on a computer. This is a generic concept used for performance analysis."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "298",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ArraySub",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArraySub"
+    },
+    "comment" : {
+      "undefined" : "[]"
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#UnionType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnionType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "133",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TemplateClassInstantiationDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemplateClassInstantiationDeclaration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "183",
+    "superClasses" : [ "107", "31" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ShlOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShlOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "234",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FunctionType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#function_type",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "function_type"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "113",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ArrayDecl",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArrayDecl"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FunctionRef",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionRef"
+    },
+    "attributes" : [ "external" ],
+    "id" : "440",
+    "superClasses" : [ "153" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#LessOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LessOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "12", "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Statement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Statement"
+    },
+    "subClasses" : [ "207", "327", "226", "333", "111", "307", "310", "5", "300", "282", "286", "291", "44", "298", "263", "266", "215", "272" ],
+    "attributes" : [ "external" ],
+    "id" : "209",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FloatType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FloatType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#float",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "float"
+      }
+    } ],
+    "subClasses" : [ "202" ],
+    "attributes" : [ "external" ],
+    "id" : "203",
+    "superClasses" : [ "379" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ModOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "250",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AndOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AndOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "217",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#String",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "String"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#string",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "string"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "467",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TypedefDecl",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypedefDecl"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BoolType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoolType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#bool",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "bool"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "412",
+    "superClasses" : [ "379" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BitwiseXOROp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BitwiseXOROp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "169",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#StandardLibrary",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StandardLibrary"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.co-ode.org/ontologies/ont.owl#c_standard_library",
+      "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+      "comment" : {
+        "undefined" : "C standard library"
+      },
+      "labels" : {
+        "IRI-based" : "c_standard_library"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Standard libraries defined in some language standards"
+    },
+    "attributes" : [ "external" ],
+    "id" : "138",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CaseOptionStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CaseOptionStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "327",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#XorOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "XorOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "223",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ExternalFunctionDefinition",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExternalFunctionDefinition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CastOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CastOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "471",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#StorageClass",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StorageClass"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#unspecified",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "unspecified"
+      }
+    } ],
+    "subClasses" : [ "279", "239", "242", "246" ],
+    "attributes" : [ "external" ],
+    "id" : "208",
+    "superClasses" : [ "156" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#NullPointerType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NullPointerType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#null_pointer",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "null_pointer"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "293",
+    "superClasses" : [ "159" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BinaryOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BinaryOp"
+    },
+    "subClasses" : [ "250", "212", "217", "16", "223", "20", "231", "234", "189", "194", "198", "11", "318", "473", "454", "24", "322", "481" ],
+    "comment" : {
+      "undefined" : "An operation that takes two values and produces an output."
+    },
+    "attributes" : [ "external" ],
+    "id" : "163",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CharConst",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharConst"
+    },
+    "attributes" : [ "external" ],
+    "id" : "255",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MainFunction",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MainFunction"
+    },
+    "comment" : {
+      "undefined" : "The main function in C/C++. Or similar entry function in other programming languages."
+    },
+    "attributes" : [ "external" ],
+    "id" : "281",
+    "superClasses" : [ "282" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FloatingConst",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FloatingConst"
+    },
+    "attributes" : [ "external" ],
+    "id" : "256",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PostfixDecrementOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PostfixDecrementOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#UnaryOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnaryOp"
+    },
+    "subClasses" : [ "150", "251", "477", "370", "351", "353", "358", "350", "361" ],
+    "comment" : {
+      "undefined" : "An operation that acts on a single value."
+    },
+    "attributes" : [ "external" ],
+    "id" : "151",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#NeqOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NeqOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "318",
+    "superClasses" : [ "163", "319" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PrefixMinusOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrefixMinusOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "353",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CallGraph",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CallGraph"
+    },
+    "comment" : {
+      "undefined" : "A graph that consists of Functions and FunctionCalls, which indicate caller-callee relationships in a program."
+    },
+    "attributes" : [ "external" ],
+    "id" : "135",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PrefixIncrementOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrefixIncrementOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "358",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#OrAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "141",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#VoidType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VoidType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#void_type",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "void_type"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "414",
+    "superClasses" : [ "379" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ForInitStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForInitStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "266",
+    "superClasses" : [ "209" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#UnknownClass",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnknownClass"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AggregateCallsite",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AggregateCallsite"
+    },
+    "comment" : {
+      "undefined" : "Callsite returned from profiling analysis that may not contain all information about the callsite location"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#SubOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "231",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ExpressionList",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionList"
+    },
+    "attributes" : [ "external" ],
+    "id" : "341",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Lvalue",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lvalue"
+    },
+    "comment" : {
+      "undefined" : "An Object is a named region of storage; an lvalue is an expression referring to an object."
+    },
+    "attributes" : [ "external" ],
+    "id" : "438",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CharType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharType"
+    },
+    "individuals" : [ {
+      "iri" : "https://hpc-fair.github.io/ontology#char",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "char"
+      }
+    }, {
+      "iri" : "https://hpc-fair.github.io/ontology#signed_char",
+      "baseIri" : "https://hpc-fair.github.io/ontology",
+      "labels" : {
+        "IRI-based" : "signed_char"
+      }
+    } ],
+    "subClasses" : [ "260" ],
+    "attributes" : [ "external" ],
+    "id" : "261",
+    "superClasses" : [ "379" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#VariableDecl",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VariableDecl"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MulOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MulOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "212",
+    "superClasses" : [ "163" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#SubAssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubAssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ArrowExp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArrowExp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "274",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#TemplateFunctionInstantiationDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemplateFunctionInstantiationDeclaration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "182",
+    "superClasses" : [ "107", "26" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#AssignOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssignOp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "145",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Volatile",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Volatile"
+    },
+    "attributes" : [ "external" ],
+    "id" : "196",
+    "superClasses" : [ "192" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#FunctionDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionDeclaration"
+    },
+    "subClasses" : [ "182", "187" ],
+    "comment" : {
+      "undefined" : "A function declaration can be either a forward declaration or a defining declaration. If it is a defining declaration then it contains a pointer to the function definition."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "5", "282" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "259",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "273",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "292",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "294",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "302",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "304",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "305",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "306",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "308",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "309",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "311",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "312",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "313",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "314",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "315",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "317",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "320",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "324",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "329",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "330",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "331",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "332",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "336",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "345",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "347",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "349",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "352",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "354",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "355",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "357",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "359",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "360",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "362",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "363",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "364",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "365",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "366",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "367",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "368",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "369",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "371",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "372",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "373",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "374",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "375",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "376",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "377",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "380",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "384",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "385",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "388",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "389",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "390",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "391",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "392",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "393",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "394",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "395",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "396",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "397",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "398",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "399",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "404",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "405",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "406",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "407",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "408",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "409",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "383",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "410",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "411",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "415",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "417",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "419",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "421",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "422",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "423",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "424",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "425",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "426",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "427",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "428",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "429",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "432",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "433",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "434",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "435",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "436",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "437",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "439",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "441",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "444",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "382",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "450",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "451",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "452",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "455",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "457",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "458",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "459",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "460",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "461",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "462",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "381",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "468",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "469",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "474",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "257",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "475",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "476",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "478",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "479",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "480",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "482",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "483",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "484",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "485",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "486",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "487",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "488",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "489",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "490",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "491",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "492",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "493",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "494",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "496",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "497",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "498",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "499",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "500",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "501",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "502",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "503",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "504",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "505",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "506",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "507",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "508",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "509",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "510",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "511",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "524",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "525",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "526",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "527",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "516",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "528",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "529",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "530",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "531",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "453",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "532",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "533",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "534",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "535",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "536",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "537",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "538",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "539",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "540",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "541",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "542",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "543",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "544",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "545",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "546",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "258",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "547",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "548",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "549",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "550",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "551",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "552",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "553",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "554",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "555",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "556",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "557",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "558",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "559",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "560",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "561",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "520",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "562",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "563",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "564",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "513",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "565",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "566",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "567",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "568",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "569",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "570",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "571",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "572",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "573",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "523",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "574",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#caller",
+    "equivalent" : [ "9" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "caller"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "5",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "12",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "5",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "12",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "5",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "5",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "29",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#callSite",
+    "inverse" : "38",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Callsite",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "callSite"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "a function has one or more call sites where it calls other functions.\nThis property links a function to its function call sites."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#referredBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "referredBy"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#write",
+    "inverse" : "46",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "write"
+    },
+    "superproperty" : [ "47" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#callee",
+    "inverse" : "6",
+    "equivalent" : [ "49" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "callee"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "7",
+    "subproperty" : [ "51" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#arrayID",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "arrayID"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasElseBody",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasElseBody"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasStatement"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "5",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "2",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "5",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "2",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "5",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "71",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "71",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "71",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "71",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "71",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "5",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "5",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "2",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "5",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "2",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasParameterDeclList",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "hasParameterDeclList"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "113",
+    "comment" : {
+      "undefined" : "function relation"
+    },
+    "attributes" : [ "external", "functional", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#allocatedBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "allocatedBy"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "array relation"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasArrayBaseType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasArrayBaseType"
+    },
+    "superproperty" : [ "121" ],
+    "domain" : "119",
+    "attributes" : [ "external", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "71",
+    "domain" : "123",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "71",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "128",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "128",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "128",
+    "domain" : "133",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "136",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "139",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "71",
+    "domain" : "141",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#file",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "file"
+    },
+    "domain" : "7",
+    "subproperty" : [ "143" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "71",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "71",
+    "domain" : "147",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "71",
+    "domain" : "149",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#accessedBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "accessedBy"
+    },
+    "domain" : "7",
+    "subproperty" : [ "46", "155" ],
+    "comment" : {
+      "undefined" : "variable relation"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "128",
+    "domain" : "159",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasDeclaration",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasDeclaration"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Domain: definition"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "57",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "57",
+    "domain" : "163",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "57",
+    "domain" : "165",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "57",
+    "domain" : "167",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "57",
+    "domain" : "169",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "57",
+    "domain" : "171",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "57",
+    "domain" : "173",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "57",
+    "domain" : "175",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#numOfCalls",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "numOfCalls"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates the number of times a function or callsite is called within a given run"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "176"
+  }, {
+    "range" : "128",
+    "domain" : "127",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "128",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#memoryAddress",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "181",
+    "label" : {
+      "IRI-based" : "memoryAddress"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#arrayName",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "185",
+    "label" : {
+      "IRI-based" : "arrayName"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "184"
+  }, {
+    "range" : "59",
+    "domain" : "187",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "163",
+    "domain" : "189",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "192",
+    "domain" : "191",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "163",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "192",
+    "domain" : "196",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "163",
+    "domain" : "198",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "201",
+    "domain" : "200",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#mustAlias",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "mustAlias"
+    },
+    "superproperty" : [ "205" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates that two variables alias one another"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "163",
+    "domain" : "212",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "215",
+    "domain" : "214",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "163",
+    "domain" : "217",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "range" : "31",
+    "domain" : "183",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "163",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "31",
+    "domain" : "221",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "163",
+    "domain" : "223",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "226",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "163",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "226",
+    "domain" : "229",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "163",
+    "domain" : "231",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "59",
+    "domain" : "221",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
+  }, {
+    "range" : "163",
+    "domain" : "234",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  }, {
+    "range" : "44",
+    "domain" : "237",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "236"
+  }, {
+    "range" : "208",
+    "domain" : "239",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "238"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "208",
+    "domain" : "242",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "44",
+    "domain" : "244",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "243"
+  }, {
+    "range" : "208",
+    "domain" : "246",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "215",
+    "domain" : "248",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "163",
+    "domain" : "250",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "215",
+    "domain" : "253",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#alias",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Variable",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Variable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "alias"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "subproperty" : [ "257", "204", "258" ],
+    "comment" : {
+      "undefined" : "Indicates a variable aliases another variable within some context"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "205"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#read",
+    "inverse" : "155",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "read"
+    },
+    "superproperty" : [ "47" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "209",
+    "domain" : "263",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "111",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "264"
+  }, {
+    "range" : "209",
+    "domain" : "266",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
+  }, {
+    "range" : "210",
+    "domain" : "200",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
+  }, {
+    "range" : "209",
+    "domain" : "215",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "range" : "105",
+    "domain" : "270",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "269"
+  }, {
+    "range" : "209",
+    "domain" : "272",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
+  }, {
+    "range" : "105",
+    "domain" : "274",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "273"
+  }, {
+    "range" : "203",
+    "domain" : "202",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
+  }, {
+    "range" : "44",
+    "domain" : "277",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "208",
+    "domain" : "279",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
+  }, {
+    "range" : "282",
+    "domain" : "281",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
+  }, {
+    "range" : "209",
+    "domain" : "282",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "range" : "282",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
+  }, {
+    "range" : "209",
+    "domain" : "286",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "289",
+    "domain" : "288",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
+  }, {
+    "range" : "209",
+    "domain" : "291",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "290"
+  }, {
+    "range" : "159",
+    "domain" : "293",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "292"
+  }, {
+    "range" : "209",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "294"
+  }, {
+    "range" : "111",
+    "domain" : "296",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "295"
+  }, {
+    "range" : "209",
+    "domain" : "298",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "297"
+  }, {
+    "range" : "111",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "299"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#NthPara",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "303",
+    "label" : {
+      "IRI-based" : "NthPara"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "302"
+  }, {
+    "range" : "209",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
+  }, {
+    "range" : "117",
+    "domain" : "254",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "305"
+  }, {
+    "range" : "209",
+    "domain" : "307",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "306"
+  }, {
+    "range" : "117",
+    "domain" : "255",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "308"
+  }, {
+    "range" : "209",
+    "domain" : "310",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "309"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasForInit",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasForInit"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "311"
+  }, {
+    "range" : "117",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "312"
+  }, {
+    "range" : "209",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "313"
+  }, {
+    "range" : "117",
+    "domain" : "256",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "314"
+  }, {
+    "range" : "209",
+    "domain" : "300",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "315"
+  }, {
+    "range" : "156",
+    "domain" : "120",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "316"
+  }, {
+    "range" : "319",
+    "domain" : "318",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "317"
+  }, {
+    "range" : "156",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "320"
+  }, {
+    "range" : "319",
+    "domain" : "322",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "321"
+  }, {
+    "range" : "156",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "323"
+  }, {
+    "range" : "209",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "324"
+  }, {
+    "range" : "156",
+    "domain" : "209",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "325"
+  }, {
+    "range" : "209",
+    "domain" : "327",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "326"
+  }, {
+    "range" : "156",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "329"
+  }, {
+    "range" : "209",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "330"
+  }, {
+    "range" : "156",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "331"
+  }, {
+    "range" : "209",
+    "domain" : "333",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "332"
+  }, {
+    "range" : "156",
+    "domain" : "210",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "334"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#codeVariant",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "codeVariant"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "335"
+  }, {
+    "range" : "36",
+    "domain" : "165",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "336"
+  }, {
+    "range" : "107",
+    "domain" : "182",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "337"
+  }, {
+    "range" : "36",
+    "domain" : "301",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "338"
+  }, {
+    "range" : "107",
+    "domain" : "183",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "339"
+  }, {
+    "range" : "36",
+    "domain" : "341",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "340"
+  }, {
+    "range" : "156",
+    "domain" : "208",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "342"
+  }, {
+    "range" : "36",
+    "domain" : "344",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "343"
+  }, {
+    "range" : "109",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "345"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#NthArg",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "348",
+    "label" : {
+      "IRI-based" : "NthArg"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "347"
+  }, {
+    "range" : "351",
+    "domain" : "350",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "349"
+  }, {
+    "range" : "353",
+    "domain" : "350",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "352"
+  }, {
+    "range" : "109",
+    "domain" : "350",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "354"
+  }, {
+    "range" : "61",
+    "domain" : "350",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "355"
+  }, {
+    "range" : "358",
+    "domain" : "350",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "357"
+  }, {
+    "range" : "251",
+    "domain" : "350",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "359"
+  }, {
+    "range" : "358",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "360"
+  }, {
+    "range" : "251",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "362"
+  }, {
+    "range" : "351",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "363"
+  }, {
+    "range" : "353",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "364"
+  }, {
+    "range" : "61",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "365"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasOperator",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasOperator"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "366"
+  }, {
+    "range" : "350",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "367"
+  }, {
+    "range" : "109",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "368"
+  }, {
+    "range" : "358",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "369"
+  }, {
+    "range" : "251",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "371"
+  }, {
+    "range" : "351",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "372"
+  }, {
+    "range" : "353",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "373"
+  }, {
+    "range" : "350",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "374"
+  }, {
+    "range" : "109",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "375"
+  }, {
+    "range" : "61",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "376"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#srcFunc",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "282",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Callsite",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "srcFunc"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates the caller function of a given callsite"
+    },
+    "attributes" : [ "external", "functional", "object", "someValues" ],
+    "id" : "377"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "26",
+    "subproperty" : [ "381", "382", "383", "118" ],
+    "comment" : {
+      "undefined" : "variable relation"
+    },
+    "attributes" : [ "external", "functional", "object", "someValues" ],
+    "id" : "380"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasParameter",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "289",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Parameter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParameter"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "26",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "384"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasInitStatement",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasInitStatement"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "385"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#destFunc",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "282",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "destFunc"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates the callee function of a callsite"
+    },
+    "attributes" : [ "external", "functional", "object", "someValues" ],
+    "id" : "388"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#consistsOf",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "209",
+    "label" : {
+      "IRI-based" : "consistsOf"
+    },
+    "domain" : "263",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "389"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasArgumentExpr",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasArgumentExpr"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "390"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#calls",
+    "equivalent" : [ "48" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "57",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "calls"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "a function calls another function"
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "391"
+  }, {
+    "range" : "351",
+    "domain" : "358",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "392"
+  }, {
+    "range" : "353",
+    "domain" : "358",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "393"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasParameterList",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasParameterList"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "394"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasInitialValue",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasInitialValue"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "387",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "395"
+  }, {
+    "range" : "351",
+    "domain" : "353",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "396"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasCondition",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasCondition"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "AST node to its condition node"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "397"
+  }, {
+    "range" : "351",
+    "domain" : "251",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "398"
+  }, {
+    "range" : "353",
+    "domain" : "251",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "399"
+  }, {
+    "range" : "358",
+    "domain" : "251",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "404"
+  }, {
+    "range" : "358",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "405"
+  }, {
+    "range" : "251",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "406"
+  }, {
+    "range" : "351",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "407"
+  }, {
+    "range" : "353",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "408"
+  }, {
+    "range" : "358",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "409"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasReturnType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasReturnType"
+    },
+    "superproperty" : [ "121" ],
+    "domain" : "113",
+    "comment" : {
+      "undefined" : "function relation"
+    },
+    "attributes" : [ "external", "functional", "object" ],
+    "id" : "383"
+  }, {
+    "range" : "251",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "410"
+  }, {
+    "range" : "351",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "411"
+  }, {
+    "range" : "353",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "415"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#columnNumber",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "418",
+    "label" : {
+      "IRI-based" : "columnNumber"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Column number within a file"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "417"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#exclusivePercentageTime",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "exclusivePercentageTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The proportion (percentage) of the execution time of the program spent executing this function, excluding time spent executing callee functions."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "419"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasIndexExp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasIndexExp"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "421"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#referTo",
+    "inverse" : "42",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "289",
+    "label" : {
+      "IRI-based" : "referTo"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "152",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "422"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasSize",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "400",
+    "label" : {
+      "IRI-based" : "hasSize"
+    },
+    "domain" : "289",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "423"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasInitializer",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "386",
+    "label" : {
+      "IRI-based" : "hasInitializer"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "289",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "424"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasStorageClass",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "hasStorageClass"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "289",
+    "comment" : {
+      "undefined" : "variable relation"
+    },
+    "attributes" : [ "external", "functional", "object", "someValues" ],
+    "id" : "425"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#declaredBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "5",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Statement",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Variable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "declaredBy"
+    },
+    "domain" : "289",
+    "comment" : {
+      "undefined" : "a variable is declared by a statment"
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "426"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#definedBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "definedBy"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "289",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "427"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#inclusiveTime",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "inclusiveTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Time spent within a function or callsite that includes time spent in callee functions"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "428"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasExpression",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "430",
+    "label" : {
+      "IRI-based" : "hasExpression"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "333",
+    "attributes" : [ "external", "object" ],
+    "id" : "429"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasScope",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "207",
+    "label" : {
+      "IRI-based" : "hasScope"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "289",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "432"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "289",
+    "subproperty" : [ "381", "382", "383", "118" ],
+    "comment" : {
+      "undefined" : "variable relation"
+    },
+    "attributes" : [ "external", "functional", "object", "someValues" ],
+    "id" : "433"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#name",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "400",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "289",
+    "attributes" : [ "external", "datatype", "object", "someValues" ],
+    "id" : "434"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasDefinition",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "420",
+    "label" : {
+      "IRI-based" : "hasDefinition"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "26",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "435"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasScope",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "207",
+    "label" : {
+      "IRI-based" : "hasScope"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "26",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "436"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#referTo",
+    "inverse" : "42",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "289",
+    "label" : {
+      "IRI-based" : "referTo"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "438",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "437"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#referTo",
+    "inverse" : "42",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "referTo"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "440",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "439"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#deallocatedBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "deallocatedBy"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "array relation"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "441"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasArrayRank",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasArrayRank"
+    },
+    "superproperty" : [ "50" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "?"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasSelector",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasSelector"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "444"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasBaseType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasBaseType"
+    },
+    "superproperty" : [ "121" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "382"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#allocatedDataSize",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "allocatedDataSize"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "450"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#kernelName",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "448",
+    "label" : {
+      "IRI-based" : "kernelName"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "451"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasLeftOperand",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "449",
+    "label" : {
+      "IRI-based" : "hasLeftOperand"
+    },
+    "superproperty" : [ "453" ],
+    "domain" : "163",
+    "attributes" : [ "external", "object" ],
+    "id" : "452"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#calledBy",
+    "inverse" : "49",
+    "equivalent" : [ "6" ],
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "calledBy"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Associates a callee function with a caller function that invokes it."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasArgumentList",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasArgumentList"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "455"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#allocate",
+    "inverse" : "115",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "allocate"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "457"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#exclusiveTime",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "exclusiveTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Time spent in a function, excluding time spent executing children (callee) functions"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "458"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasLabelRef",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasLabelRef"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "459"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Nth",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "447",
+    "label" : {
+      "IRI-based" : "Nth"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "460"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#relationOp",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "relationOp"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "461"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasValue",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "462"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasHiddenType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasHiddenType"
+    },
+    "superproperty" : [ "121" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "381"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#endMemoryAddress",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "443",
+    "label" : {
+      "IRI-based" : "endMemoryAddress"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "468"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasOperand",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasOperand"
+    },
+    "superproperty" : [ "453" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "469"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasType",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "119",
+    "subproperty" : [ "381", "382", "383", "118" ],
+    "comment" : {
+      "undefined" : "variable relation"
+    },
+    "attributes" : [ "external", "functional", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#writtenIn",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "346",
+    "label" : {
+      "IRI-based" : "writtenIn"
+    },
+    "domain" : "156",
+    "attributes" : [ "external", "object" ],
+    "id" : "474"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#mayAlias",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "mayAlias"
+    },
+    "superproperty" : [ "205" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates that two memory locations/variables may or may not alias one another"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "257"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#sourceFile",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "sourceFile"
+    },
+    "superproperty" : [ "142" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#referTo",
+    "inverse" : "42",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "referTo"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "475"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasRightOperand",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "449",
+    "label" : {
+      "IRI-based" : "hasRightOperand"
+    },
+    "superproperty" : [ "453" ],
+    "domain" : "163",
+    "attributes" : [ "external", "object" ],
+    "id" : "476"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasProfiling",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "416",
+    "label" : {
+      "IRI-based" : "hasProfiling"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates whether or not a given node has information related to dynamic execution (performance information)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "478"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasTrueBody",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasTrueBody"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "479"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#size",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "463",
+    "label" : {
+      "IRI-based" : "size"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "480"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasForIncr",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasForIncr"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "482"
+  }, {
+    "range" : "57",
+    "domain" : "386",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "483"
+  }, {
+    "range" : "57",
+    "domain" : "356",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "484"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "485"
+  }, {
+    "range" : "57",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "486"
+  }, {
+    "range" : "57",
+    "domain" : "235",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "487"
+  }, {
+    "range" : "57",
+    "domain" : "400",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "488"
+  }, {
+    "range" : "57",
+    "domain" : "319",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "489"
+  }, {
+    "range" : "57",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "490"
+  }, {
+    "range" : "57",
+    "domain" : "471",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "491"
+  }, {
+    "range" : "57",
+    "domain" : "472",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "492"
+  }, {
+    "range" : "57",
+    "domain" : "289",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "493"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#upstreamCallSite",
+    "inverse" : "495",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Callsite",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#Function",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "upstreamCallSite"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Inverse of a call site --> function being called."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "494"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#lineNumber",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "445",
+    "label" : {
+      "IRI-based" : "lineNumber"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "line number within a file"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "496"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#beginMemoryAddress",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "446",
+    "label" : {
+      "IRI-based" : "beginMemoryAddress"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "497"
+  }, {
+    "range" : "120",
+    "domain" : "328",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "498"
+  }, {
+    "range" : "120",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "499"
+  }, {
+    "range" : "120",
+    "domain" : "379",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "500"
+  }, {
+    "range" : "57",
+    "domain" : "470",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "501"
+  }, {
+    "range" : "57",
+    "domain" : "465",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "502"
+  }, {
+    "range" : "57",
+    "domain" : "153",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "503"
+  }, {
+    "range" : "57",
+    "domain" : "438",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "504"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasFalseBody",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasFalseBody"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "505"
+  }, {
+    "range" : "57",
+    "domain" : "151",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "506"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#readBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "readBy"
+    },
+    "superproperty" : [ "154" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "57",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "507"
+  }, {
+    "range" : "120",
+    "domain" : "431",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "508"
+  }, {
+    "range" : "120",
+    "domain" : "467",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "509"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#inclusivePercentageTime",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "inclusivePercentageTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The proportion (percent) of the execution time of the program that was spent executing this function or callsite, including time spent executing child functions"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "510"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasParent",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasParent"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "511"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#graphLink",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "graphLink"
+    },
+    "domain" : "7",
+    "subproperty" : [ "6", "482", "385", "512", "37", "511", "42", "513", "479", "48", "514", "515", "516", "517", "54", "421", "453", "518", "55", "9", "444", "455", "519", "311", "394", "160", "520", "49", "397", "475", "521", "459", "112", "121", "494", "429", "522", "205", "523", "366", "462", "38", "505", "495" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasKey",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasKey"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "case key:"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "524"
+  }, {
+    "range" : "151",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "525"
+  }, {
+    "range" : "263",
+    "domain" : "420",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "526"
+  }, {
+    "range" : "151",
+    "domain" : "351",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "527"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasForTest",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasForTest"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "516"
+  }, {
+    "range" : "207",
+    "domain" : "420",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "528"
+  }, {
+    "range" : "151",
+    "domain" : "353",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "529"
+  }, {
+    "range" : "207",
+    "domain" : "206",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "530"
+  }, {
+    "range" : "151",
+    "domain" : "358",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "531"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasChild",
+    "inverse" : "511",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasChild"
+    },
+    "superproperty" : [ "8" ],
+    "maxCardinality" : "1",
+    "domain" : "7",
+    "subproperty" : [ "452", "469", "476" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "453"
+  }, {
+    "range" : "153",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "532"
+  }, {
+    "range" : "151",
+    "domain" : "350",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "533"
+  }, {
+    "range" : "153",
+    "domain" : "456",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "534"
+  }, {
+    "range" : "151",
+    "domain" : "361",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "535"
+  }, {
+    "range" : "153",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "536"
+  }, {
+    "range" : "261",
+    "domain" : "260",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "537"
+  }, {
+    "range" : "153",
+    "domain" : "440",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "538"
+  }, {
+    "range" : "26",
+    "domain" : "182",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "539"
+  }, {
+    "range" : "120",
+    "domain" : "466",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "540"
+  }, {
+    "range" : "26",
+    "domain" : "187",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "541"
+  }, {
+    "range" : "379",
+    "domain" : "414",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "542"
+  }, {
+    "range" : "151",
+    "domain" : "251",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "543"
+  }, {
+    "range" : "379",
+    "domain" : "261",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "544"
+  }, {
+    "range" : "151",
+    "domain" : "477",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "545"
+  }, {
+    "range" : "379",
+    "domain" : "203",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "546"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#neverAlias",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "neverAlias"
+    },
+    "superproperty" : [ "205" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates that two memory locations/variables will never alias one another"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "258"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#access",
+    "inverse" : "154",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "access"
+    },
+    "domain" : "7",
+    "subproperty" : [ "259", "45" ],
+    "comment" : {
+      "undefined" : "function relation"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "163",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "547"
+  }, {
+    "range" : "386",
+    "domain" : "387",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "548"
+  }, {
+    "range" : "163",
+    "domain" : "318",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "549"
+  }, {
+    "range" : "401",
+    "domain" : "402",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "550"
+  }, {
+    "range" : "163",
+    "domain" : "473",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "551"
+  }, {
+    "range" : "401",
+    "domain" : "403",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "552"
+  }, {
+    "range" : "163",
+    "domain" : "454",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "553"
+  }, {
+    "range" : "379",
+    "domain" : "401",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "554"
+  }, {
+    "range" : "163",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "555"
+  }, {
+    "range" : "379",
+    "domain" : "378",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "556"
+  }, {
+    "range" : "163",
+    "domain" : "322",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "557"
+  }, {
+    "range" : "379",
+    "domain" : "412",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "558"
+  }, {
+    "range" : "163",
+    "domain" : "481",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "559"
+  }, {
+    "range" : "379",
+    "domain" : "413",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "560"
+  }, {
+    "range" : "151",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "561"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasFile",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasFile"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "AST node to its file node"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "520"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#writtenBy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "writtenBy"
+    },
+    "superproperty" : [ "154" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "350",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "562"
+  }, {
+    "range" : "61",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "563"
+  }, {
+    "range" : "109",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "564"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasBody",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasBody"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "AST has a body"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "513"
+  }, {
+    "range" : "251",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "565"
+  }, {
+    "range" : "358",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "566"
+  }, {
+    "range" : "353",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "567"
+  }, {
+    "range" : "351",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "568"
+  }, {
+    "range" : "361",
+    "domain" : "370",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "569"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasTarget",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasTarget"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "570"
+  }, {
+    "range" : "370",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "571"
+  }, {
+    "range" : "361",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "572"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#commandLineOption",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "464",
+    "label" : {
+      "IRI-based" : "commandLineOption"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "573"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#hasAlignment",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasAlignment"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "AST node to alignment node"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "523"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#id",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "id"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "574"
+  } ]
+}
